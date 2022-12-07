@@ -1,0 +1,370 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo-img{
+    width: 150px;
+    height: 45px;
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: blue;
+}
+.right-nav{
+    width: 30%;
+    text-align: right;
+    text-align: center;
+}
+.right-nav a{
+    text-decoration: none;
+}
+.right-nav img{
+    width: 45px;
+    align-items: center;
+    margin-top: 15px;
+}
+p {
+    font-size: 16px;
+    color: rgb(152, 149, 149);
+    padding:2% 0%;
+    line-height: 1.5;
+}
+h1{
+    letter-spacing: 1px;
+    color: rgb(46, 46, 46);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.btn{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-color{
+    background-color: rgb(53, 53, 215);
+    color: white;
+
+}
+.section1{
+    display: flex;
+    justify-content: space-around;
+    height: 800px;
+    width: 100%;
+}
+#top-content{
+    width: 50%;
+    padding: 10%;
+    padding-top: 15%;
+    height: 350px;
+}
+#top-content h1{
+    font-size: 50px;
+}
+.sub-title{
+    color: rgb(21, 21, 193);
+}
+#top-content p{
+    padding: 10px;
+}
+.banner-button{
+    padding-top: 20px;
+}
+#top-image{
+    height: 350px;
+}
+#top-image img{
+    width: 81%;
+    padding: 5%;
+    padding-top: 14%;
+}
+button:first-child{
+    background-color: rgb(53, 53, 215);
+    color: white;
+}
+hr{
+    width: 100%;
+}
+.all-mnc-logo {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.all-mnc-logo li{
+    list-style: none;
+    width: 100px;
+}
+.all-mnc-logo img{
+    height: auto;
+    margin: 30px;
+    width: 100%;
+}
+.section3{
+    background-color: rgb(251, 252, 252);
+    height: 892px;
+    width: 100%
+}
+.how-it-work{
+    width: 40%;
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 7%;
+}
+.how-it-work h1{
+    font-size: 35px;
+    margin: 5%;
+}
+.way-to-build-website{
+    display: flex;
+    justify-content: center;
+}
+.way-to-build-website img{
+    width: 40%;
+}
+.way-to-build-website .content{
+    width: 50%;
+    padding: 7% 5%;
+    background-color: rgb(251, 252, 252);
+}
+.way-to-build-website .content h1{
+    font-size: 35px;
+    margin: 5% 0%;
+}
+.section3List li{
+    display:list-item;
+    list-style-type:symbols();
+    margin: 3% 2%;
+}
+#find-out-more{
+    font-size: 20px;
+    margin-top: 5%;
+}
+.section4{
+    display: flex;
+    justify-content: center;
+    height: 835px;
+    background-color: rgb(243, 244, 246);
+
+}
+.section4 .content{
+    padding: 10% 5%;
+    width: 50%;
+    background-color: rgb(243, 244, 246);
+}
+.section4 .content h1{
+    padding: 5% 24%;
+    padding-left: 0%;
+    font-size: 35px;
+}
+.form-section{
+    width: 50%;
+    height: 500px;
+}
+.form-section .form{
+    width: 62%;
+    height: 138%;
+    margin: 10% 16% 16% 23%;
+    background-color: white;
+}
+.mobile-img{
+    width: 91%;
+    padding: 2%;
+}
+.input-form{
+    margin: 5%;
+}
+.input-form input{
+    width: 96%;
+    height: 36px;
+    margin: 2% 0%;
+    font-size: 20px;
+    padding-left: 4%;
+}
+.input-form label{
+    font-size: 19px;
+}
+.required label:after {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
+.input-form button{
+    width: 100%;
+    height: 17%;
+    font-size: 20px;
+    padding: 3%;
+    margin-top: 4%;
+    color: white;
+    background-color: rgb(63, 80, 234);
+    border: 2px solid white;
+    border-radius: 8px;
+}
+.input-form button:hover{
+    background-color: rgb(39, 58, 229);
+}
+.section5{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+.section5 .heading{
+    text-align: center;
+    padding: 6% 31%;
+}
+.section5 .heading h3{
+    padding: 2%;
+    color: rgb(63, 80, 234) 
+}
+.section5 .heading h1{
+    padding: 4% 0%;
+    font-size: 30px;
+}
+#scroll-box{
+    width: 77%;
+    height: 260px;
+    /* background-color: green; */
+    margin: 0% 10%;
+    
+}
+#scroll-box button{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+#scroll-wrapper{
+    width: 94%;
+    height: 207px;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    padding: 0px 3%;
+    /* background-color: #e32; */
+    /* display: none; */
+    overflow-x: scroll;
+    
+}
+.slide{
+    display: inline;
+    border: 1.5px solid rgb(216, 214, 211);
+}
+.slide div{
+    display: flex;
+}
+.slide img{
+    width: 261px;
+}
+.slide p{
+    width: 350px;
+    padding: 4%;
+}
+.section6{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+
+}
+.section6 .content{
+    width: 32%;
+    height: 300px;
+    padding: 6%;
+    padding-left: 14%;
+}
+.section6 .cards {
+    width: 48%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.cards .card1{
+    width: 41%;
+    height: 430px;
+    background-color: rgb(251, 250, 249);
+    /* border: 2px solid rgb(197, 188, 188); */
+}
+.cards .card2{
+    width: 41%;
+    left: -200px;
+    top: 200px;
+    height: 417px;
+    background-color: rgb(249, 246, 245);
+}
+.card2:hover{
+    width: 41%;
+    height: 435px;
+    background-color: rgb(251, 246, 243);
+    /* border: 2px solid rgb(200, 188, 188); */
+    opacity: 1;
+
+}
+
+.section7{
+    width: 80%;
+    height: 300px;
+    padding: 4% 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(243, 244, 246);
+
+}
+.section7 li{
+    width: 80%;
+    height: 5%;
+    margin-left: 11%;
+}
+.section7 li{
+    font-size: 19px;
+}
+.section7 li p{
+    padding: 3%;
+}
+.section8 {
+    width: 92%;
+    height: 250px;
+    background-color: aqua;
+    padding: 4%;
+    background-color: rgb(243, 244, 246);
+}
+.section8 .content{
+    padding: 0% 31%;
+    text-align: center;
+}
+.section8 .content h1{
+    font-size: 30px;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(26, 18, 48);
+    color: white;
+    transform:scaleX(20deg);
+}
