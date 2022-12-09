@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Techwind</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
   <nav class="navbar">
-    <ul class="nav-list" id="menu">
+    <div class="nav-logo">
       <a href="/home"><img class="logo-img" src="./image/logo.jpg" alt="logo"></a>
+    </div>
+    <ul class="nav-list" id="menu">
       <li class="menu-item"><a href="#home">HOME</a></li>
       <li class="menu-item"><a href="#landing">LANDING</a></li>
       <li class="menu-item"><a href="#page">PAGES</a></li>
@@ -33,7 +35,8 @@
     <div class="content" id="top-content">
       <h1>Our Creativity Is Your</h1>
       <h1 class="sub-title">Success</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A molestiae eveniet veritatis dolorum aperiam.
+      <p>Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae eveniet veritatis
+        dolorum aperiam.
       </p>
       <div class="banner-button">
         <button class="btn">Get Started</button>
@@ -44,15 +47,14 @@
       <img src="./image/design-template (1).png" alt="first image">
     </div>
   </section>
+  <hr>
   <section class="section2">
-    <hr>
-    <ul class="all-mnc-logo">
-      <li class="mnc-logo"><img src="./image/Amazon.webp" alt="amazon"></li>
-      <li class="mnc-logo"><img src="./image/google.jpeg" alt="google"></li>
-      <li class="mnc-logo"><img src="./image/lenovo.webp" alt="lenovo"></li>
-      <li class="mnc-logo"><img src="./image/paypal.webp" alt="paypal"></li>
-      <li class="mnc-logo"><img src="./image/shopify.jpeg" alt="shopify"></li>
-      <li class="mnc-logo"><img src="./image/Spotify.png" alt="Spotify"></li>
+    <div class="mnc-logo"><img src="./image/Amazon.webp" alt="amazon"></div>
+    <div class="mnc-logo"><img src="./image/google.jpeg" alt="google"></div>
+    <div class="mnc-logo"><img src="./image/lenovo.webp" alt="lenovo"></div>
+    <div class="mnc-logo"><img src="./image/paypal.webp" alt="paypal"></div>
+    <div class="mnc-logo"><img src="./image/shopify.jpeg" alt="shopify"></div>
+    <div class="mnc-logo"><img src="./image/Spotify.png" alt="Spotify"></div>
     </ul>
   </section>
   <section class="section3">
@@ -60,6 +62,7 @@
       <h1>How It Work?</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque ea nobis?
       </p>
+      <!-- </div> -->
     </div>
     <div class="way-to-build-website">
       <img src="./image/sec3img.jpg" alt="sec-3 image">
@@ -81,7 +84,7 @@
       <h1>Speed up your development with Techwind</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt sit amet consectetur
         adipisicing elit. A, neque! Aperiam, incidunt.</p>
-      <ul class="section3List">
+      <ul>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
@@ -105,9 +108,10 @@
   </section>
   <section class="section5">
     <div class="heading">
-      <h3>We believe in building each other and hence</h3>
-      <h1>Work with some amazing partners</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis tempora ut.</p>
+        <h3>We believe in building each other and hence</h3>
+        <h1>Work with some amazing partners</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis tempora ut.</p>
+      
     </div>
     <div id="scroll-box">
       <div id="scroll-wrapper">
@@ -190,8 +194,54 @@
       <button class="btn btn-color">Contect us</button>
     </div>
   </section>
-  <footer class="contaner">
-
+  <footer class="footer">
+    <div class="aboutus-wrapper">
+      <img class="logo-img" src="./image/logo.jpg" alt="logo">
+      <p>Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic,
+        connect.</p>
+      <div>
+        <!-- <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div> -->
+      </div>
+    </div>
+    <div class="service-wrapper">
+      <div class="company">
+        <h3>Company</h3>
+        <ul>
+          <li>About us</li>
+          <li>Services</li>
+          <li>Team</li>
+          <li>Procing</li>
+          <li>Project</li>
+          <li>Blog</li>
+          <li>Login</li>
+        </ul>
+      </div>
+      <div class="usefull-links">
+        <h3>Usefull Links</h3>
+        <ul>
+          <li>Terms of Services</li>
+          <li>Privacy Policy</li>
+          <li>Documantation</li>
+          <li>Changelog</li>
+          <li>Widget</li>
+        </ul>
+      </div>
+    </div>
+    <div class="subscribe-wrapper required">
+      <h3>Newsletter</h3>
+      <p>Sign up and recive the latest tips via email.</p>
+      <label for="email">Write your email</label><br>
+      <input type="email" placeholder="Email"><br>
+      <button class="btn btn-color">Subscribe</button>
+    </div>
   </footer>
   <script src="./main.js"></script>
 </body>

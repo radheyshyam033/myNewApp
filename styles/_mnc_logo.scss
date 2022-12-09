@@ -1,0 +1,32 @@
+$section-color: rgb(255, 255, 255);
+
+hr {
+    width: 100%;
+  }
+.section2 {
+    display: flex;
+    background-color: $section-color;
+    height: 88px;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+    margin-left: 5%;
+    @media (max-width:1000px) {
+        height: 70px;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .mnc-logo {
+        list-style: none;
+        padding: 1%;
+
+        img {
+            width: 55%;
+        }
+        @media (max-width:1000px) {
+            width: 75%;
+        }
+    }
+}

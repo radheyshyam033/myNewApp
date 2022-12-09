@@ -1,0 +1,106 @@
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    height: 835px;
+    background-color: rgb(243, 244, 246);
+    flex-wrap: wrap;
+  
+    @media (max-width:1000px) {
+      height: 1370px;
+    }
+    @media (max-width:500px) {
+      height: 970px;
+    }
+  
+    .content {
+      padding: 10% 2%;
+      width: 45%;
+      background-color: rgb(243, 244, 246);
+  
+      @media (max-width:1000px) {
+        width: 80%;
+        padding: 2% 2%;
+      }
+  
+      h1 {
+        padding: 5% 0%;
+        padding-left: 0%;
+        font-size: 35px;
+      }
+  
+      li {
+        display: list-item;
+        list-style-type: symbols();
+        margin: 3% 2%;
+        font-size: 20px;
+        color: rgb(152, 149, 149);
+      }
+  
+      a {
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+  }
+  
+  .form-section {
+    width: 50%;
+    height: 500px;
+  
+    .form {
+      width: 62%;
+      height: 148%;
+      margin: 7% 16% 16% 23%;
+      background-color: white;
+  
+      @media (max-width:1000px) {
+        width: 95%;
+        height: 300px;
+        margin: 0% 6% 6% 6%;
+      }
+  
+      .mobile-img {
+        width: 91%;
+        padding: 2%;
+      }
+        .input-form {
+          margin: 5%;
+  
+          input {
+            width: 85%;
+            height: 36px;
+            margin: 3% 0%;
+            font-size: 18px;
+            padding-left: 4%;
+          }
+  
+          // label {
+          //   font-size: 18px;
+          // }
+  
+          label:after {
+            color: #e32;
+            content: ' *';
+            display: inline;
+          }
+  
+          button {
+            width: 90%;
+            height: 17%;
+            font-size: 20px;
+            padding: 2%;
+            margin-top: 4%;
+            color: white;
+            background-color: rgb(63, 80, 234);
+            border: 2px solid white;
+            border-radius: 8px;
+          }
+  
+          button:hover {
+            background-color: rgb(39, 58, 229);
+          }
+        }
+      }
+    }
+  
