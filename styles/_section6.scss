@@ -1,0 +1,52 @@
+.section6 {
+    height: 600px;
+    display: flex;
+    padding-left: 5%;
+
+    .content {
+        width: 32%;
+        padding: 3%;
+
+        h1 {
+            padding: 2% 0%;
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+            color: rgb(152, 149, 149);
+            padding: 2% 0%;
+            line-height: 1.5;
+        }
+    }
+    .cards {
+        width: 48%;
+        height: 500px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card1 {
+            width: 41%;
+            height: 430px;
+            background-color: rgb(251, 250, 249);
+            /* border: 2px solid rgb(197, 188, 188); */
+        }
+
+        .card2 {
+            width: 41%;
+            left: -200px;
+            top: 200px;
+            height: 417px;
+            background-color: rgb(249, 246, 245);
+        }
+
+        .card2:hover {
+            width: 41%;
+            height: 435px;
+            background-color: rgb(251, 246, 243);
+            opacity: 1;
+
+        }
+    }
+}

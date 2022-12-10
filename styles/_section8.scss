@@ -1,0 +1,22 @@
+.section8 {
+    height: 250px;
+    padding: 4% 0%;
+    align-items: center;
+    background-color: rgb(243, 244, 246);
+
+    .content {
+        padding-left: 25%;
+        width: 50%;
+        text-align: center;
+
+        h1 {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}

@@ -7,40 +7,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Techwind</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <nav class="navbar">
     <div class="nav-logo">
-      <a href="/home"><img class="logo-img" src="./image/logo.jpg" alt="logo"></a>
+      <a href="/"><img class="logo-img" src="./image/logo.jpg" alt="logo"></a>
     </div>
     <ul class="nav-list" id="menu">
-      <li class="menu-item"><a href="#home">HOME</a></li>
-      <li class="menu-item"><a href="#landing">LANDING</a></li>
+      <li class="menu-item"><a href="#home"><span>HOME</span></a></li>
+      <li class="menu-item"><a href="#landing" class="arrow-icon">LANDING</a></li>
       <li class="menu-item"><a href="#page">PAGES</a></li>
       <li class="menu-item"><a href="#portfolio">PORTFOLIO</a></li>
       <li class="menu-item"><a href="#docs">DOCS</a></li>
       <li class="menu-item"><a href="#contect">CONTACT</a></li>
     </ul>
     <div class="right-nav">
-      <a href="/setting">
-        <img class="setting" src="./image/setting.png" alt="setting" srcset="">
-      </a>
-      <a href="/kart">
-        <img class="kart" src="./image/kart.png" alt="kart" srcset="">
-      </a>
+      <div class="icon-width">
+        <div class="nav-icon" id="setting">
+          <a href="/setting">
+            <img class="setting" src="./image/_setting.png" alt="setting" srcset="">
+          </a>
+        </div>
+        <div class="nav-icon" id="kart">
+          <a href="/kart">
+            <img class="kart" src="./image/kart.png" alt="kart" srcset="">
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
   <section class="section1">
     <div class="content" id="top-content">
       <h1>Our Creativity Is Your</h1>
       <h1 class="sub-title">Success</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae eveniet veritatis
-        dolorum aperiam.
+      <p>Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae dolorum aperiam.
       </p>
       <div class="banner-button">
         <button class="btn">Get Started</button>
-        <button class="btn">Documentation</button>
+        <button class="btn doc-btn">Documentation</button>
       </div>
     </div>
     <div class="content" id="top-image">
@@ -49,12 +54,12 @@
   </section>
   <hr>
   <section class="section2">
-    <div class="mnc-logo"><img src="./image/Amazon.webp" alt="amazon"></div>
-    <div class="mnc-logo"><img src="./image/google.jpeg" alt="google"></div>
-    <div class="mnc-logo"><img src="./image/lenovo.webp" alt="lenovo"></div>
-    <div class="mnc-logo"><img src="./image/paypal.webp" alt="paypal"></div>
-    <div class="mnc-logo"><img src="./image/shopify.jpeg" alt="shopify"></div>
-    <div class="mnc-logo"><img src="./image/Spotify.png" alt="Spotify"></div>
+    <div class="mnc-logo"><img src="./image/amazon.png" alt="amazon"></div>
+    <div class="mnc-logo"><img src="./image/google.png" alt="google"></div>
+    <div class="mnc-logo"><img src="./image/lenovo.png" alt="lenovo"></div>
+    <div class="mnc-logo"><img src="./image/paypal.png" alt="paypal"></div>
+    <div class="mnc-logo"><img src="./image/shopify.png" alt="shopify"></div>
+    <div class="mnc-logo"><img src="./image/spotify.png" alt="Spotify"></div>
     </ul>
   </section>
   <section class="section3">
@@ -75,21 +80,25 @@
           <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         </ul>
-        <a id="find-out-more" href="./">Find Out More</a>
+        <div>
+          <a id="find-out-more" href="./">Find Out More</a>
+        </div>
       </div>
     </div>
   </section>
   <section class="section4">
     <div class="content">
-      <h1>Speed up your development with Techwind</h1>
+      <h1>Speed up your development<br> with <span>Techwind</span></h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt sit amet consectetur
-        adipisicing elit. A, neque! Aperiam, incidunt.</p>
+        adipisicing.</p>
       <ul>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
       </ul>
-      <a id="find-out-more" href="./">Find Out More</a>
+      <div>
+        <a id="find-out-more" href="./">Find Out More</a>
+      </div>
     </div>
     <div class="form-section">
       <div class="form">
@@ -108,10 +117,10 @@
   </section>
   <section class="section5">
     <div class="heading">
-        <h3>We believe in building each other and hence</h3>
-        <h1>Work with some amazing partners</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis tempora ut.</p>
-      
+      <h3>We believe in building each other and hence</h3>
+      <h1>Work with some amazing partners</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis tempora ut.</p>
+
     </div>
     <div id="scroll-box">
       <div id="scroll-wrapper">
@@ -159,8 +168,8 @@
   <section class="section6">
     <div class="content">
       <h1>Our Comfortable Rates</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores perspiciatis? Earum natus
-        iusto voluptatibus praesentium quod, amet eos!</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores perspiciatis? Earum natus!
+      </p>
       <button class="btn btn-color">Subscribe Now</button>
     </div>
     <div class="cards">
@@ -169,7 +178,7 @@
     </div>
   </section>
   <section class="section7">
-    <li>How our Techwind work ?
+    <li>How our <span>Techwind</span> work ?
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse ut incidunt, optio
         facilis reprehenderit tenetur placeat corporis?</p>
     </li>
@@ -181,7 +190,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat reprehenderit ipsum
         officiis animi inventore beatae, error atque.</p>
     </li>
-    <li> Is Techwind safe to use with my accoun ?
+    <li> Is <span>Techwind</span> safe to use with my accoun ?
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo excepturi
         similique rerum temporibus impedit vitae.</p>
     </li>
@@ -196,8 +205,11 @@
   </section>
   <footer class="footer">
     <div class="aboutus-wrapper">
-      <img class="logo-img" src="./image/logo.jpg" alt="logo">
-      <p>Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic,
+      <div class="footer-logo">
+        <a href="/"><img src="./image/techwind-logo.png" alt="Techwind"></a>
+      </div>
+      <p>Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, you
+        need to generate
         connect.</p>
       <div>
         <!-- <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
@@ -235,12 +247,14 @@
         </ul>
       </div>
     </div>
-    <div class="subscribe-wrapper required">
-      <h3>Newsletter</h3>
-      <p>Sign up and recive the latest tips via email.</p>
-      <label for="email">Write your email</label><br>
-      <input type="email" placeholder="Email"><br>
-      <button class="btn btn-color">Subscribe</button>
+    <div class="subscribe-wrapper">
+      <div class="footer-p">
+        <h3>Newsletter</h3>
+        <p>Sign up and recive the latest tips via email.</p>
+        <label for="email">Write your email</label><br>
+        <input type="email require" placeholder="Email"><br>
+        <button class="btn btn-color">Subscribe</button>
+      </div>
     </div>
   </footer>
   <script src="./main.js"></script>

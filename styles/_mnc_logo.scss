@@ -4,14 +4,14 @@ hr {
     width: 100%;
   }
 .section2 {
-    display: flex;
-    background-color: $section-color;
     height: 88px;
     width: 90%;
-    align-items: center;
+    display: flex;
     justify-content: space-around;
+    align-items: center;
     overflow: auto;
     margin-left: 5%;
+    background-color: $section-color;
     @media (max-width:1000px) {
         height: 70px;
         width: 100%;
@@ -20,10 +20,11 @@ hr {
 
     .mnc-logo {
         list-style: none;
-        padding: 1%;
+        align-items: center;
 
         img {
-            width: 55%;
+            width: 35%;
+            padding-left: 31%;
         }
         @media (max-width:1000px) {
             width: 75%;

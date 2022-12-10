@@ -13,72 +13,8 @@
     align-items: center;
 
 }
-.section6 .content{
-    width: 32%;
-    height: 300px;
-    padding: 6%;
-    padding-left: 14%;
-}
-.section6 .content h1 {
-    padding: 4% 0%;
-    font-size: 30px;
-  }
 
-.section6 .content p {
-    font-size: 20px;
-    color: rgb(152, 149, 149);
-    padding: 2% 0%;
-    line-height: 1.5;
-  }
-.section6 .cards {
-    width: 48%;
-    height: 500px;
-    background-color: white;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    
-}
-.cards .card1{
-    width: 41%;
-    height: 430px;
-    background-color: rgb(251, 250, 249);
-    /* border: 2px solid rgb(197, 188, 188); */
-}
-.cards .card2{
-    width: 41%;
-    left: -200px;
-    top: 200px;
-    height: 417px;
-    background-color: rgb(249, 246, 245);
-}
-.card2:hover{
-    width: 41%;
-    height: 435px;
-    background-color: rgb(251, 246, 243);
-    /* border: 2px solid rgb(200, 188, 188); */
-    opacity: 1;
 
-}
-.section7{
-    width: 80%;
-    height: 300px;
-    padding: 4% 10%;
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: rgb(243, 244, 246);
-}
-.section7 li{
-    width: 80%;
-    height: 5%;
-    margin-left: 11%;
-}
-.section7 li{
-    font-size: 19px;
-}
-.section7 li p{
-    padding: 3%;
-}
 .section8 {
     /* width: 92%; */
     height: 250px;
@@ -93,15 +29,7 @@
     /* padding: 0% 31%; */
     text-align: center;
 }
-.section8 .content h1{
-    font-size: 30px;
-    margin: 3%;
-}
-.section8 .content p{
-    font-size: 20px;
-    text-align: center;
-    padding: 3%;
-}
+
 footer{
     --minheight: 280px;
     --maxheight: 390px;

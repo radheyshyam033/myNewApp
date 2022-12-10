@@ -1,26 +1,22 @@
-$content-color: rgb(39, 58, 229);
+$content-color: rgb(80, 70, 228);
 $contaner-color: rgb(243, 244, 246);
 $white-color: white;
-
-* {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
 
 .navbar {
   display: flex;
   position: fixed;
   height: 70px;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: $white-color;
   overflow: auto;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
 .nav-logo {
-  width: 25%;
+  width: 20%;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
 
   .logo-img {
     width: 159px;
@@ -32,16 +28,25 @@ $white-color: white;
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 
     a {
       text-decoration: none;
       color: black;
       text-align: center;
       font-size: 15px;
+      padding-right: 0px;
+
+      i {
+        white-space: 2px;
+      }
     }
 
     a:hover {
@@ -58,21 +63,39 @@ $white-color: white;
 
 .right-nav {
   width: 20%;
-  text-align: center;
+
   @media (max-width:800px) {
     width: 50%;
     text-align: end;
     padding-right: 10%;
-}
-
-
-  a {
-    text-decoration: none;
   }
 
-  img {
-    width: 45px;
+  .icon-width {
+    width: 100%;
+    display: flex;
+  }
+
+  .nav-icon {
+    border: 2px solid rgb(207, 208, 244);
+    width: 42px;
+    height: 42px;
+    margin-top: 10px;
+    border-radius: 50%;
+
+    img {
+      width: 24px;
+      margin: 10px 8px;
+    }
+  }
+
+  #setting {
+    margin-left: 134px;
     align-items: center;
-    margin-top: 15px;
+    background-color: $contaner-color;
+  }
+
+  #kart {
+    margin-left: 3px;
+    background-color: $content-color;
   }
 }

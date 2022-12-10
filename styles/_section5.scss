@@ -1,0 +1,68 @@
+
+.section5 {
+    height: 800px;
+    background-color: white;
+    align-items: center;
+  
+    .heading {
+      width: 40%;
+      padding: 6% 30% 4%;
+      text-align: center;
+      padding-top: 6%;
+  
+      h3 {
+        padding: 3%;
+        color: rgb(63, 80, 234)
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  
+  #scroll-box {
+    width: 84%;
+    height: 260px;
+    margin: 0% 10%;
+   button {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+  }
+  }
+  
+  #scroll-wrapper {
+    width: 94%;
+    height: 260px;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    padding: 0px 0%;
+    /* background-color: #e32; */
+    /* display: none; */
+    overflow-x: scroll;
+  
+  }
+  li{
+    margin: 2% .5%;
+    font-size: 20px;
+    color: #989595;
+  }
+  
+  .slide {
+    display: inline;
+    border: 1.5px solid rgb(216, 214, 211);
+  
+    div {
+      display: flex;
+    }
+  
+    img {
+      width: 261px;
+    }
+  
+    p {
+      width: 350px;
+      padding: 4%;
+    }
+  }

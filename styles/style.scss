@@ -3,33 +3,77 @@
 @import "mnc_logo";
 @import "section3";
 @import "section4";
+@import "section5";
+@import "section6";
+@import "section7";
+@import "section8";
+@import "footer";
 
-// p {
-//   font-size: 16px;
-//   color: rgb(152, 149, 149);
-//   padding: 2% 0%;
-//   line-height: 1.5;
-// } 
+@use 'base';
 
-// h1 {
-//   letter-spacing: 2px;
-//   color: rgb(46, 46, 46);
-//   font-family: 'Trebuchet MS', sans-serif;
-// }
+$blue-color:rgb(76, 66, 224);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  // font-family: Sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: table-cell;
+  // padding: 3px;
+  width: 7px;
+  height: 7px;
+}
+h1{
+  letter-spacing: 2px;
+  color: rgb(46, 46, 46);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+p{
+  font-size: 20px;
+  color: $paragraph-color;
+  margin: 3% 0%;
+  line-height: 1.5;
+  padding: 2% 0%;
+}
+
+span{
+  color: $blue-color;
+}
 
 .btn {
-  height: 40px;
-  width: 200px;
-  font-size: 20px;
-  border: 2px solid rgb(53, 53, 215);
+  height: 47px;
+  width: 199px;
+  font-size: 18px;
+  border: 2px solid $blue-color;
   border-radius: 8px;
   cursor: pointer;
-  color: rgb(53, 53, 215);
+  color: $blue-color;
 
   @media (max-width:500px) {
     height: 30px;
     width: 150px;
     font-size: 17px;
+  }
+}
+.doc-btn{
+  width: 225px;
+  &:hover{
+    background-color: $blue-color;
+    color: white;
   }
 }
 
@@ -38,82 +82,17 @@
 }
 
 .btn-color {
-  background-color: rgb(53, 53, 215);
+  background-color: $blue-color;
   color: white;
 }
 
-// --------------------------------------------
-
-.section5 {
-  width: 100%;
-  height: 800px;
-  background-color: white;
-  align-items: center;
-
-  .heading {
-    width: 40%;
-    padding: 6% 30% 4%;
-    text-align: center;
-    padding-top: 6%;
-
-    h3 {
-      padding: 3%;
-      color: rgb(63, 80, 234)
-    }
-    h1 {
-      padding: 4% 0%;
-      font-size: 30px;
-    }
-
-    p {
-      font-size: 20px;
-      color: rgb(152, 149, 149);
-      padding: 2% 0%;
-      line-height: 1.5;
-    }
-  }
-}
-
-#scroll-box {
-  width: 77%;
-  height: 260px;
-  margin: 0% 10%;
-
-}
-
-#scroll-box button {
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-}
-
-#scroll-wrapper {
-  width: 94%;
-  height: 207px;
-  display: flex;
-  justify-content: space-around;
-  /* text-align: center; */
-  padding: 0px 3%;
-  /* background-color: #e32; */
-  /* display: none; */
-  overflow-x: scroll;
-
-}
-
-.slide {
-  display: inline;
-  border: 1.5px solid rgb(216, 214, 211);
-
-  div {
-    display: flex;
-  }
-
-  img {
-    width: 261px;
-  }
-
-  p {
-    width: 350px;
-    padding: 4%;
-  }
-}
+// --------------------------------------
+// .footer {
+//   --minheight: 280px;
+//   --maxheight: 390px;
+//   width: 100%;
+//   height: var(--maxheight);
+//   background-color: rgb(33, 42, 61);
+//   clip-path: polygon(0 calc(var(--maxheight) - var(--minheight)), 100% 0, 100% 100%, 0 100%);
+//   color: white;
+// }
