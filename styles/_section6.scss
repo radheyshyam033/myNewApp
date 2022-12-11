@@ -1,11 +1,24 @@
 .section6 {
-    // height: 600px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     padding: 5%;
 
     .content {
         width: 34%;
         padding: 3%;
+        @media (max-width:1000px) {
+            width: 70%;
+            text-align: center;
+            margin: auto;
+            padding: 3%;
+        }
+        @media (max-width:500px) {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            padding: 3%;
+        }
 
         h1 {
             padding: 2% 0%;
@@ -20,18 +33,37 @@
     }
     .cards {
         width: 48%;
-        height: 500px;
         background-color: white;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 0% 8%;
+        padding: 0% 6%;
+        @media (max-width:1000px) {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            padding: 3%;
+        }
+        @media (max-width:500px) {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            padding: 3%;
+        }
 
         .card1 {
             width: 41%;
             height: 430px;
-            background-color: rgb(251, 250, 249);
+            background-color: rgb(202, 118, 34);
             /* border: 2px solid rgb(197, 188, 188); */
+            @media (max-width:500px) {
+                width: 100%;
+                text-align: center;
+                margin: auto;
+                padding: 3%;
+                margin: 5%;
+            }
         }
 
         .card2 {
@@ -39,7 +71,14 @@
             left: -200px;
             top: 200px;
             height: 417px;
-            background-color: rgb(249, 246, 245);
+            background-color: rgb(65, 21, 6);
+            @media (max-width:500px) {
+                width: 90%;
+                text-align: center;
+                margin: auto;
+                padding: 3%;
+                margin: 5%;
+            }
         }
 
         .card2:hover {

@@ -17,6 +17,9 @@ $white-color: white;
   width: 20%;
   text-align: center;
   margin-top: 10px;
+  @media (max-width:850px) {
+    width: 50%;
+  }
 
   .logo-img {
     width: 159px;
@@ -29,6 +32,9 @@ $white-color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (max-width:850px) {
+    display: none;
+  }
 
   li {
     list-style: none;
@@ -53,21 +59,13 @@ $white-color: white;
       color: $content-color;
     }
   }
-
-  @media (max-width:800px) {
-    display: none;
-    width: 100%;
-  }
-
 }
 
 .right-nav {
   width: 20%;
 
-  @media (max-width:800px) {
+  @media (max-width:850px) {
     width: 50%;
-    text-align: end;
-    padding-right: 10%;
   }
 
   .icon-width {
@@ -97,5 +95,11 @@ $white-color: white;
   #kart {
     margin-left: 3px;
     background-color: $content-color;
+  }
+  #hamburger{
+    display: none;
+    @media (max-width:850px) {
+      display: inline;
+    }
   }
 }

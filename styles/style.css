@@ -12,6 +12,9 @@
   width: 20%;
   text-align: center;
   margin-top: 10px; }
+  @media (max-width: 850px) {
+    .nav-logo {
+      width: 50%; } }
   .nav-logo .logo-img {
     width: 159px;
     height: 37px; }
@@ -21,6 +24,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around; }
+  @media (max-width: 850px) {
+    .nav-list {
+      display: none; } }
   .nav-list li {
     list-style: none;
     display: flex;
@@ -37,18 +43,12 @@
         white-space: 2px; }
     .nav-list li a:hover {
       color: #5046e4; }
-  @media (max-width: 800px) {
-    .nav-list {
-      display: none;
-      width: 100%; } }
 
 .right-nav {
   width: 20%; }
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     .right-nav {
-      width: 50%;
-      text-align: end;
-      padding-right: 10%; } }
+      width: 50%; } }
   .right-nav .icon-width {
     width: 100%;
     display: flex;
@@ -68,6 +68,11 @@
   .right-nav #kart {
     margin-left: 3px;
     background-color: #5046e4; }
+  .right-nav #hamburger {
+    display: none; }
+    @media (max-width: 850px) {
+      .right-nav #hamburger {
+        display: inline; } }
 
 .section1 {
   display: flex;
@@ -78,16 +83,22 @@
 
 #top-content {
   padding: 15% 0% 14% 4%;
-  height: 380px;
   width: 45%; }
   @media (max-width: 900px) {
     #top-content {
       width: 100%;
-      padding: 20% 5% 0%; } }
+      padding: 20% 5% 6%; } }
+  @media (max-width: 500px) {
+    #top-content {
+      width: 100%;
+      padding: 40% 5% 6%; } }
   #top-content h1 {
     letter-spacing: 2px;
     color: #2e2e2e;
     font-size: 50px; }
+    @media (max-width: 500px) {
+      #top-content h1 {
+        font-size: 38px; } }
   #top-content .sub-title {
     color: #4c42e0;
     padding-top: 0%; }
@@ -149,6 +160,9 @@ hr {
   @media (max-width: 1000px) {
     .how-it-work {
       width: 55%; } }
+  @media (max-width: 1000px) {
+    .how-it-work {
+      width: 95%; } }
 
 .way-to-build-website {
   display: flex;
@@ -168,6 +182,10 @@ hr {
       .way-to-build-website .content {
         width: 90%;
         padding: 0% 5% 5%; } }
+    @media (max-width: 1000px) {
+      .way-to-build-website .content {
+        width: 95%;
+        padding: 0% 5% 20%; } }
     .way-to-build-website .content li {
       display: list-item;
       list-style-type: symbols();
@@ -183,22 +201,28 @@ hr {
   display: flex;
   justify-content: space-between;
   background-color: #f3f4f6;
-  flex-wrap: wrap; }
+  flex-wrap: wrap-reverse; }
   .section4 .content {
     padding: 6% 2% 0% 5%;
     width: 45%;
     background-color: #f3f4f6; }
+    @media (max-width: 1000px) {
+      .section4 .content {
+        padding: 0% 0% 15%; } }
     .section4 .content h1 {
       padding: 5% 0% 1%;
       padding-left: 0%;
       font-size: 35px; }
+      @media (max-width: 1000px) {
+        .section4 .content h1 {
+          padding: 0% 0% 1%; } }
     .section4 .content a {
       text-decoration: none;
       font-size: 20px; }
-    @media (max-width: 1050px) {
+    @media (max-width: 1000px) {
       .section4 .content {
         width: 100%;
-        padding: 2% 8%; } }
+        padding: 2% 2% 15% 5%; } }
 
 .form-section {
   width: 45%;
@@ -214,11 +238,15 @@ hr {
     @media (max-width: 1050px) {
       .form-section .form {
         width: 75%; } }
+    @media (max-width: 500px) {
+      .form-section .form {
+        margin: 14% 8%;
+        width: 95%; } }
     .form-section .form .mobile-img {
       width: 91%;
       padding: 2%; }
     .form-section .form .input-form {
-      margin: 5%; }
+      margin: 0% 3%; }
       .form-section .form .input-form input {
         width: 85%;
         height: 36px;
@@ -231,7 +259,6 @@ hr {
         display: inline; }
       .form-section .form .input-form button {
         width: 90%;
-        height: 17%;
         font-size: 20px;
         padding: 2%;
         margin: 4% 0%;
@@ -251,6 +278,14 @@ hr {
     padding: 6% 30% 4%;
     text-align: center;
     padding-top: 6%; }
+    @media (max-width: 1000px) {
+      .section5 .heading {
+        width: 60%;
+        padding: 6% 18% 4%; } }
+    @media (max-width: 500px) {
+      .section5 .heading {
+        width: 100%;
+        padding: 6% 0% 4%; } }
     .section5 .heading h3 {
       padding: 3%;
       color: #3f50ea; }
@@ -294,11 +329,25 @@ li {
     padding: 4%; }
 
 .section6 {
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
   padding: 5%; }
   .section6 .content {
     width: 34%;
     padding: 3%; }
+    @media (max-width: 1000px) {
+      .section6 .content {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        padding: 3%; } }
+    @media (max-width: 500px) {
+      .section6 .content {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        padding: 3%; } }
     .section6 .content h1 {
       padding: 2% 0%;
       font-size: 30px; }
@@ -309,23 +358,49 @@ li {
       line-height: 1.5; }
   .section6 .cards {
     width: 48%;
-    height: 500px;
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0% 8%; }
+    padding: 0% 6%; }
+    @media (max-width: 1000px) {
+      .section6 .cards {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding: 3%; } }
+    @media (max-width: 500px) {
+      .section6 .cards {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 3%; } }
     .section6 .cards .card1 {
       width: 41%;
       height: 430px;
-      background-color: #fbfaf9;
+      background-color: #ca7622;
       /* border: 2px solid rgb(197, 188, 188); */ }
+      @media (max-width: 500px) {
+        .section6 .cards .card1 {
+          width: 100%;
+          text-align: center;
+          margin: auto;
+          padding: 3%;
+          margin: 5%; } }
     .section6 .cards .card2 {
       width: 41%;
       left: -200px;
       top: 200px;
       height: 417px;
-      background-color: #f9f6f5; }
+      background-color: #411506; }
+      @media (max-width: 500px) {
+        .section6 .cards .card2 {
+          width: 90%;
+          text-align: center;
+          margin: auto;
+          padding: 3%;
+          margin: 5%; } }
     .section6 .cards .card2:hover {
       width: 41%;
       height: 435px;
@@ -338,6 +413,11 @@ li {
   display: grid;
   grid-template-columns: auto auto;
   background-color: #f3f4f6; }
+  @media (max-width: 900px) {
+    .section7 {
+      width: 95%;
+      padding: 4% 2%;
+      grid-template-columns: auto; } }
   .section7 li {
     width: 80%;
     height: 5%;
@@ -352,9 +432,12 @@ li {
   align-items: center;
   background-color: #f3f4f6; }
   .section8 .content {
-    padding-left: 25%;
+    margin: auto;
     width: 50%;
     text-align: center; }
+    @media (max-width: 900px) {
+      .section8 .content {
+        width: 75%; } }
     .section8 .content h1 {
       font-size: 32px;
       text-align: center; }
@@ -362,23 +445,24 @@ li {
       font-size: 20px;
       text-align: center; }
 
-footer {
-  --minheight: 280px;
-  --maxheight: 390px;
-  width: 100%;
-  height: var(--maxheight);
-  background-color: #192130;
-  clip-path: polygon(0 calc(var(--maxheight) - var(--minheight)), 100% 0, 100% 100%, 0 100%);
-  color: white; }
-
 .footer {
   display: flex;
   justify-content: space-around;
-  padding-top: 12%; }
+  flex-wrap: wrap;
+  color: white;
+  background-color: #192130; }
   .footer div {
-    width: 33%; }
+    width: 30%; }
   .footer .aboutus-wrapper {
-    padding-left: 7%; }
+    padding: 7% 0% 7% 5%; }
+    @media (max-width: 1000px) {
+      .footer .aboutus-wrapper {
+        width: 80%;
+        padding: 17% 5% 0%; } }
+    .footer .aboutus-wrapper .footer-logo {
+      width: 250px; }
+      .footer .aboutus-wrapper .footer-logo img {
+        width: 220px; }
     .footer .aboutus-wrapper p {
       font-size: 18px;
       letter-spacing: 1px;
@@ -387,40 +471,82 @@ footer {
       line-height: 1.75; }
   .footer .service-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 7% 0%;
+    display: flex;
     justify-content: space-around; }
+    @media (max-width: 1000px) {
+      .footer .service-wrapper {
+        padding: 3% 0%;
+        width: 70%; } }
+    @media (max-width: 500px) {
+      .footer .service-wrapper {
+        padding: 3% 0%;
+        width: 100%; }
+        .footer .service-wrapper .company {
+          width: 80%; }
+        .footer .service-wrapper .usefull-links {
+          width: 80%; } }
     .footer .service-wrapper h3 {
       padding-bottom: 17%; }
+      @media (max-width: 1000px) {
+        .footer .service-wrapper h3 {
+          padding-bottom: 7%;
+          font-size: 25px; } }
     .footer .service-wrapper li {
       margin: 10%;
+      letter-spacing: 1px;
       color: white; }
-  .footer .subscribe-wrapper h3 {
-    padding-bottom: 7%; }
-  .footer .subscribe-wrapper .footer-p {
-    padding: 0% 20%;
-    width: 63%; }
-    .footer .subscribe-wrapper .footer-p p {
-      color: white; }
-    .footer .subscribe-wrapper .footer-p label {
-      font-size: 19px;
-      margin: 2%; }
-    .footer .subscribe-wrapper .footer-p label:after {
-      color: #e32;
-      content: ' *';
-      display: inline; }
-    .footer .subscribe-wrapper .footer-p input {
-      font-size: 20px;
-      color: white;
-      background-color: #27324b;
-      border: #27324b;
-      width: 284px;
-      height: 44px;
-      margin: 2%; }
-    .footer .subscribe-wrapper .footer-p ::placeholder {
-      color: white;
-      padding-left: 10px; }
-    .footer .subscribe-wrapper .footer-p .btn {
-      width: 284px;
-      margin: 2%; }
+      @media (max-width: 1000px) {
+        .footer .service-wrapper li {
+          margin: 8%;
+          font-size: 20px; } }
+      @media (max-width: 500px) {
+        .footer .service-wrapper li {
+          margin: 5%;
+          font-size: 20px; } }
+  .footer .subscribe-wrapper {
+    padding: 7% 5% 7% 0%; }
+    @media (max-width: 1000px) {
+      .footer .subscribe-wrapper {
+        width: 80%;
+        padding: 7% 0%; } }
+    .footer .subscribe-wrapper .footer-p {
+      padding: 0% 20%;
+      width: 83%; }
+      @media (max-width: 1000px) {
+        .footer .subscribe-wrapper .footer-p {
+          padding: 0% 0%; } }
+      .footer .subscribe-wrapper .footer-p h3 {
+        padding-bottom: 25px; }
+        @media (max-width: 1000px) {
+          .footer .subscribe-wrapper .footer-p h3 {
+            padding-bottom: 0%;
+            font-size: 30px; } }
+      .footer .subscribe-wrapper .footer-p p {
+        color: white; }
+      .footer .subscribe-wrapper .footer-p label {
+        font-size: 19px;
+        margin: 2%; }
+      .footer .subscribe-wrapper .footer-p label:after {
+        color: #e32;
+        content: ' *';
+        display: inline; }
+      .footer .subscribe-wrapper .footer-p input {
+        font-size: 20px;
+        color: white;
+        background-color: #27324b;
+        border: #27324b;
+        width: 284px;
+        height: 44px;
+        margin: 2%; }
+      .footer .subscribe-wrapper .footer-p ::placeholder {
+        color: white;
+        padding-left: 10px; }
+      .footer .subscribe-wrapper .footer-p .btn {
+        width: 284px;
+        margin: 2%; }
 
 @use 'base';
 * {
@@ -472,15 +598,18 @@ span {
   color: #4c42e0; }
   @media (max-width: 500px) {
     .btn {
-      height: 30px;
-      width: 150px;
+      height: 50px;
+      width: 160px;
       font-size: 17px; } }
 
 .doc-btn {
   width: 225px; }
-  .doc-btn:hover {
+  .doc-btn :hover {
     background-color: #4c42e0;
     color: white; }
+  @media (max-width: 500px) {
+    .doc-btn {
+      width: 200px; } }
 
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }

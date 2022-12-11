@@ -1,11 +1,15 @@
 $heading-color: rgb(46, 46, 46);
 .section7 {
     width: 80%;
-    // height: 400px;
     padding: 4% 10%;
     display: grid;
     grid-template-columns: auto auto;
     background-color: rgb(243, 244, 246);
+    @media (max-width:900px) {
+        width: 95%;
+        padding: 4% 2%;
+        grid-template-columns: auto;
+    }
 
     li {
         width: 80%;

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: rgb(243, 244, 246);
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 
   // @media (max-width:1050px) {
   // }
@@ -14,21 +14,26 @@
     padding: 6% 2% 0% 5%;
     width: 45%;
     background-color: rgb(243, 244, 246);
+    @media (max-width:1000px) {
+      padding: 0% 0% 15%;
+    }
 
     h1 {
       padding: 5% 0% 1%;
       padding-left: 0%;
       font-size: 35px;
+      @media (max-width:1000px) {
+        padding: 0% 0% 1%;
+      }
     }
 
     a {
       text-decoration: none;
       font-size: 20px;
     }
-    @media (max-width:1050px) {
+    @media (max-width:1000px) {
       width: 100%;
-      padding: 2% 8%;
-
+      padding: 2% 2% 15% 5%;
     }
   }
 }
@@ -48,13 +53,17 @@
     @media (max-width:1050px) {
       width: 75%;
     }
+    @media (max-width:500px) {
+      margin: 14% 8%;
+      width: 95%;
+    }
     .mobile-img {
       width: 91%;
       padding: 2%;
     }
 
     .input-form {
-      margin: 5%;
+      margin: 0% 3%;
 
       input {
         width: 85%;
@@ -72,7 +81,6 @@
 
       button {
         width: 90%;
-        height: 17%;
         font-size: 20px;
         padding: 2%;
         margin: 4% 0%;

@@ -68,16 +68,19 @@ span{
   color: $blue-color;
 
   @media (max-width:500px) {
-    height: 30px;
-    width: 150px;
+    height: 50px;
+    width: 160px;
     font-size: 17px;
   }
 }
 .doc-btn{
   width: 225px;
-  &:hover{
+  :hover{
     background-color: $blue-color;
     color: white;
+  }
+  @media (max-width:500px) {
+    width: 200px;
   }
 }
 
