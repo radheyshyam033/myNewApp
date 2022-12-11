@@ -395,7 +395,7 @@ footer {
   --maxheight: 390px;
   width: 100%;
   height: var(--maxheight);
-  background-color: #212a3d;
+  background-color: #192130;
   clip-path: polygon(0 calc(var(--maxheight) - var(--minheight)), 100% 0, 100% 100%, 0 100%);
   color: white; }
 
@@ -406,7 +406,7 @@ footer {
   .footer div {
     width: 33%; }
   .footer .aboutus-wrapper {
-    padding-left: 10%; }
+    padding-left: 7%; }
     .footer .aboutus-wrapper p {
       font-size: 18px;
       letter-spacing: 1px;
@@ -422,9 +422,9 @@ footer {
       margin: 10%;
       color: white; }
   .footer .subscribe-wrapper .footer-p {
-    padding: 0% 27%;
+    padding: 0% 20%;
     width: 63%; }
-    .footer .subscribe-wrapper .footer-p .p {
+    .footer .subscribe-wrapper .footer-p p {
       color: white; }
     .footer .subscribe-wrapper .footer-p label {
       font-size: 19px;
@@ -435,12 +435,15 @@ footer {
       display: inline; }
     .footer .subscribe-wrapper .footer-p input {
       font-size: 20px;
+      color: white;
       background-color: #27324b;
       border: #27324b;
       width: 284px;
-      height: 41px;
-      margin: 2%;
-      color: white; }
+      height: 44px;
+      margin: 2%; }
+    .footer .subscribe-wrapper .footer-p ::placeholder {
+      color: white;
+      padding-left: 10px; }
     .footer .subscribe-wrapper .footer-p .btn {
       width: 284px;
       margin: 2%; }
