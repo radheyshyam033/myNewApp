@@ -1,11 +1,11 @@
 $section-color: rgb(251, 252, 252);
 .section3 {
     background-color: $section-color;
-    height: 942px;
+    height: 900px;
     width: 100%;
-    @media (max-width:1300px) {
-      height: 1050px;
-    }
+    // @media (max-width:1300px) {
+    //   height: 1050px;
+    // }
   p {
     font-size: 20px;
     color: rgb(152, 149, 149);
@@ -19,14 +19,14 @@ $section-color: rgb(251, 252, 252);
 }
   
   .how-it-work {
-    padding: 5% 30% 3% 30%;
+    padding: 5% 30% 1% 30%;
     width: 40%;
     text-align: center;
-    @media (max-width:1000px) {
-      padding: 5% 25% 0% 25%;
-      width: 50%;
-      text-align: center;
-    }
+    // @media (max-width:1000px) {
+    //   padding: 5% 25% 0% 25%;
+    //   width: 50%;
+    //   text-align: center;
+    // }
   }
   
   .way-to-build-website {
@@ -42,10 +42,10 @@ $section-color: rgb(251, 252, 252);
       width: 50%;
       padding: 3% 5%;
       background-color: $section-color;
-      @media (max-width:1300px) {
-        width: 90%;
-        padding: 0% 5%;
-      }
+      // @media (max-width:1300px) {
+      //   width: 90%;
+      //   padding: 0% 5%;
+      // }
   
     li {
       display: list-item;

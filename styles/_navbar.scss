@@ -5,11 +5,11 @@ $white-color: white;
 .navbar {
   display: flex;
   position: fixed;
+  width: 100vw;
   height: 70px;
   justify-content: space-evenly;
   align-items: center;
   background-color: $white-color;
-  overflow: auto;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
@@ -28,7 +28,7 @@ $white-color: white;
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   li {
     list-style: none;
@@ -73,6 +73,7 @@ $white-color: white;
   .icon-width {
     width: 100%;
     display: flex;
+    justify-content: center;
   }
 
   .nav-icon {
@@ -89,7 +90,6 @@ $white-color: white;
   }
 
   #setting {
-    margin-left: 134px;
     align-items: center;
     background-color: $contaner-color;
   }

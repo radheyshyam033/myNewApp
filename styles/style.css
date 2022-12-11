@@ -1,11 +1,11 @@
 .navbar {
   display: flex;
   position: fixed;
+  width: 100vw;
   height: 70px;
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
-  overflow: auto;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset; }
 
 .nav-logo {
@@ -20,7 +20,7 @@
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-around; }
   .nav-list li {
     list-style: none;
     display: flex;
@@ -51,7 +51,8 @@
       padding-right: 10%; } }
   .right-nav .icon-width {
     width: 100%;
-    display: flex; }
+    display: flex;
+    justify-content: center; }
   .right-nav .nav-icon {
     border: 2px solid #cfd0f4;
     width: 42px;
@@ -62,7 +63,6 @@
       width: 24px;
       margin: 10px 8px; }
   .right-nav #setting {
-    margin-left: 134px;
     align-items: center;
     background-color: #f3f4f6; }
   .right-nav #kart {
@@ -72,89 +72,58 @@
 .section1 {
   display: flex;
   justify-content: space-around;
-  height: 830px;
+  height: auto;
   background-color: white; }
-  @media (max-width: 1000px) {
-    .section1 {
-      flex-wrap: wrap;
-      height: 900px; } }
-  @media (max-width: 500px) {
-    .section1 {
-      flex-wrap: wrap;
-      height: 650px; } }
 
 #top-content {
-  width: 100%;
-  padding: 15% 1% 10% 10%;
-  height: 380px; }
-  @media (max-width: 1000px) {
-    #top-content {
-      width: 100%;
-      height: 363px;
-      padding: 0% 5% 5% 5%; } }
-  @media (max-width: 500px) {
-    #top-content {
-      flex-wrap: wrap-reverse;
-      height: 300px; } }
+  padding: 15% 1% 12% 10%;
+  height: 380px;
+  width: 50%; }
   #top-content h1 {
     letter-spacing: 2px;
     color: #2e2e2e;
     font-size: 50px; }
-    @media (max-width: 1000px) {
-      #top-content h1 {
-        font-size: 29px; } }
   #top-content .sub-title {
     color: #4c42e0;
     padding-top: 0%; }
   #top-content .banner-button {
-    padding-top: 3%; }
+    padding-top: 3%;
+    margin-bottom: 3%; }
   #top-content button:first-child {
     background-color: #4c42e0;
     color: white;
     margin-right: 1.5%; }
 
 #top-image {
-  width: 100%;
-  padding: 7% 8% 30% 1%; }
-  @media (max-width: 1000px) {
-    #top-image {
-      width: 50%;
-      padding: 15% 15% 0% 15%; } }
+  width: 50%;
+  padding: 7% 8% 6% 1%; }
 
 hr {
   width: 100%; }
 
 .section2 {
-  height: 88px;
+  height: auto;
   width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   overflow: auto;
   margin-left: 5%;
   background-color: white; }
-  @media (max-width: 1000px) {
-    .section2 {
-      height: 70px;
-      width: 100%;
-      margin-left: 0%; } }
   .section2 .mnc-logo {
     list-style: none;
-    align-items: center; }
+    align-items: center;
+    max-width: 250px; }
     .section2 .mnc-logo img {
-      width: 35%;
-      padding-left: 31%; }
-    @media (max-width: 1000px) {
-      .section2 .mnc-logo {
-        width: 75%; } }
+      width: 55%;
+      padding: 10%;
+      padding-left: 23%; }
 
 .section3 {
   background-color: #fbfcfc;
-  height: 942px;
+  height: 900px;
   width: 100%; }
-  @media (max-width: 1300px) {
-    .section3 {
-      height: 1050px; } }
   .section3 p {
     font-size: 20px;
     color: #989595;
@@ -164,14 +133,9 @@ hr {
     margin: 5% 0% 3%; }
 
 .how-it-work {
-  padding: 5% 30% 3% 30%;
+  padding: 5% 30% 1% 30%;
   width: 40%;
   text-align: center; }
-  @media (max-width: 1000px) {
-    .how-it-work {
-      padding: 5% 25% 0% 25%;
-      width: 50%;
-      text-align: center; } }
 
 .way-to-build-website {
   display: flex;
@@ -183,10 +147,6 @@ hr {
     width: 50%;
     padding: 3% 5%;
     background-color: #fbfcfc; }
-    @media (max-width: 1300px) {
-      .way-to-build-website .content {
-        width: 90%;
-        padding: 0% 5%; } }
     .way-to-build-website .content li {
       display: list-item;
       list-style-type: symbols();
@@ -201,17 +161,17 @@ hr {
 .section4 {
   display: flex;
   justify-content: center;
-  height: 835px;
+  height: 940px;
   background-color: #f3f4f6;
   flex-wrap: wrap; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     .section4 {
       height: 1370px; } }
   @media (max-width: 500px) {
     .section4 {
       height: 970px; } }
   .section4 .content {
-    padding: 10% 2% 5% 2%;
+    padding: 6% 2% 0% 2%;
     width: 45%;
     background-color: #f3f4f6; }
     @media (max-width: 1000px) {
@@ -230,9 +190,9 @@ hr {
   width: 40%;
   height: 500px; }
   .form-section .form {
-    width: 68%;
-    height: 148%;
-    margin: 7% 16% 16% 23%;
+    width: 81%;
+    height: auto;
+    margin: 14% 18%;
     background-color: white;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; }
     @media (max-width: 1000px) {
@@ -260,7 +220,7 @@ hr {
         height: 17%;
         font-size: 20px;
         padding: 2%;
-        margin-top: 4%;
+        margin: 4% 0%;
         color: white;
         background-color: #3f50ea;
         border: 2px solid white;
@@ -320,11 +280,10 @@ li {
     padding: 4%; }
 
 .section6 {
-  height: 600px;
   display: flex;
-  padding-left: 5%; }
+  padding: 5%; }
   .section6 .content {
-    width: 32%;
+    width: 34%;
     padding: 3%; }
     .section6 .content h1 {
       padding: 2% 0%;
@@ -340,7 +299,8 @@ li {
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding: 0% 8%; }
     .section6 .cards .card1 {
       width: 41%;
       height: 430px;
@@ -360,7 +320,6 @@ li {
 
 .section7 {
   width: 80%;
-  height: 400px;
   padding: 4% 10%;
   display: grid;
   grid-template-columns: auto auto;
@@ -375,8 +334,7 @@ li {
     padding: 3%; }
 
 .section8 {
-  height: 250px;
-  padding: 4% 0%;
+  padding: 10% 0%;
   align-items: center;
   background-color: #f3f4f6; }
   .section8 .content {
@@ -421,6 +379,8 @@ footer {
     .footer .service-wrapper li {
       margin: 10%;
       color: white; }
+  .footer .subscribe-wrapper h3 {
+    padding-bottom: 7%; }
   .footer .subscribe-wrapper .footer-p {
     padding: 0% 20%;
     width: 63%; }
@@ -452,7 +412,7 @@ footer {
 * {
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  max-width: 100%;
   font-family: 'Trebuchet MS', sans-serif; }
 
 .arrow {
@@ -490,6 +450,7 @@ span {
   font-size: 18px;
   border: 2px solid #4c42e0;
   border-radius: 8px;
+  margin-bottom: 3%;
   cursor: pointer;
   color: #4c42e0; }
   @media (max-width: 500px) {

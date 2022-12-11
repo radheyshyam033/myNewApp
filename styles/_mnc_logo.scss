@@ -4,30 +4,32 @@ hr {
     width: 100%;
   }
 .section2 {
-    height: 88px;
+    height: auto;
     width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     overflow: auto;
     margin-left: 5%;
     background-color: $section-color;
-    @media (max-width:1000px) {
-        height: 70px;
-        width: 100%;
-        margin-left: 0%;
-    }
+    // @media (max-width:1000px) {
+    //     height: 70px;
+    //     width: 100%;
+    //     margin-left: 0%;
+    // }
 
     .mnc-logo {
         list-style: none;
         align-items: center;
-
+        max-width: 250px;
         img {
-            width: 35%;
-            padding-left: 31%;
+            width: 55%;
+            padding: 10%;
+            padding-left: 23%;
         }
-        @media (max-width:1000px) {
-            width: 75%;
-        }
+        // @media (max-width:1000px) {
+        //     width: 75%;
+        // }
     }
 }
