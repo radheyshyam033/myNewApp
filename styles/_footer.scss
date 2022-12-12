@@ -1,13 +1,9 @@
 .footer-head {
-    --minheight: 2px;
-    --maxheight: 70px;
-    position: sticky;
-    z-index: -1;
-    height: var(--maxheight);
-    background-color: rgb(25, 33, 48);
-    border-color: rgb(25, 33, 48);
-    clip-path: polygon(0 calc(var(--maxheight) - var(--minheight)), 100% 0, 100% 100%, 0 100%);
-    color: white;
+    position: absolute;
+    border: none;
+    right: 0;
+    border-bottom: 110px solid #1a2130;
+    border-left: 1600px solid #f3f4f6;
 }
 
 .footer {
@@ -22,11 +18,16 @@
     }
 
     .aboutus-wrapper {
-        padding: 7% 0% 7% 5%;
+        // dont use padding in %
+        padding: 10% 0% 7% 5%;
 
         @media (max-width:1000px) {
             width: 80%;
             padding: 17% 5% 0%;
+        }
+        @media (max-width:500px) {
+            width: 80%;
+            padding: 32% 5% 0%;
         }
 
         .footer-logo {
@@ -50,7 +51,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: 7% 0%;
+        padding: 10% 0%;
         display: flex;
         justify-content: space-around;
 
@@ -100,7 +101,7 @@
     }
 
     .subscribe-wrapper {
-        padding: 7% 5% 7% 0%;
+        padding: 10% 5% 7% 0%;
 
         @media (max-width:1000px) {
             width: 80%;

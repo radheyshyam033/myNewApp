@@ -47,6 +47,16 @@ $section-color: white;
     padding: 7% 0% 4%;
     @media (max-width:900px) {
       width: 90%;
-      padding: 0% 5% 5% 0%;
+      padding: 0% 5% 5% 16%;
+    }
+    @media (max-width:600px) {
+      width: 90%;
+      padding: 0% 5% 5% 2%;
+    }
+    img{
+      width: 500px;
+      @media (max-width:600px) {
+        width: 280px;
+      }
     }
   }

@@ -66,10 +66,12 @@
                 margin: 5%;
             }
             .card-heading{
+                text-align: left;
                 padding: 10% 0% 0% 12%;
                 font-size: 23px;
             }
             .emi{
+                text-align: left;
                 padding: 10% 0% 0% 12%;
                 font-size: 37px;
             }
@@ -77,10 +79,14 @@
                 padding: 4% 20% ;
             }
             li{
+                text-align: left;
                 padding: 4px;
             }
             button{
                 margin: 4% 13% ;
+                @media (max-width:900px) {
+                    margin: 4% 0% ;
+                }
             }
         }
 
@@ -98,10 +104,12 @@
                 margin: 5%;
             }
             .card-heading{
+                text-align: left;
                 padding: 10% 0% 0% 12%;
                 font-size: 23px;
             }
             .emi{
+                text-align: left;
                 padding: 10% 0% 0% 12%;
                 font-size: 37px;
             }
@@ -110,9 +118,13 @@
             }
             li{
                 padding: 4px;
+                text-align: left;
             }
             button{
                 margin: 4% 13% ;
+                @media (max-width:900px) {
+                    margin: 4% 0% ;
+                }
             }
         }
 

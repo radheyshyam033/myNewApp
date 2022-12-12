@@ -12,11 +12,13 @@
 @use 'base';
 
 $blue-color:rgb(76, 66, 224);
+body{
+  overflow-x: hidden;
+}
 
 * {
   margin: 0px;
   padding: 0px;
-  max-width: 100%;
   // box-sizing: border-box;
   font-family: 'Trebuchet MS', sans-serif;
 }
@@ -93,13 +95,3 @@ span{
   color: white;
 }
 
-// --------------------------------------
-// .footer {
-//   --minheight: 280px;
-//   --maxheight: 390px;
-//   width: 100%;
-//   height: var(--maxheight);
-//   background-color: rgb(33, 42, 61);
-//   clip-path: polygon(0 calc(var(--maxheight) - var(--minheight)), 100% 0, 100% 100%, 0 100%);
-//   color: white;
-// }
