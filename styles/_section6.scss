@@ -32,7 +32,7 @@
         }
     }
     .cards {
-        width: 48%;
+        width: 45%;
         background-color: white;
         display: flex;
         flex-wrap: wrap;
@@ -40,7 +40,7 @@
         align-items: center;
         padding: 0% 6%;
         @media (max-width:1000px) {
-            width: 80%;
+            width: 95%;
             text-align: center;
             margin: auto;
             padding: 3%;
@@ -53,10 +53,11 @@
         }
 
         .card1 {
-            width: 41%;
-            height: 430px;
-            background-color: rgb(202, 118, 34);
-            /* border: 2px solid rgb(197, 188, 188); */
+            width: 45%;
+            height: 400px;
+            margin: 7px;
+            border-radius: 20px;
+            background-color: rgb(244, 241, 241);
             @media (max-width:500px) {
                 width: 100%;
                 text-align: center;
@@ -64,29 +65,64 @@
                 padding: 3%;
                 margin: 5%;
             }
+            .card-heading{
+                padding: 10% 0% 0% 12%;
+                font-size: 23px;
+            }
+            .emi{
+                padding: 10% 0% 0% 12%;
+                font-size: 37px;
+            }
+            ul{
+                padding: 4% 20% ;
+            }
+            li{
+                padding: 4px;
+            }
+            button{
+                margin: 4% 13% ;
+            }
         }
 
         .card2 {
-            width: 41%;
-            left: -200px;
-            top: 200px;
-            height: 417px;
-            background-color: rgb(65, 21, 6);
+            width: 45%;
+            height: 400px;
+            margin: 7px;
+            border-radius: 20px;
+            background-color: rgb(244, 241, 241);
             @media (max-width:500px) {
-                width: 90%;
+                width: 100%;
                 text-align: center;
                 margin: auto;
                 padding: 3%;
                 margin: 5%;
             }
+            .card-heading{
+                padding: 10% 0% 0% 12%;
+                font-size: 23px;
+            }
+            .emi{
+                padding: 10% 0% 0% 12%;
+                font-size: 37px;
+            }
+            ul{
+                padding: 4% 20% ;
+            }
+            li{
+                padding: 4px;
+            }
+            button{
+                margin: 4% 13% ;
+            }
         }
 
         .card2:hover {
-            width: 41%;
-            height: 435px;
-            background-color: rgb(251, 246, 243);
+            background-color: rgb(231, 228, 241);
             opacity: 1;
-
+        }
+        .card1:hover {
+            background-color: rgb(231, 228, 241);
+            opacity: 1;
         }
     }
 }

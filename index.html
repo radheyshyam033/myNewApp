@@ -7,19 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Techwind</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <nav class="navbar">
     <div class="nav-logo">
+      <div class="hamburger" onclick="hamburger()">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+      </div>
       <a href="/"><img class="logo-img" src="./image/logo.jpg" alt="logo"></a>
     </div>
-    <ul class="nav-list" id="menu">
+    <ul class="nav-list" id="nav-list">
       <li class="menu-item"><a href="#home"><span>HOME</span></a></li>
-      <li class="menu-item"><a href="#landing" class="arrow-icon">LANDING</a></li>
-      <li class="menu-item"><a href="#page">PAGES</a></li>
-      <li class="menu-item"><a href="#portfolio">PORTFOLIO</a></li>
-      <li class="menu-item"><a href="#docs">DOCS</a></li>
+      <li class="menu-item"><a href="#landing" class="arrow-icon">LANDING <i class="fa fa-angle-down"></i></a>
+        <div class="select-option">
+          <a href="">option1</a>
+          <a href="">option1</a>
+          <a href="">option1</a>
+        </div>
+      </li>
+      <li class="menu-item"><a href="#page">PAGES <i class="fa fa-angle-down"></i></a>
+        <div class="select-option">
+          <a href="">option2</a>
+          <a href="">option2</a>
+          <a href="">option3</a>
+        </div></li>
+      <li class="menu-item"><a href="#portfolio">PORTFOLIO <i class="fa fa-angle-down"></i></a>
+        <div class="select-option">
+          <a href="">option2</a>
+          <a href="">option2</a>
+          <a href="">option3</a>
+        </div>
+      </li>
+      <li class="menu-item"><a href="#docs">DOCS <i class="fa fa-angle-down"></i></a></li>
       <li class="menu-item"><a href="#contect">CONTACT</a></li>
     </ul>
     <div class="right-nav">
@@ -34,22 +57,18 @@
             <img class="kart" src="./image/kart.png" alt="kart" srcset="">
           </a>
         </div>
-        <div class="nav-icon" id="hamburger">
-          <a href="/kart">
-            <img class="kart" src="./image/kart.png" alt="kart" srcset="">
-          </a>
-        </div>
       </div>
     </div>
   </nav>
   <section class="section1">
     <div class="content" id="top-content">
       <h1>Our Creativity Is Your <span>Success</span></h1>
-      <p>Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae dolorum aperiam.
+      <p>
+        Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae dolorum aperiam.
       </p>
       <div class="banner-button">
-        <button class="btn">Get Started</button>
-        <button class="btn doc-btn">Documentation</button>
+        <button class="btn"><i class="fa fa-envelope"></i> Get Started</button>
+        <button class="btn doc-btn"><i class="fa fa-book"></i> Documentation</button>
       </div>
     </div>
     <div class="content" id="top-image">
@@ -79,7 +98,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quae beatae earum
           cupiditate commodi ad molestias nisi maxime rem!</p>
         <ul class="section3List">
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          <li> Lorem ipsum dolor sit amet consectetur adipisicing.</li>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         </ul>
@@ -123,44 +142,25 @@
       <h3>We believe in building each other and hence</h3>
       <h1>Work with some amazing partners</h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis tempora ut.</p>
-
     </div>
     <div id="scroll-box">
       <div id="scroll-wrapper">
         <li class="slide">
-          <div>
+          <div class="profile-card">
             <img src="./image/mobile-template.jpg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed!</p>
+            <p>1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! <br> <span>card 1</span></p>
           </div>
         </li>
         <li class="slide">
-          <div>
+          <div class="profile-card">
             <img src="./image/mobile-template.jpg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed!</p>
+            <p>2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! <br> <span>card 2</span></p>
           </div>
         </li>
         <li class="slide">
-          <div>
+          <div class="profile-card">
             <img src="./image/mobile-template.jpg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed!</p>
-          </div>
-        </li>
-        <li class="slide">
-          <div>
-            <img src="./image/mobile-template.jpg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed!</p>
-          </div>
-        </li>
-        <li class="slide">
-          <div>
-            <img src="./image/mobile-template.jpg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed!</p>
-          </div>
-        </li>
-        <li class="slide">
-          <div>
-            <img src="./image/mobile-template.jpg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed!</p>
+            <p> 3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! <br> <span>card 3</span></p>
           </div>
         </li>
       </div>
@@ -176,8 +176,28 @@
       <button class="btn btn-color">Subscribe Now</button>
     </div>
     <div class="cards">
-      <div class="card1"></div>
-      <div class="card2"></div>
+      <div class="card1">
+        <div class="card-heading"><span>STARTER</span></div>
+        <div class="emi">$39/mo</div>
+        <ul>
+          <li>Full access</li>
+          <li>Source File</li>
+          <li>Free appointment</li>
+          <li>Enhance Security</li>
+        </ul>
+        <button class="btn btn-color">Get Started</button>
+      </div>
+      <div class="card2">
+        <div class="card-heading"><span>STARTER</span></div>
+        <div class="emi">$39/mo</div>
+        <ul>
+          <li>Full access</li>
+          <li>Source File</li>
+          <li>Free appointment</li>
+          <li>Enhance Security</li>
+        </ul>
+        <button class="btn btn-color">Get Started</button>
+      </div>
     </div>
   </section>
   <section class="section7">
@@ -206,6 +226,7 @@
       <button class="btn btn-color">Contect us</button>
     </div>
   </section>
+  <div class="footer-head"></div>
   <footer class="footer">
     <div class="aboutus-wrapper">
       <div class="footer-logo">
@@ -217,8 +238,8 @@
       <div>
         <!-- <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
         <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
+        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div> -->
+        <!-- <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
         <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
         <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
         <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>

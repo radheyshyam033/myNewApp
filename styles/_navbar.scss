@@ -12,29 +12,54 @@ $white-color: white;
   background-color: $white-color;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
-
 .nav-logo {
   width: 20%;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin-top: 10px;
   @media (max-width:850px) {
     width: 50%;
+    margin-top: 8px;
   }
-
+  .hamburger{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin: 10px 0px 0px 10px;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+    @media (max-width:850px) {
+      display: inline;
+    }
+    .bar{
+      height: 5px;
+      width: 100%;
+      background-color: rgb(118, 120, 118);
+      display: block;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+    #bar1{
+      transform: translateY(-4px);
+    }
+    #bar3{
+      transform: translateY(4px);
+    }
+  }
   .logo-img {
     width: 159px;
     height: 37px;
   }
 }
-
-.nav-list {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  @media (max-width:850px) {
-    display: none;
-  }
+  .nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width:850px) {
+      display: none;
+    }
 
   li {
     list-style: none;
@@ -51,7 +76,7 @@ $white-color: white;
       padding-right: 0px;
 
       i {
-        white-space: 2px;
+        font-size: 20px;
       }
     }
 
@@ -60,7 +85,6 @@ $white-color: white;
     }
   }
 }
-
 .right-nav {
   width: 20%;
 
@@ -96,10 +120,39 @@ $white-color: white;
     margin-left: 3px;
     background-color: $content-color;
   }
-  #hamburger{
-    display: none;
-    @media (max-width:850px) {
-      display: inline;
+}
+.side-menu{
+  background-color: $content-color;
+  height: 70vh;
+  margin: 17% 5%; 
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 60%;
+  display: grid;
+  .menu-item {
+    a{
+      color: white;
+    }
+    span{
+      color: white;
     }
   }
+}
+.select-option{
+  display: none;
+  position: absolute;
+  padding-top: 11%;
+  a{
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 100;
+  }
+}
+.menu-item:hover .select-option {
+  display: grid;
 }

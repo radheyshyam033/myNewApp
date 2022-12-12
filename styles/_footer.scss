@@ -1,11 +1,14 @@
-// footer {
-//     --minheight: 5%;
-//     --maxheight: 8%;
-//     height: var(--maxheight);
-//     background-color: rgb(25, 33, 48);
-//     clip-path: polygon(0 calc(var(--maxheight) - var(--minheight)), 100% 0, 100% 100%, 0 100%);
-//     color: white;
-// }
+.footer-head {
+    --minheight: 2px;
+    --maxheight: 70px;
+    position: sticky;
+    z-index: -1;
+    height: var(--maxheight);
+    background-color: rgb(25, 33, 48);
+    border-color: rgb(25, 33, 48);
+    clip-path: polygon(0 calc(var(--maxheight) - var(--minheight)), 100% 0, 100% 100%, 0 100%);
+    color: white;
+}
 
 .footer {
     display: flex;
@@ -20,13 +23,16 @@
 
     .aboutus-wrapper {
         padding: 7% 0% 7% 5%;
+
         @media (max-width:1000px) {
             width: 80%;
             padding: 17% 5% 0%;
         }
-        .footer-logo{
+
+        .footer-logo {
             width: 250px;
-            img{
+
+            img {
                 width: 220px;
             }
         }
@@ -52,13 +58,16 @@
             padding: 3% 0%;
             width: 70%;
         }
+
         @media (max-width:500px) {
             padding: 3% 0%;
             width: 100%;
-            .company{
+
+            .company {
                 width: 80%;
             }
-            .usefull-links{
+
+            .usefull-links {
                 width: 80%;
             }
         }
@@ -81,6 +90,7 @@
                 margin: 8%;
                 font-size: 20px;
             }
+
             @media (max-width:500px) {
                 margin: 5%;
                 font-size: 20px;

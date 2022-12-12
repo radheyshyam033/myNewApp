@@ -7,3 +7,7 @@ buttonRight.onclick = function () {
 buttonLeft.onclick = function () {
     document.getElementById("scroll-wrapper").scrollLeft -= 600;
 };
+
+function hamburger(){
+    document.getElementById('nav-list').classList.toggle('side-menu')
+}
