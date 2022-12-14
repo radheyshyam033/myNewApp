@@ -1,130 +1,104 @@
 .section6 {
-    height: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
-
+    padding: 50px 0px 80px 50px;
+    @media (max-width:400px) {
+        padding: 0px;
+        width: 100vw;
+    }
     .content {
-        width: 34%;
-        padding: 3%;
+        width: 34vw;
+        padding: 30px;
         @media (max-width:1000px) {
             width: 70%;
             text-align: center;
             margin: auto;
-            padding: 3%;
         }
-        @media (max-width:500px) {
-            width: 90%;
-            text-align: center;
-            margin: auto;
-            padding: 3%;
+        @media (max-width:400px) {
+            width: 95vw;
+            // text-align: center;
+            // margin: auto;
+            // padding: 3%;
         }
 
         h1 {
-            padding: 2% 0%;
-            font-size: 30px;
+            // padding: 2% 0%;
         }
         p { 
-            font-size: 20px;
             color: rgb(152, 149, 149);
-            padding: 2% 0%;
-            line-height: 1.5;
+            // padding: 2% 0%;
+            // line-height: 1.5;
         }
     }
     .cards {
-        width: 45%;
+        width: 55vw;
         background-color: white;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 0% 6%;
+        // padding: 0% 6%;
         @media (max-width:1000px) {
-            width: 95%;
+            width: 95vw;
             text-align: center;
             margin: auto;
-            padding: 3%;
+            // padding: 3%;
         }
-        @media (max-width:500px) {
-            width: 100%;
-            text-align: center;
-            margin: auto;
-            padding: 3%;
+        @media (max-width:400px) {
+            width: 100vw;
+            // text-align: center;
+            // margin: auto;
+            padding: 0%;
+        }
+        .card-heading{
+            text-align: left;
+            padding: 20px 13px 20px 10px;
+            font-size: 23px;
+        }
+        .emi{
+            text-align: left;
+            padding: 25px 13px 10px 10px;
+            font-size: 37px;
+        }
+        li{
+            text-align: left;
+            padding: 4px 30px;
+            list-style: none;
+            font-size: 18px;
+        }
+        button{
+            margin: 4% 5%;
+            float: left;
+            @media (max-width:900px) {
+                margin: 4% 0% ;
+            }
         }
 
         .card1 {
-            width: 45%;
+            width: 300px;
             height: 400px;
             margin: 7px;
-            border-radius: 20px;
-            background-color: rgb(244, 241, 241);
-            @media (max-width:500px) {
-                width: 100%;
-                text-align: center;
-                margin: auto;
-                padding: 3%;
-                margin: 5%;
-            }
-            .card-heading{
-                text-align: left;
-                padding: 10% 0% 0% 12%;
-                font-size: 23px;
-            }
-            .emi{
-                text-align: left;
-                padding: 10% 0% 0% 12%;
-                font-size: 37px;
-            }
-            ul{
-                padding: 4% 20% ;
-            }
-            li{
-                text-align: left;
-                padding: 4px;
-            }
-            button{
-                margin: 4% 13% ;
-                @media (max-width:900px) {
-                    margin: 4% 0% ;
-                }
+            border-radius: 10px;
+            padding-left: 25px;
+            border: 2px  solid rgb(241, 243, 238);
+            box-shadow: 0px 2px 2px rgb(230, 228, 228);
+            @media (max-width:400px) {
+                width: 100vw;
             }
         }
 
         .card2 {
-            width: 45%;
+            width: 300px;
             height: 400px;
             margin: 7px;
             border-radius: 20px;
-            background-color: rgb(244, 241, 241);
+            padding-left: 25px;
+            border: 2px  solid rgb(241, 243, 238);
+            box-shadow: 0px 2px 2px rgb(230, 228, 228);
+            // background-color: rgb(244, 241, 241);
             @media (max-width:500px) {
-                width: 100%;
-                text-align: center;
-                margin: auto;
-                padding: 3%;
-                margin: 5%;
-            }
-            .card-heading{
-                text-align: left;
-                padding: 10% 0% 0% 12%;
-                font-size: 23px;
-            }
-            .emi{
-                text-align: left;
-                padding: 10% 0% 0% 12%;
-                font-size: 37px;
-            }
-            ul{
-                padding: 4% 20% ;
-            }
-            li{
-                padding: 4px;
-                text-align: left;
-            }
-            button{
-                margin: 4% 13% ;
-                @media (max-width:900px) {
-                    margin: 4% 0% ;
-                }
+                width: 100vw;
+                margin-bottom: 50px;
             }
         }
 

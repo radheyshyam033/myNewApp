@@ -11,8 +11,9 @@
 
 @use 'base';
 
-$blue-color:rgb(76, 66, 224);
-body{
+$blue-color: rgb(76, 66, 224);
+
+body {
   overflow-x: hidden;
 }
 
@@ -22,6 +23,7 @@ body{
   // box-sizing: border-box;
   font-family: 'Trebuchet MS', sans-serif;
 }
+
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -30,32 +32,52 @@ body{
   width: 7px;
   height: 7px;
 }
-h1{
+
+h1 {
+  font-size: 33px;
   letter-spacing: 2px;
   color: rgb(46, 46, 46);
+
+  @media (max-width:600px) {
+    font-size: 22px;
+  }
 }
 
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
-p{
+p {
   font-size: 20px;
   color: $paragraph-color;
   margin: 3% 0%;
   line-height: 1.5;
   padding: 2% 0%;
+
   @media (max-width:1000px) {
     font-size: 24px;
   }
+
+  @media (max-width:600px) {
+    font-size: 16px;
+  }
 }
 
-span{
+li {
+  list-style: none;
+
+  @media (max-width:600px) {
+    font-size: 16px;
+  }
+}
+
+span {
   color: $blue-color;
 }
 
@@ -75,12 +97,15 @@ span{
     font-size: 17px;
   }
 }
-.doc-btn{
+
+.doc-btn {
   width: 225px;
-  :hover{
+
+  :hover {
     background-color: $blue-color;
     color: white;
   }
+
   @media (max-width:500px) {
     width: 200px;
   }
@@ -95,3 +120,55 @@ span{
   color: white;
 }
 
+.placeholder-icon {
+  font-family: fontawesome;
+}
+
+.angle {
+  display: inline-block;
+  color: $blue-color;
+  width: 7px;
+  height: 7px;
+  border: 2px solid;
+  border-top: transparent;
+  border-left: transparent;
+  transform: rotate(-45deg);
+}
+.dot{
+  position: absolute;
+  color: #4c42e0;
+  margin: 5px 0px 0px 7px;
+  width: 1px;
+  height: 1px;
+  border: 1px solid;
+}
+
+.circle {
+  // display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 3px solid;
+  color: #4c42e0;
+}
+
+.tick-mark {
+  // display: inline-block;
+  position: absolute;
+  margin: 6px 0px 0px 8px;
+  color: #4c42e0;
+  width: 4px;
+  height: 7px;
+  border: 3px solid;
+  border-top: transparent;
+  border-left: transparent;
+  transform: rotate(50deg);
+  z-index: 1;
+}
+.questionMark{
+  position: absolute;
+  margin: 6px 0px 0px 6px;
+  width: 10px;
+  height: 10px;
+}

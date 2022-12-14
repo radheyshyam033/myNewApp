@@ -16,17 +16,18 @@
     }
 
     @media (max-width:500px) {
-      width: 100%;
+      width: 95vw;
       padding: 6% 0% 4%;
     }
 
     h3 {
       padding: 3%;
-      color: rgb(63, 80, 234)
-    }
-
-    h1 {
-      font-size: 30px;
+      color: rgb(63, 80, 234);
+      @media (max-width:500px) {
+        width: 95vw;
+        padding: 20px 0px;
+        font-size: 15px;
+      }
     }
   }
 }

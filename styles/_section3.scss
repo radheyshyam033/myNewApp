@@ -1,16 +1,15 @@
 $section-color: rgb(251, 252, 252);
+$content-color: rgb(80, 70, 228);
 .section3 {
     background-color: $section-color;
     width: 100%;
     align-content: center;
   p {
-    font-size: 20px;
     color: rgb(152, 149, 149);
     line-height: 1.5;
   }
   
   h1 {
-    font-size: 33px;
     margin: 5% 0% 3%;
   }
 }
@@ -23,7 +22,7 @@ $section-color: rgb(251, 252, 252);
     @media (max-width:1000px) {
       width: 55%;
     }
-    @media (max-width:1000px) {
+    @media (max-width:600px) {
       width: 95%;
     }
   }
@@ -36,8 +35,8 @@ $section-color: rgb(251, 252, 252);
     img {
       width: 40%;
       @media (max-width:1000px) {
-        width: 70%;
-        padding: 0% 5%;
+        width: 95vw;
+        margin: 35px 0px;
       }
     }
   
@@ -49,23 +48,27 @@ $section-color: rgb(251, 252, 252);
         width: 90%;
         padding: 0% 5% 5%;
       }
-      @media (max-width:1000px) {
-        width: 95%;
-        padding: 0% 5% 20%;
+      @media (max-width:600px) {
+        width: 93vw;
+        padding: 0px 5px 30px 10px;
       }
   
     li {
       display: list-item;
       list-style-type: symbols();
-      margin: 3% 2%;
-      font-size: 20px;
+      margin: 20px 35px;
       color: rgb(152, 149, 149);
+      @media (max-width:600px) {
+        width: 90vw;
+      }
     }
 
-    #find-out-more {
-      font-size: 20px;
+    .find-more-link {
+      font-size: 17px;
       margin-top: 5%;
       text-decoration: none;
+      color: $content-color;
+      list-style: none;
     }
   }
   }

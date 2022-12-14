@@ -13,11 +13,6 @@
 <body>
   <nav class="navbar">
     <div class="nav-logo">
-      <div class="hamburger" onclick="hamburger()">
-        <div class="bar" id="bar1"></div>
-        <div class="bar" id="bar2"></div>
-        <div class="bar" id="bar3"></div>
-      </div>
       <a href="/"><img class="logo-img" src="./image/logo.jpg" alt="logo"></a>
     </div>
     <ul class="nav-list" id="nav-list">
@@ -34,7 +29,8 @@
           <a href="">option2</a>
           <a href="">option2</a>
           <a href="">option3</a>
-        </div></li>
+        </div>
+      </li>
       <li class="menu-item"><a href="#portfolio">PORTFOLIO <i class="fa fa-angle-down"></i></a>
         <div class="select-option">
           <a href="">option2</a>
@@ -47,7 +43,8 @@
           <a href="">option2</a>
           <a href="">option2</a>
           <a href="">option3</a>
-        </div></li>
+        </div>
+      </li>
       <li class="menu-item"><a href="#contect">CONTACT</a></li>
     </ul>
     <div class="right-nav">
@@ -62,6 +59,11 @@
             <img class="kart" src="./image/kart.png" alt="kart" srcset="">
           </a>
         </div>
+        <div class="hamburger" onclick="hamburger()">
+          <div class="bar" id="bar1"></div>
+          <div class="bar" id="bar2"></div>
+          <div class="bar" id="bar3"></div>
+        </div>
       </div>
     </div>
   </nav>
@@ -72,12 +74,12 @@
         Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae dolorum aperiam.
       </p>
       <div class="banner-button">
-        <button class="btn"><i class="fa fa-envelope"></i> Get Started</button>
+        <button class="btn doc-btn"><i class="fa fa-envelope"></i> Get Started</button>
         <button class="btn doc-btn"><i class="fa fa-book"></i> Documentation</button>
       </div>
     </div>
     <div class="content" id="top-image">
-      <img src="./image/design-template (1).png" alt="first image">
+      <img src="./image/section1Img.png" alt="first image">
     </div>
   </section>
   <!-- <hr> -->
@@ -91,24 +93,28 @@
     </ul>
   </section>
   <section class="section3">
-      <div class="how-it-work">
-        <h1>How It Work?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque ea nobis?
-        </p>
+    <div class="how-it-work">
+      <h1>How It Work?</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque ea nobis?
+      </p>
     </div>
     <div class="way-to-build-website">
-      <img src="./image/sec3img.jpg" alt="sec-3 image">
+      <img src="./image/sec3img.png" alt="sec-3 image">
       <div class="content">
         <h1>Change the way you build websites</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quae beatae earum
           cupiditate commodi ad molestias nisi maxime rem!</p>
         <ul class="section3List">
+          <div class="circle"></div><div class="tick-mark"></div>
           <li> Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         </ul>
         <div>
-          <a id="find-out-more" href="./">Find Out More</a>
+          <a class="find-more-link" id="find-out-more" href="./">Find Out More</a>
+          <div class="angle"></div>
         </div>
       </div>
     </div>
@@ -119,12 +125,16 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt sit amet consectetur
         adipisicing.</p>
       <ul>
+        <div class="circle"></div><div class="tick-mark"></div>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <div class="circle"></div><div class="tick-mark"></div>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <div class="circle"></div><div class="tick-mark"></div>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
       </ul>
-      <div>
-        <a id="find-out-more" href="./">Find Out More</a>
+      <div class="inline-block">
+        <a class="find-more-link" id="find-out-more" href="./">Find Out More </a>
+        <div class="angle"></div>
       </div>
     </div>
     <div class="form-section">
@@ -132,11 +142,11 @@
         <div><img src="./image/mobile-template.jpg" alt="" class="mobile-img"></div>
         <div class="input-form required">
           <label for="name">Your Name:</label><br>
-          <input type="text" id="name" placeholder="Name"><br>
+          <input type="text" id="name" class="placeholder-icon" placeholder="&#xf007; Name"><br>
           <label for="email">Your Email:</label><br>
-          <input type="email" id="email" placeholder="Email"><br>
+          <input class="" type="email" class="placeholder-icon" id="email" placeholder="&#xf0e0; Email"><br>
           <label for="password">Enter Password:</label><br>
-          <input type="password" id="password" placeholder="Password">
+          <input type="password" id="password" class="placeholder-icon" placeholder="&#xf6f3; Password">
           <button class="btn" type="submit">Download</button>
         </div>
       </div>
@@ -185,9 +195,13 @@
         <div class="card-heading"><span>STARTER</span></div>
         <div class="emi">$39/mo</div>
         <ul>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Full access</li>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Source File</li>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Free appointment</li>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Enhance Security</li>
         </ul>
         <button class="btn btn-color">Get Started</button>
@@ -196,9 +210,13 @@
         <div class="card-heading"><span>STARTER</span></div>
         <div class="emi">$39/mo</div>
         <ul>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Full access</li>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Source File</li>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Free appointment</li>
+          <div class="circle"></div><div class="tick-mark"></div>
           <li>Enhance Security</li>
         </ul>
         <button class="btn btn-color">Get Started</button>
@@ -206,19 +224,20 @@
     </div>
   </section>
   <section class="section7">
-    <li>How our <span>Techwind</span> work ?
+    <li>How our <span>Techwind</span> work?
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse ut incidunt, optio
         facilis reprehenderit tenetur placeat corporis?</p>
     </li>
-    <li> What is main process open accoun ?
+    <!-- <div class="circle"></div> <img class="questionMark" src="./image/questionMark.png" alt="question-mark"> -->
+    <li> What is main process open account?
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis iure non. Distinctio recusandae
         ipsam nostrum obcaecati odio voluptatibus!</p>
     </li>
-    <li> How to make unlimited data entr ?
+    <li> How to make unlimited data entry?
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat reprehenderit ipsum
         officiis animi inventore beatae, error atque.</p>
     </li>
-    <li> Is <span>Techwind</span> safe to use with my accoun ?
+    <li> Is <span>Techwind</span> safe to use with my account?
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo excepturi
         similique rerum temporibus impedit vitae.</p>
     </li>
@@ -240,16 +259,15 @@
       <p>Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, you
         need to generate
         connect.</p>
-      <div>
-        <!-- <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div> -->
-        <!-- <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div>
-        <div class="mnc-logo"><img class="logo-img" src="./image/kart.png" alt="logo"></div> -->
+      <div class="footer-kart-logo">
+        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
       </div>
     </div>
     <div class="service-wrapper">
@@ -281,7 +299,7 @@
         <h3>Newsletter</h3>
         <p>Sign up and recive the latest tips via email.</p>
         <label for="email">Write your email</label><br>
-        <input type="email require" placeholder="Email"><br>
+        <input type="email require" class="placeholder-icon" placeholder="&#xf0e0; Email"><br>
         <button class="btn btn-color">Subscribe</button>
       </div>
     </div>

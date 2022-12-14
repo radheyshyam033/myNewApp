@@ -11,20 +11,20 @@ $section-color: white;
   }
   #top-content {
     padding: 15% 0% 14% 4%;
-    width: 45%;
-    @media (max-width:900px) {
-      width: 100%;
+    width: 45vw;
+    @media (max-width:1000px) {
+      width: 90vw;
       padding: 20% 5% 6%;
     }
-    @media (max-width:500px) {
-      width: 100%;
-      padding: 40% 5% 6%;
+    @media (max-width:600px) {
+      width: 95vw;
+      padding: 40% 5% 16%;
     }
     h1 {
       letter-spacing: 2px;
       color: $heading-color;
       font-size: 50px;
-      @media (max-width:500px) {
+      @media (max-width:600px) {
         font-size: 38px;
       }
     }
@@ -40,23 +40,26 @@ $section-color: white;
       background-color: $subTitle-color;
       color: white;
       margin-right: 1.5%;
+
     }
   }
   #top-image {
-    width: 40%;
+    width: 45vw;
     padding: 7% 0% 4%;
-    @media (max-width:900px) {
-      width: 90%;
-      padding: 0% 5% 5% 16%;
+    @media (max-width:1000px) {
+      width: 90vw;
     }
     @media (max-width:600px) {
-      width: 90%;
-      padding: 0% 5% 5% 2%;
+      width: 100vw;
+      margin-bottom: 60px;
     }
     img{
-      width: 500px;
+      width: 37vw;
+      @media (max-width:1000px) {
+        width: 80vw;
+      }
       @media (max-width:600px) {
-        width: 280px;
+        width: 90vw;
       }
     }
   }
