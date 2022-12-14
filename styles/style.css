@@ -133,80 +133,75 @@
   flex-wrap: wrap;
   background-color: white; }
 
-#top-content {
+.top-content {
   padding: 15% 0% 14% 4%;
   width: 45vw; }
   @media (max-width: 1000px) {
-    #top-content {
+    .top-content {
       width: 90vw;
       padding: 20% 5% 6%; } }
   @media (max-width: 600px) {
-    #top-content {
+    .top-content {
       width: 95vw;
       padding: 40% 5% 16%; } }
-  #top-content .top-heading {
+  .top-content .top-heading {
     letter-spacing: 2px;
     color: #2e2e2e;
     font-size: 50px; }
     @media (max-width: 600px) {
-      #top-content .top-heading {
+      .top-content .top-heading {
         font-size: 38px; } }
-  #top-content .sec1-p {
+  .top-content .sec1-p {
     width: 42vw; }
-    @media (max-width: 600px) {
-      #top-content .sec1-p {
+    @media (max-width: 1000px) {
+      .top-content .sec1-p {
         width: 95vw; } }
-  #top-content .sub-title {
+  .top-content .sub-title {
     color: #4c42e0;
     padding-top: 0%; }
-  #top-content .banner-button {
+  .top-content .banner-button {
     padding-top: 3%;
     margin-bottom: 3%; }
-  #top-content .get-start {
+  .top-content .get-start {
     background-color: #4c42e0;
     color: white;
     margin-right: 1.5%; }
 
-#top-image {
+.top-image {
   width: 45vw;
   padding: 7% 0% 4%; }
   @media (max-width: 1000px) {
-    #top-image {
+    .top-image {
       width: 90vw; } }
   @media (max-width: 600px) {
-    #top-image {
+    .top-image {
       width: 100vw;
       margin-bottom: 60px; } }
-  #top-image .top-image {
+  .top-image .image {
     width: 37vw; }
     @media (max-width: 1000px) {
-      #top-image .top-image {
+      .top-image .image {
         width: 80vw; } }
     @media (max-width: 600px) {
-      #top-image .top-image {
+      .top-image .image {
         width: 90vw; } }
 
-hr {
-  width: 100%; }
-
 .section2 {
-  height: auto;
-  width: 90%;
+  width: 100vw;
+  border: 2px solid #f4f2f2;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  overflow: auto;
-  margin-left: 5%;
   background-color: white; }
   .section2 .mnc-logo {
     list-style: none;
     align-items: center;
-    max-width: 250px; }
+    max-width: 150px;
+    min-width: 150px; }
     .section2 .mnc-logo img {
       width: 55%;
-      padding: 10%;
-      padding-left: 23%; }
+      padding: 18%; }
 
 .section3 {
   background-color: #fbfcfc;
@@ -235,10 +230,12 @@ hr {
   justify-content: space-between;
   flex-wrap: wrap; }
   .way-to-build-website img {
-    width: 40%; }
+    width: 35%;
+    padding: 0px 0px 80px 80px; }
     @media (max-width: 1000px) {
       .way-to-build-website img {
         width: 95vw;
+        padding: 0px 0px 0px 0px;
         margin: 35px 0px; } }
   .way-to-build-website .content {
     width: 50%;

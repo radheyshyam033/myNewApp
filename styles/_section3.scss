@@ -33,9 +33,11 @@ $content-color: rgb(80, 70, 228);
     flex-wrap: wrap;
   
     img {
-      width: 40%;
+      width: 35%;
+      padding: 0px 0px 80px 80px;
       @media (max-width:1000px) {
         width: 95vw;
+        padding: 0px 0px 0px 0px;
         margin: 35px 0px;
       }
     }
