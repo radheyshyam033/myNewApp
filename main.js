@@ -1,12 +1,17 @@
-const buttonRight = document.getElementById("next");
-const buttonLeft = document.getElementById("prev");
+function next_btn() {
+    document.getElementById("scroll-wrapper").scrollLeft += 470;
+};
+ function prev_btn() {
+    document.getElementById("scroll-wrapper").scrollLeft -= 470;
+};
 
-buttonRight.onclick = function () {
-    document.getElementById("scroll-wrapper").scrollLeft += 300;
+function mob_next_btn() {
+    document.getElementById("scroll-wrapper").scrollLeft += 320;
 };
-buttonLeft.onclick = function () {
-    document.getElementById("scroll-wrapper").scrollLeft -= 300;
+ function mob_prev_btn() {
+    document.getElementById("scroll-wrapper").scrollLeft -= 320;
 };
+
 
 function hamburger(){
     document.getElementById('nav-list').classList.toggle('side-menu')

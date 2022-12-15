@@ -123,19 +123,20 @@
   </section>
   <section class="section4">
     <div class="content">
-      <h1>Speed up your development with <span>Techwind</span></h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt sit amet consectetur
+      <h1 class="sec4-heading">Speed up your development <br> with <span>Techwind</span></h1>
+      <p class="sec4-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt
+        sit amet consectetur
         adipisicing.</p>
       <ul>
         <div class="circle"></div>
         <div class="tick-mark"></div>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li class="sec4-li">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         <div class="circle"></div>
         <div class="tick-mark"></div>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li class="sec4-li">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         <div class="circle"></div>
         <div class="tick-mark"></div>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li class="sec4-li">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
       </ul>
       <div class="inline-block">
         <a class="find-more-link" id="find-out-more" href="./">Find Out More </a>
@@ -147,9 +148,9 @@
         <div><img src="./image/mobile-template.jpg" alt="" class="mobile-img"></div>
         <div class="input-form required">
           <label for="name">Your Name:</label><br>
-          <input type="text" id="name" class="placeholder-icon" placeholder="&#xf007; Name"><br>
+          <input type="text" id="name" class="placeholder-icon" placeholder="&#xf007;  Name"><br>
           <label for="email">Your Email:</label><br>
-          <input class="" type="email" class="placeholder-icon" id="email" placeholder="&#xf0e0; Email"><br>
+          <input type="email" class="placeholder-icon" id="email" placeholder="&#xf0e0;  Email"><br>
           <label for="password">Enter Password:</label><br>
           <input type="password" id="password" class="placeholder-icon" placeholder="&#xf6f3; Password">
           <button class="btn" type="submit">Download</button>
@@ -158,34 +159,41 @@
     </div>
   </section>
   <section class="section5">
-    <div class="heading">
-      <h3>We believe in building each other and hence</h3>
-      <h1>Work with some amazing partners</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis tempora ut.</p>
-    </div>
-    <div id="scroll-box">
-      <div id="scroll-wrapper">
-        <li class="slide">
-          <div class="profile-card">
-            <img src="./image/mobile-template.jpg" alt="">
-            <p>1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! <br> <span>card 1</span></p>
-          </div>
-        </li>
-        <li class="slide">
-          <div class="profile-card">
-            <img src="./image/mobile-template.jpg" alt="">
-            <p>2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! <br> <span>card 2</span></p>
-          </div>
-        </li>
-        <li class="slide">
-          <div class="profile-card">
-            <img src="./image/mobile-template.jpg" alt="">
-            <p> 3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! <br> <span>card 3</span></p>
-          </div>
-        </li>
+    <div class="sec5-container">
+      <div class="heading">
+        <h3>We believe in building each other and hence</h3>
+        <h1>Work with some amazing partners</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis tempora ut.</p>
       </div>
-      <button type="button" id="prev">prev</button>
-      <button type="button" id="next">next</button>
+      <div class="scroll-box" id="scroll-box">
+        <div class="scroll-wrapper" id="scroll-wrapper">
+          <li class="slide">
+            <div class="profile-card">
+              <img src="./image/mobile-template.jpg" alt="">
+              <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed" <br>
+                <span>card 1</span></p>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="profile-card">
+              <img src="./image/mobile-template.jpg" alt="">
+              <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed" <br>
+                <span>card 2</span></p>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="profile-card">
+              <img src="./image/mobile-template.jpg" alt="">
+              <p> "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! a adipng elit. Nihil, sed" <br>
+                <span>card 3</span></p>
+            </div>
+          </li>
+        </div>
+        <button class="scroll-button" type="button" onclick="prev_btn()" id="prev">prev</button>
+        <button class="scroll-button" type="button" onclick="next_btn()" id="next">next</button>
+        <button class="mob-scroll-button" type="button" onclick="mob_prev_btn()" id="prev">prev</button>
+        <button class="mob-scroll-button" type="button" onclick="mob_next_btn()" id="next">next</button>
+      </div>
     </div>
   </section>
   <section class="section6">
