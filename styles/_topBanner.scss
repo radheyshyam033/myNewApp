@@ -10,8 +10,8 @@ $section-color: white;
     background-color: $section-color;
   }
   .top-content {
-    padding: 15% 0% 14% 4%;
-    width: 45vw;
+    padding: 15% 6% 14% 4%;
+    width: 38vw;
     @media (max-width:1000px) {
       width: 90vw;
       padding: 20% 5% 6%;
@@ -24,6 +24,7 @@ $section-color: white;
       letter-spacing: 2px;
       color: $heading-color;
       font-size: 45px;
+      font-weight: 500;
       @media (max-width:600px) {
         font-size: 38px;
       }

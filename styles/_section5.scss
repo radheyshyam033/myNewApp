@@ -21,7 +21,9 @@
 
     h3 {
       padding: 3%;
-      color: rgb(63, 80, 234);
+      color: #3f50ea;
+      font-weight: 420;
+      font-size: medium;
       @media (max-width:500px) {
         width: 95vw;
         padding: 20px 0px;
@@ -29,8 +31,34 @@
       }
     }
   }
-}
+  .mob-scroll-button{
+    // display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid #ccc9c9;
+    @media (min-width:500px) {
+      display: none;
+    }
+  }
+  .mob_prev_btn{
+    margin: 50% 0% 0% 10%;
+    .angle{
+      color: black;
+      transform: rotate(-75deg);
+    }
 
+  }
+  .mob_next_btn{
+    margin: 50% 10% 0% 87%;
+    .angle{
+      color: black;
+    }
+
+  }
+
+}
 .scroll-box {
   margin: 0% 18%;
   width: 66%;
@@ -49,15 +77,6 @@
     height: 40px;
     border-radius: 100%;
     @media (max-width:500px) {
-      display: none;
-    }
-  }
-  .mob-scroll-button{
-    display: in;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    @media (min-width:500px) {
       display: none;
     }
   }

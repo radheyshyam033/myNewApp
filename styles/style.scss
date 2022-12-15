@@ -21,7 +21,7 @@ body {
   margin: 0px;
   padding: 0px;
   // box-sizing: border-box;
-  font-family: Verdana;
+  font-family: system-ui;
 }
 
 .arrow {
@@ -34,9 +34,10 @@ body {
 }
 
 h1 {
-  font-size: 33px;
+  font-size: 32px;
   letter-spacing: 1px;
-  color: rgb(46, 46, 46);
+  color: #101010;
+  font-weight: 430;
 
   @media (max-width:600px) {
     font-size: 22px;
@@ -102,10 +103,12 @@ span {
 .doc-btn {
   width: 225px;
   background-color: white;
+
   @media (max-width:500px) {
     width: 200px;
   }
 }
+
 .doc-btn:hover {
   background-color: $blue-color;
   color: white;
@@ -135,7 +138,8 @@ span {
   border-left: transparent;
   transform: rotate(-45deg);
 }
-.dot{
+
+.dot {
   position: absolute;
   color: #4c42e0;
   margin: 5px 0px 0px 7px;
@@ -145,29 +149,28 @@ span {
 }
 
 .circle {
-  // display: inline-block;
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  border: 3px solid;
+  border: 2px solid;
   color: #4c42e0;
+  margin: 4px
 }
 
 .tick-mark {
-  // display: inline-block;
   position: absolute;
-  margin: 6px 0px 0px 8px;
+  margin: 9px 0px 0px 11px;
   color: #4c42e0;
   width: 4px;
   height: 7px;
-  border: 3px solid;
+  border: 2px solid;
   border-top: transparent;
   border-left: transparent;
   transform: rotate(50deg);
-  z-index: 1;
 }
-.questionMark{
+
+.questionMark {
   position: absolute;
   margin: 6px 0px 0px 6px;
   width: 10px;
