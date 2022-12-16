@@ -23,6 +23,54 @@ body {
   // box-sizing: border-box;
   font-family: system-ui;
 }
+.container{
+  width: 110%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 560px;
+  }
+}
+@media (min-width: 650px) {
+  .container {
+    max-width: 630px;
+  }
+}
+@media (min-width: 768px) {
+  .container{
+    max-width: 740px;
+  }
+}
+@media (min-width: 850px) {
+  .container{
+    max-width: 830px;
+  }
+}
+@media (min-width: 991px) {
+  .container{
+    max-width: 960px;
+  }
+}
+@media (min-width: 1024px) {
+  .container{
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1240px) {
+  .container{
+    max-width: 1235px;
+  }
+}
+@media (min-width: 1440px) {
+  .container{
+    max-width: 1435px;
+  }
+}
+
 
 .arrow {
   border: solid black;
@@ -155,12 +203,12 @@ span {
   border-radius: 50%;
   border: 2px solid;
   color: #4c42e0;
-  margin: 4px
+  margin: 1px 7px;
 }
 
 .tick-mark {
   position: absolute;
-  margin: 9px 0px 0px 11px;
+  margin: 6px 0px 0px 14px;
   color: #4c42e0;
   width: 4px;
   height: 7px;
@@ -192,4 +240,9 @@ span {
   background-color: rgb(191, 195, 191);
   z-index: 10;
   position: fixed;
+}
+sup {
+  vertical-align:text-top;
+  font-size: smaller;
+  
 }

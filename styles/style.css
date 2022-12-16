@@ -2,15 +2,12 @@
   display: flex;
   position: fixed;
   width: 100%;
-  height: 70px;
+  min-height: 70px;
   z-index: 10;
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
   box-shadow: 0px 1px 6px #b2acac; }
-  @media (max-width: 1000px) {
-    .navbar {
-      height: 55px; } }
 
 .nav-logo {
   width: 20%;
@@ -134,81 +131,79 @@
   height: auto;
   flex-wrap: wrap;
   background-color: white; }
-
-.top-content {
-  padding: 15% 6% 14% 4%;
-  width: 38vw; }
-  @media (max-width: 1000px) {
-    .top-content {
-      width: 90vw;
-      padding: 20% 5% 6%; } }
-  @media (max-width: 600px) {
-    .top-content {
-      width: 95vw;
-      padding: 40% 5% 16%; } }
-  .top-content .top-heading {
-    letter-spacing: 2px;
-    color: #2e2e2e;
-    font-size: 45px;
-    font-weight: 500; }
-    @media (max-width: 600px) {
-      .top-content .top-heading {
-        font-size: 38px; } }
-  .top-content .sec1-p {
-    width: 42vw; }
-    @media (max-width: 1000px) {
-      .top-content .sec1-p {
-        width: 95vw; } }
-  .top-content .sub-title {
-    color: #4c42e0;
-    padding-top: 0%; }
-  .top-content .banner-button {
-    padding-top: 3%;
-    margin-bottom: 3%; }
-  .top-content .get-start {
-    background-color: #4c42e0;
-    color: white;
-    margin-right: 1.5%; }
-
-.top-image {
-  width: 45vw;
-  padding: 7% 0% 4%; }
-  @media (max-width: 1000px) {
-    .top-image {
-      width: 90vw; } }
-  @media (max-width: 600px) {
-    .top-image {
-      width: 100vw;
-      margin-bottom: 60px; } }
-  .top-image .image {
-    width: 37vw; }
-    @media (max-width: 1000px) {
-      .top-image .image {
-        width: 80vw; } }
-    @media (max-width: 600px) {
-      .top-image .image {
-        width: 90vw; } }
+  .section1 .top-content {
+    width: 100%;
+    padding: 30% 5% 5%; }
+    @media (min-width: 576px) {
+      .section1 .top-content {
+        padding: 15% 6% 7% 4%;
+        width: 90%; } }
+    @media (min-width: 850px) {
+      .section1 .top-content {
+        padding: 15% 6% 14% 4%;
+        width: 45%; } }
+    @media (min-width: 1250px) {
+      .section1 .top-content {
+        padding: 212px 50px 50px;
+        width: 500px; } }
+    .section1 .top-content .top-heading {
+      letter-spacing: 2px;
+      color: #2e2e2e;
+      font-size: 38px;
+      font-weight: 500; }
+      @media (min-width: 600px) {
+        .section1 .top-content .top-heading {
+          font-size: 45px; } }
+    .section1 .top-content .banner-button {
+      padding-top: 3%;
+      margin-bottom: 3%; }
+      .section1 .top-content .banner-button .get-start {
+        background-color: #4c42e0;
+        color: white;
+        margin-right: 1.5%; }
+  .section1 .top-image {
+    width: 100%;
+    margin-bottom: 60px; }
+    @media (min-width: 570px) {
+      .section1 .top-image {
+        width: 90%; } }
+    @media (min-width: 850px) {
+      .section1 .top-image {
+        width: 38%;
+        padding: 7% 0% 4%; } }
+    @media (min-width: 1250px) {
+      .section1 .top-image {
+        padding: 111px 50px 50px;
+        width: 508px; } }
+    .section1 .top-image .image {
+      width: 100%; }
+      @media (min-width: 570px) {
+        .section1 .top-image .image {
+          width: 90%; } }
+      @media (min-width: 850px) {
+        .section1 .top-image .image {
+          width: 100%; } }
 
 .section2 {
-  width: 100vw;
-  border: 2px solid #f4f2f2;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: white; }
-  .section2 .mnc-logo {
-    list-style: none;
+  width: 100%;
+  border: 2px solid #f4f2f2; }
+  .section2 .sec2-logo {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    max-width: 150px;
-    min-width: 150px; }
-    .section2 .mnc-logo img {
-      width: 55%;
-      padding: 18%; }
+    flex-wrap: wrap;
+    background-color: white; }
+    .section2 .sec2-logo .mnc-logo {
+      list-style: none;
+      align-items: center;
+      max-width: 150px;
+      min-width: 130px; }
+      .section2 .sec2-logo .mnc-logo img {
+        width: 55%;
+        padding: 18%; }
 
 .section3 {
   background-color: #fbfcfc;
-  width: 100%;
   align-content: center; }
   .section3 p {
     color: #989595;
@@ -217,49 +212,54 @@
     margin: 5% 0% 3%; }
 
 .how-it-work {
-  width: 40%;
+  width: 100%;
   margin: auto;
   padding-top: 3%;
   text-align: center; }
-  @media (max-width: 1000px) {
+  @media (min-width: 1000px) {
     .how-it-work {
-      width: 55%; } }
-  @media (max-width: 600px) {
+      width: 20%; } }
+  @media (min-width: 600px) {
     .how-it-work {
-      width: 95%; } }
+      width: 80%; } }
+  @media (min-width: 1000px) {
+    .how-it-work .sec3-p {
+      width: 50%;
+      margin: auto; } }
 
 .way-to-build-website {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
   .way-to-build-website img {
-    width: 35%;
-    padding: 0px 0px 80px 80px; }
-    @media (max-width: 1000px) {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 35px 0px; }
+    @media (min-width: 1000px) {
       .way-to-build-website img {
-        width: 95vw;
-        padding: 0px 0px 0px 0px;
-        margin: 35px 0px; } }
+        width: 35%;
+        padding: 0px 0px 80px 80px; } }
   .way-to-build-website .content {
-    width: 45%;
-    padding: 3% 5%;
-    background-color: #fbfcfc; }
-    @media (max-width: 1000px) {
+    width: 100%;
+    padding: 0px 5px 30px 10px; }
+    @media (min-width: 600px) {
       .way-to-build-website .content {
         width: 90%;
         padding: 0% 5% 5%; } }
-    @media (max-width: 600px) {
+    @media (min-width: 1000px) {
       .way-to-build-website .content {
-        width: 93vw;
-        padding: 0px 5px 30px 10px; } }
+        width: 40%;
+        padding: 3% 5%;
+        background-color: #fbfcfc; } }
     .way-to-build-website .content li {
       display: list-item;
       list-style-type: symbols();
       margin: 20px 35px;
+      font-size: 18px;
       color: #989595; }
-      @media (max-width: 600px) {
+      @media (min-width: 1000px) {
         .way-to-build-website .content li {
-          width: 90vw; } }
+          width: 100%; } }
     .way-to-build-website .content .find-more-link {
       font-size: 17px;
       margin-top: 5%;
@@ -290,6 +290,7 @@
       display: list-item;
       list-style-type: symbols();
       margin: 20px 35px;
+      font-size: 18px;
       color: #989595; }
       @media (max-width: 600px) {
         .section4 .content .sec4-li {
@@ -335,18 +336,19 @@
         .form-section .form .input-form {
           margin: 5vw; } }
       .form-section .form .input-form input {
-        width: 413px;
+        width: 90%;
         height: 43px;
-        margin: 3% 0% 0%;
+        margin: 5px 0px;
         font-size: 16px;
-        padding-left: 4%;
+        padding-left: 9%;
         border: 2px solid #e0e4e8;
         border-radius: 5px; }
         @media (max-width: 600px) {
           .form-section .form .input-form input {
-            width: 312px;
-            height: 43px;
-            font-size: 18px; } }
+            width: 90%;
+            height: 34;
+            font-size: 18px;
+            padding-left: 12%; } }
       .form-section .form .input-form label {
         font-size: 19px;
         color: #1d1c1cd4; }
@@ -358,14 +360,25 @@
         color: #e32;
         content: ' *';
         display: inline; }
+      .form-section .form .input-form .key-icon {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        margin: 21px 11px; }
+        @media (min-width: 600px) {
+          .form-section .form .input-form .key-icon {
+            width: 23px;
+            height: 21px;
+            margin: 26px 11px; } }
       .form-section .form .input-form button {
-        width: 99%;
+        width: 100%;
         font-size: 22px;
         height: 51px;
         color: white;
         background-color: #3f50ea;
         border: 2px solid white;
-        border-radius: 8px; }
+        border-radius: 8px;
+        margin: 5px 0px; }
         @media (max-width: 600px) {
           .form-section .form .input-form button {
             font-size: 20px;
@@ -525,12 +538,12 @@ li {
         padding: 0%; } }
     .section6 .cards .card-heading {
       text-align: left;
-      padding: 20px 13px 20px 10px;
-      font-size: 23px; }
+      padding: 32px 13px 20px 10px;
+      font-size: 18px; }
     .section6 .cards .emi {
       text-align: left;
       padding: 13px 13px 22px 10px;
-      font-size: 37px; }
+      font-size: 34px; }
     .section6 .cards li {
       text-align: left;
       padding: 4px 30px;
@@ -825,6 +838,45 @@ body {
   padding: 0px;
   font-family: system-ui; }
 
+.container {
+  width: 110%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 560px; } }
+
+@media (min-width: 650px) {
+  .container {
+    max-width: 630px; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px; } }
+
+@media (min-width: 850px) {
+  .container {
+    max-width: 830px; } }
+
+@media (min-width: 991px) {
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px; } }
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1235px; } }
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1435px; } }
+
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -934,11 +986,11 @@ span {
   border-radius: 50%;
   border: 2px solid;
   color: #4c42e0;
-  margin: 4px; }
+  margin: 1px 7px; }
 
 .tick-mark {
   position: absolute;
-  margin: 9px 0px 0px 11px;
+  margin: 6px 0px 0px 14px;
   color: #4c42e0;
   width: 4px;
   height: 7px;
@@ -969,3 +1021,7 @@ span {
   background-color: #bfc3bf;
   z-index: 10;
   position: fixed; }
+
+sup {
+  vertical-align: text-top;
+  font-size: smaller; }

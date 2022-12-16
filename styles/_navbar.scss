@@ -6,16 +6,14 @@ $white-color: white;
   display: flex;
   position: fixed;
   width: 100%;
-  height: 70px;
+  min-height: 70px;
   z-index: 10;
   justify-content: space-evenly;
   align-items: center;
   background-color: $white-color;
   box-shadow:  0px 1px 6px #b2acac;
-  @media (max-width:1000px) {
-    height: 55px;
-  }
-  @media (max-width:600px) {
+  @media (min-width: 1250px) {
+      // max-width: 1220px;
   }
 }
 .nav-logo {
@@ -58,7 +56,6 @@ $white-color: white;
         font-size: 20px;
       }
     }
-
     a:hover {
       color: $content-color;
     }
