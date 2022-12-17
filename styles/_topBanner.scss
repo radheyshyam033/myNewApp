@@ -5,26 +5,29 @@ $section-color: white;
 
 .section1 {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   height: auto;
   flex-wrap: wrap;
   background-color: $section-color;
 
   .top-content {
     width: 100%;
-    padding: 30% 5% 5%;
+    padding: 33% 5% 5%;
 
     @media (min-width:576px) {
-      padding: 15% 6% 7% 4%;
       width: 90%;
+      padding: 20% 5% 5%;
     }
-    @media (min-width:850px) {
-      padding: 15% 6% 14% 4%;
+
+    @media (min-width:1000px) {
       width: 45%;
+      padding: 5%;
     }
-    @media (min-width:1250px) {
-      padding: 212px 50px 50px;
+
+    @media (min-width:1350px) {
       width: 500px;
+      padding: 0%;
     }
 
     .top-heading {
@@ -52,18 +55,18 @@ $section-color: white;
 
   .top-image {
     width: 100%;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 
     @media (min-width:570px) {
       width: 90%;
     }
 
-    @media (min-width:850px) {
+    @media (min-width:1000px) {
       width: 38%;
-      padding: 7% 0% 4%;
+      // padding: 7% 0% 4%;
     }
     @media (min-width:1250px) {
-      padding: 111px 50px 50px;
+      padding: 7% 0% 4%;
       width: 508px;
     }
 
@@ -73,6 +76,7 @@ $section-color: white;
       @media (min-width:570px) {
         width: 90%;
       }
+
       @media (min-width:850px) {
         width: 100%;
       }

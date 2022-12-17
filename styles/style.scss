@@ -20,16 +20,18 @@ body {
 * {
   margin: 0px;
   padding: 0px;
-  // box-sizing: border-box;
+  box-sizing: border-box;
   font-family: system-ui;
 }
-.container{
-  width: 110%;
+.container,
+.gl-grid {
+  width: 100%;
   padding-right: 0;
   padding-left: 0;
   margin-right: auto;
   margin-left: auto;
 }
+
 @media (min-width: 576px) {
   .container {
     max-width: 560px;
@@ -40,34 +42,45 @@ body {
     max-width: 630px;
   }
 }
+
 @media (min-width: 768px) {
-  .container{
+  .container,
+  .gl-grid {
     max-width: 740px;
   }
 }
+
 @media (min-width: 850px) {
-  .container{
+  .container,
+  .gl-grid {
     max-width: 830px;
   }
 }
+
 @media (min-width: 991px) {
-  .container{
+  .container,
+  .gl-grid {
     max-width: 960px;
   }
 }
+
 @media (min-width: 1024px) {
-  .container{
-    max-width: 1024px;
+  .container,
+  .gl-grid {
+    max-width: 1020px;
   }
 }
-@media (min-width: 1240px) {
-  .container{
-    max-width: 1235px;
+@media (min-width: 1250px) {
+  .container,
+  .gl-grid {
+    max-width: 1220px;
   }
 }
-@media (min-width: 1440px) {
-  .container{
-    max-width: 1435px;
+
+@media (min-width: 1366px) {
+  .container,
+  .gl-grid {
+    max-width: 1280px;
   }
 }
 
@@ -134,7 +147,7 @@ span {
 .btn {
   height: 47px;
   width: 199px;
-  font-size: 18px;
+  font-size: 16px;
   border: 2px solid $blue-color;
   border-radius: 8px;
   margin-bottom: 3%;

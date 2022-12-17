@@ -1,15 +1,17 @@
 .section6 {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0px 80px 50px;
+    justify-content: space-around;
+    padding-bottom: 8%;
+    // padding: 50px 0px 80px 50px;
 
     @media (max-width:400px) {
         padding: 0px;
-        width: 100vw;
+        width: 100%;
     }
 
     .content {
-        width: 34vw;
+        width: 34%;
         padding: 30px;
 
         @media (max-width:1000px) {
@@ -19,7 +21,7 @@
         }
 
         @media (max-width:400px) {
-            width: 95vw;
+            width: 95%;
             // text-align: center;
             // margin: auto;
             // padding: 3%;
@@ -37,7 +39,7 @@
     }
 
     .cards {
-        width: 55vw;
+        width: 55%;
         background-color: white;
         display: flex;
         flex-wrap: wrap;
@@ -46,14 +48,14 @@
 
         // padding: 0% 6%;
         @media (max-width:1000px) {
-            width: 95vw;
+            width: 95%;
             text-align: center;
             margin: auto;
             // padding: 3%;
         }
 
         @media (max-width:400px) {
-            width: 100vw;
+            width: 100%;
             // text-align: center;
             // margin: auto;
             padding: 0%;
@@ -83,44 +85,44 @@
             float: left;
 
             @media (max-width:900px) {
-                margin: 4% 0%;
+                margin: 4% 3%;
             }
         }
 
         .card1 {
-            width: 300px;
+            width: 45%;
             height: 400px;
             margin: 7px;
             border-radius: 10px;
-            padding-left: 25px;
+            // padding-left: 25px;
             border: 2px solid rgb(241, 243, 238);
             box-shadow: 0px 2px 2px rgb(230, 228, 228);
 
-            @media (max-width:400px) {
-                width: 100vw;
+            @media (max-width:500px) {
+                width: 100%;
             }
             &:hover {
                 box-shadow: 0px 0px 10px rgb(199, 198, 198);
             }
         }
 
-        .card2 {
-            width: 300px;
-            height: 400px;
-            margin: 7px;
-            border-radius: 20px;
-            padding-left: 25px;
-            border: 2px solid rgb(241, 243, 238);
-            box-shadow: 0px 2px 2px rgb(230, 228, 228);
+        // .card2 {
+        //     width: 100%;
+        //     height: 400px;
+        //     margin: 7px;
+        //     border-radius: 20px;
+        //     // padding-left: 25px;
+        //     border: 2px solid rgb(241, 243, 238);
+        //     box-shadow: 0px 2px 2px rgb(230, 228, 228);
 
-            // background-color: rgb(244, 241, 241);
-            @media (max-width:500px) {
-                width: 100vw;
-                margin-bottom: 50px;
-            }
-            &:hover {
-                box-shadow: 0px 0px 10px rgb(203, 200, 200);
-            }
-        }
+        //     // background-color: rgb(244, 241, 241);
+        //     @media (max-width:500px) {
+        //         width: 100%;
+        //         margin-bottom: 50px;
+        //     }
+        //     &:hover {
+        //         box-shadow: 0px 0px 10px rgb(203, 200, 200);
+        //     }
+        // }
     }
 }

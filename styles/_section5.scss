@@ -1,24 +1,21 @@
 .sec5-container {
   background-color: white;
   align-items: center;
-  padding: 50px 0px;
+  padding: 2%;
 
   .heading {
-    width: 40%;
-    padding: 6% 30% 4%;
-    text-align: center;
-    padding-top: 6%;
-
-    @media (max-width:1000px) {
-      width: 60%;
-      padding: 6% 18% 4%;
-    }
-
-    @media (max-width:500px) {
-      width: 95vw;
-      padding: 6% 0% 4%;
-    }
-
+        /* width: 40%; */
+        padding: 6% 0% 4%;
+        text-align: center;
+        /* padding-top: 6%;*/
+        @media (min-width:500px) {
+          width: 95%;
+          // padding: 6% 27% 4%;
+          padding: 0px;
+        }
+        @media (min-width:1000px) {
+          padding: 6% 30% 4%;
+        }
     h3 {
       padding: 3%;
       color: #3f50ea;
@@ -43,14 +40,16 @@
     }
   }
   .mob_prev_btn{
+    display: none;
     margin: 50% 0% 0% 10%;
     .angle{
       color: black;
-      transform: rotate(-75deg);
+      transform: rotate(135deg);
     }
 
   }
   .mob_next_btn{
+    display: none;
     margin: 50% 10% 0% 87%;
     .angle{
       color: black;
@@ -60,17 +59,19 @@
 
 }
 .scroll-box {
-  margin: 0% 18%;
-  width: 66%;
+  margin: 0% 9%;
+    width: 80%;
+    @media (min-width:500px) {
+      margin: 0% 18%;
+      width: 64%;
+    }
   // max-width: auto;
-  @media (max-width:800px) {
-    margin: 0% 18%;
+  @media (min-width:950px) {
+    width: 77%;
+    margin: 0% 10%;
     // width: px;
   }
-  @media (max-width:500px) {
-    margin: 0% 11%;
-    width: 82%;
-  }
+  
 
   .scroll-button {
     width: 40px;

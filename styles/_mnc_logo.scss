@@ -1,22 +1,22 @@
 .section2 {
     width: 100%;
     border: 2px solid rgb(244, 242, 242);
+    background-color: $section-color;
 
     .sec2-logo {
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        background-color: $section-color;
         .mnc-logo {
             list-style: none;
             align-items: center;
-            max-width: 150px;
-            min-width: 130px;
+            max-width: 200px;
+            min-width: 150px;
     
             img {
                 width: 55%;
-                padding: 18%;
+                margin: 18%;
             }
         }
     }
