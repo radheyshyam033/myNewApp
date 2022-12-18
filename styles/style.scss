@@ -12,6 +12,7 @@
 @use 'base';
 
 $blue-color: rgb(76, 66, 224);
+$section-color: #fbfcfc;
 
 body {
   overflow-x: hidden;
@@ -81,6 +82,9 @@ body {
   width: auto;
   margin: 0px 10px;
   border: none;
+}
+.sec-color{
+  background-color: $section-color;
 }
 
 
@@ -215,12 +219,12 @@ span {
   border-radius: 50%;
   border: 2px solid;
   color: #4c42e0;
-  margin: 2px 7px;
+  margin: 6px 7px;
 }
 
 .tick-mark {
   position: absolute;
-  margin: 6px 0px 0px 14px;
+  margin: 10px 0px 0px 13px;
   color: #4c42e0;
   width: 4px;
   height: 7px;
