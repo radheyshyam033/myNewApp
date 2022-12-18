@@ -1,17 +1,9 @@
 function next_btn() {
-    document.getElementById("scroll-wrapper").scrollLeft += 470;
+    document.getElementById("scroll-wrapper").scrollLeft += 624;
 };
  function prev_btn() {
-    document.getElementById("scroll-wrapper").scrollLeft -= 470;
+    document.getElementById("scroll-wrapper").scrollLeft -= 622;
 };
-
-function mob_next_btn() {
-    document.getElementById("scroll-wrapper").scrollLeft += 320;
-};
- function mob_prev_btn() {
-    document.getElementById("scroll-wrapper").scrollLeft -= 320;
-};
-
 
 function hamburger(){
     document.getElementById('nav-list').classList.toggle('side-menu')
@@ -20,13 +12,8 @@ function validateForm(){
     let name=document.getElementById("name").value;
     if(name==""){
         text="Please enter your name";
-        document.getElementById('name-error').innerHTML=text
+        document.getElementById('name-error').innerHTML=text;
         return false;
-    }
-    else{
-        text="";
-        document.getElementById('name-error').innerHTML=text
-        return true
     }
     let email=document.getElementById("email").value;
     if(email==""){
@@ -41,6 +28,25 @@ function validateForm(){
         return false;
     }
 }
-function scrollTop(){
+function cleanErrorMsg(){
+    document.getElementById('name-error').innerHTML="";
+    document.getElementById('email-error').innerHTML="";
+    document.getElementById('password-error').innerHTML="";
+    document.getElementById('f-email-error').innerHTML="";
+}
+function validateEmail(){
+    let email=document.getElementById("footer-email").value;
+    if(email==""){
+        text="Please enter your email";
+        document.getElementById('f-email-error').innerHTML=text
+        return false;
+    }
+}
+function scrollTopHeader(){
+    document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+function contectUs(){
+    document.getElementById("contectUs").scrollIntoView();
+}
+

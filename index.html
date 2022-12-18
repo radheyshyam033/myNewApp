@@ -48,7 +48,7 @@
             <a class="menu-opt" href="">option3</a>
           </div>
         </li>
-        <li class="menu-item"><a class="nav-menu" href="#contect">CONTACT</a></li>
+        <li class="menu-item"><a class="nav-menu" onclick="contectUs()">CONTACT</a></li>
       </ul>
       <div class="right-nav">
         <div class="icon-width">
@@ -160,20 +160,21 @@
         <div class="form">
           <div><img class="mobile-img" src="./image/mobile-template.jpg" alt=""></div>
           <div class="input-form required">
-            <form id="leadForm" name="leadForm" method="post" onsubmit=" return validateForm()">
+            <form id="leadForm" name="leadForm" method="post" onsubmit="return validateForm()">
               <label class="sec4-label" for="name">Your Name:</label><br>
               <img class="key-icon" src="./image/icons8-user-24.png" alt="">
-              <input class="sec4-input" type="text" id="name" name="name" class="placeholder-icon"
-                placeholder="Name"><br>
+              <input onkeypress="cleanErrorMsg()" class="sec4-input" type="text" id="name" name="name"
+                class="placeholder-icon" placeholder="Name"><br>
               <p class="name-error" id="name-error"></p>
               <label class="sec4-label" for="email">Your Email:</label><br>
               <img class="key-icon" src="./image/icons8-mail-50.png" alt="">
-              <input class="sec4-input" type="email" class="placeholder-icon" name="email" id="email"
-                placeholder="Email"><br>
+              <input onkeypress="cleanErrorMsg()" class="sec4-input" type="email" class="placeholder-icon" name="email"
+                id="email" placeholder="Email"><br>
               <p class="name-error" id="email-error"></p>
               <label class="sec4-label" for="password">Enter Password:</label><br>
               <img class="key-icon" src="./image/icons8-key-64.png" alt="">
-              <input class="sec4-input" type="password" id="password" name="password" placeholder="Password">
+              <input onkeypress="cleanErrorMsg()" class="sec4-input" type="password" id="password" name="password"
+                placeholder="Password">
               <p class="name-error" id="password-error"></p>
               <button class="sec4-btn btn" type="submit">Download</button>
             </form>
@@ -190,22 +191,25 @@
         <p class="sec5-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis
           tempora ut.</p>
       </div>
-      <!-- <button class="scroll-button" type="button" onclick="prev_btn()" id="prev">prev</button>
-        <button class="scroll-button" type="button" onclick="next_btn()" id="next">next</button> -->
-      <button class="mob-scroll-button mob_prev_btn" type="button" onclick="mob_prev_btn()" id="prev">
-        <div class="angle"></div>
-      </button>
-      <button class="mob-scroll-button mob_next_btn" type="button" onclick="mob_next_btn()" id="next">
-        <div class="angle"></div>
-      </button>
+      <!-- <button class="mob-scroll-button mob_prev_btn" type="button" onclick="mob_prev_btn()" id="prev"> -->
+      <!-- </button> -->
+      <!-- <button class="mob-scroll-button mob_next_btn" type="button" onclick="mob_next_btn()" id="next"> -->
+      <!-- </button> -->
       <div class="scroll-box" id="scroll-box">
         <div class="scroll-wrapper" id="scroll-wrapper">
+          <button class="prev_btn scroll-button" type="button" onclick="prev_btn()" id="prev">
+            <div class="angle"></div>
+          </button>
+          <button class="next_btn scroll-button" type="button" onclick="next_btn()" id="next">
+            <div class="angle"></div>
+          </button>
           <li class="slide">
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-              <p class="sec5-card-p">"Lorem ipsum dolor, sit amet consectetur adipisicing  sit amet consectetur adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
-                <h3><span>user name</span></h3>
+                <p class="sec5-card-p">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur
+                  adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
+                <h3><span>user name 1</span></h3>
                 <h4>Staff Engineer</h4>
               </div>
             </div>
@@ -214,8 +218,9 @@
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-              <p class="sec5-p">"Lorem ipsum dolor, sit amet consectetur adipisicing  sit amet consectetur adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
-              <h3><span>user name</span></h3>
+                <p class="sec5-p">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur adipisicing
+                  elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
+                <h3><span>user name 2</span></h3>
                 <h4>Staff Engineer</h4>
               </div>
             </div>
@@ -224,10 +229,11 @@
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-              <p class="sec5-p"> "Lorem ipsum dolor, sit amet consectetur  sit amet consectetur adipisicing adipisicing elit. Nihil, sed! a adipng elit. Nihil, sed"</p>
-              <h3><span>user name</span></h3>
-              <h4>Staff Engineer</h4>
-            </div>
+                <p class="sec5-p"> "Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing adipisicing
+                  elit. Nihil, sed! a adipng elit. Nihil, sed"</p>
+                <h3><span>user name 3</span></h3>
+                <h4>Staff Engineer</h4>
+              </div>
             </div>
           </li>
         </div>
@@ -238,9 +244,9 @@
     <div class="sec-6 container">
       <div class="content">
         <h1 class="sec6-h1">Our Comfortable Rates</h1>
-          <p class="sec6-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores
-            perspiciatis? Earum natus!</p>
-            <button class="sec6-btn1 btn btn-color">
+        <p class="sec6-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores
+          perspiciatis? Earum natus!</p>
+        <button class="sec6-btn1 btn btn-color">
           <img class="overlap-circle" src="./image/circle-overlap.png" alt="">
           Subscribe Now</button>
       </div>
@@ -291,34 +297,39 @@
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li">How our <span>Techwind</span> work?
-          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse ut incidunt, optio facilis reprehenderit tenetur placeat corporis?</p>
+          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse
+            ut incidunt, optio facilis reprehenderit tenetur placeat corporis?</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> What is main process open account?
-          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis iure non. Distinctio recusandae ipsam nostrum obcaecati odio voluptatibus!</p>
+          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis iure non.
+            Distinctio recusandae ipsam nostrum obcaecati odio voluptatibus!</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> How to make unlimited data entry?
-          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat reprehenderit ipsum officiis animi inventore beatae, error atque.</p>
+          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat
+            reprehenderit ipsum officiis animi inventore beatae, error atque.</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> Is <span>Techwind</span> safe to use with my account?
-          <p class="sec7-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo excepturi similique rerum temporibus impedit vitae.</p>
+          <p class="sec7-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo
+            excepturi similique rerum temporibus impedit vitae.</p>
         </li>
       </div>
     </div>
   </section>
   <section class="section sec-color">
-    <div class="sec-8 container">
+    <div class="sec-8 container" id="contectUs">
       <div class="content">
         <h1>Have Question ? Get in touch!</h1>
-        <p class="sec8-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos reprehenderit ab a laborum
+        <p class="sec8-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos reprehenderit
+          ab a laborum
           autem?</p>
         <button class="btn btn-color">
           <img class="phone-call" src="./image/phone-call.png" alt="">
@@ -329,71 +340,78 @@
   <div class="footer-head"></div>
   <footer class="footer-sec">
     <div class="footer container">
-    <div class="footer-div aboutus-wrapper">
-      <div class="footer-logo">
-        <a href="/"><img src="./image/techwind-logo.png" alt="Techwind"></a>
+      <div class="footer-div aboutus-wrapper">
+        <div class="footer-logo">
+          <a href="/"><img src="./image/techwind-logo.png" alt="Techwind"></a>
+        </div>
+        <p>Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic,
+          you
+          need to generate
+          connect.</p>
+        <div class="footer-kart-logo">
+          <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+          <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+          <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+          <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+          <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+          <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+          <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+          <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+        </div>
       </div>
-      <p>Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, you
-        need to generate
-        connect.</p>
-      <div class="footer-kart-logo">
-        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
-        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
-        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
-        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
-        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
-        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
-        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
-        <div class="f-logo"><img class="logo-img" src="./image/footer-kart.png" alt="logo"></div>
+      <div class="footer-div service-wrapper">
+        <div class="company">
+          <h3 class="footer-h3">Company</h3>
+          <ul>
+            <div class="arrow right"></div>
+            <li class="footer-li">About us</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Services</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Team</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Procing</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Project</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Blog</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Login</li>
+          </ul>
+        </div>
+        <div class="usefull-links">
+          <h3 class="footer-h3">Usefull Links</h3>
+          <ul>
+            <div class="arrow right"></div>
+            <li class="footer-li">Terms of Services</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Privacy Policy</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Documantation</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Changelog</li>
+            <div class="arrow right"></div>
+            <li class="footer-li">Widget</li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="footer-div service-wrapper">
-      <div class="company">
-        <h3 class="footer-h3">Company</h3>
-        <ul>
-          <div class="arrow right"></div>
-          <li class="footer-li">About us</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Services</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Team</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Procing</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Project</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Blog</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Login</li>
-        </ul>
-      </div>
-      <div class="usefull-links">
-        <h3 class="footer-h3">Usefull Links</h3>
-        <ul>
-          <div class="arrow right"></div>
-          <li class="footer-li">Terms of Services</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Privacy Policy</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Documantation</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Changelog</li>
-          <div class="arrow right"></div>
-          <li class="footer-li">Widget</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-div subscribe-wrapper">
-      <!-- <div class="footer-p"> -->
+      <div class="footer-div subscribe-wrapper">
+        <!-- <div class="footer-p"> -->
         <h3>Newsletter</h3>
         <p>Sign up and recive the latest tips via email.</p>
         <label for="email">Write your email</label><br>
-        <input type="email" class="placeholder-icon" placeholder="&#xf0e0; Email"><br>
-        <button class="btn btn-color">Subscribe</button>
-      <!-- </div> -->
+        <input onkeypress="cleanErrorMsg()" type="email" class="placeholder-icon" id="footer-email"
+          placeholder="&#xf0e0; Email"><br>
+        <p class="error-msg" id="f-email-error"></p>
+        <button type="submit" class="btn btn-color" onclick="return validateEmail()">Subscribe</button>
+        <!-- </div> -->
+      </div>
     </div>
-  </div>
-    <!-- <div class="scroll-top" id="scroll-top" onclick="scrollTop()"></div> -->
+    <div class="copyright">
+      <p class="copyright-p">© 2022 Techwind. Design with by ❤️ Shreethems.</p>
+    </div>
+    <button class="scroll-top" id="scroll-top" onclick="scrollTopHeader()"><img class="up-arrow"
+        src="./image/up-arrow.png" alt="up-arrow"></button>
   </footer>
   <script src="./main.js"></script>
 </body>

@@ -250,10 +250,10 @@ span {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  bottom: 30px;
+  bottom: 3px;
   right: 20px;
   border: 2px solid;
-  background-color: rgb(191, 195, 191);
+  background-color: $blue-color;
   z-index: 10;
   position: fixed;
 }
@@ -261,4 +261,14 @@ sup {
   vertical-align:text-top;
   font-size: smaller;
   
+}
+.up-arrow{
+  width: 24px;
+  margin: 11px;
+}
+.error-msg{
+  font-size: 12px;
+  color: red;
+  margin: 0px;
+  padding: 0px;
 }

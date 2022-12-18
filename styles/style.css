@@ -448,25 +448,28 @@
       @media (min-width: 600px) {
         .sec-5 .heading .sec5-p {
           font-size: 16px; } }
-  .sec-5 .mob-scroll-button {
+  .sec-5 .scroll-button {
     width: 40px;
     height: 40px;
     position: absolute;
     border-radius: 100%;
-    border: 2px solid #ccc9c9; }
-    @media (min-width: 500px) {
-      .sec-5 .mob-scroll-button {
-        display: none; } }
-  .sec-5 .mob_prev_btn {
+    border: 2px solid #ffffff; }
+  .sec-5 .prev_btn {
     display: none;
-    margin: 50% 0% 0% 10%; }
-    .sec-5 .mob_prev_btn .angle {
+    margin: 5% 0% 0% -1%; }
+    @media (min-width: 900px) {
+      .sec-5 .prev_btn {
+        display: block; } }
+    .sec-5 .prev_btn .angle {
       color: black;
       transform: rotate(135deg); }
-  .sec-5 .mob_next_btn {
+  .sec-5 .next_btn {
     display: none;
-    margin: 50% 10% 0% 87%; }
-    .sec-5 .mob_next_btn .angle {
+    margin: 5% 10% 0% 87%; }
+    @media (min-width: 900px) {
+      .sec-5 .next_btn {
+        display: block; } }
+    .sec-5 .next_btn .angle {
       color: black; }
 
 .scroll-box {
@@ -699,8 +702,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 14%;
   flex-wrap: wrap;
-  color: white; }
+  color: #eeecec; }
   @media (min-width: 600px) {
     .footer {
       flex-direction: column;
@@ -715,7 +719,7 @@
     @media (min-width: 900px) {
       .footer .aboutus-wrapper {
         width: 33%;
-        padding: 14% 0% 7% 5%; } }
+        padding: 0% 0% 0% 5%; } }
     .footer .aboutus-wrapper .footer-logo {
       width: 220px; }
       .footer .aboutus-wrapper .footer-logo img {
@@ -724,7 +728,7 @@
           .footer .aboutus-wrapper .footer-logo img {
             width: 162px; } }
     .footer .aboutus-wrapper p {
-      font-size: 18px;
+      font-size: 15px;
       letter-spacing: 1px;
       color: #fdfafa;
       padding: 2% 0%;
@@ -746,15 +750,11 @@
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 29px; } }
-    @media (min-width: 900px) {
-      .footer .service-wrapper {
-        margin-top: 136px; } }
     .footer .service-wrapper .company {
       width: 80vw; }
       @media (min-width: 500px) {
         .footer .service-wrapper .company {
-          margin-right: 80px;
-          width: 10vw; } }
+          margin-right: 80px; } }
     .footer .service-wrapper .usefull-links {
       margin: 10px 0px;
       width: 80vw; }
@@ -776,14 +776,14 @@
           font-weight: 400; } }
     .footer .service-wrapper .footer-li {
       margin: 4%;
-      font-size: 16px;
+      font-size: 15px;
       letter-spacing: 1px;
       color: white;
       list-style: none; }
       @media (min-width: 500px) {
         .footer .service-wrapper .footer-li {
           margin: 8%;
-          font-size: 18px;
+          font-size: 15px;
           font-weight: 300;
           width: 100%; } }
   .footer .subscribe-wrapper {
@@ -795,9 +795,6 @@
     @media (min-width: 500px) {
       .footer .subscribe-wrapper {
         font-size: 21px; } }
-    @media (min-width: 900px) {
-      .footer .subscribe-wrapper {
-        margin-top: 63px; } }
     .footer .subscribe-wrapper h3 {
       padding-bottom: 15px;
       font-size: 21px; }
@@ -811,6 +808,7 @@
           font-size: 25px;
           font-weight: 400; } }
     .footer .subscribe-wrapper p {
+      font-size: 15px;
       padding-bottom: 2%;
       color: white; }
       @media (min-width: 900px) {
@@ -886,6 +884,18 @@
         .footer .footer-kart-logo .f-logo {
           border-radius: 8px;
           margin: 3px; } }
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 4%; }
+  @media (min-width: 900px) {
+    .copyright {
+      width: 100%;
+      padding: 2%; } }
+  .copyright .copyright-p {
+    color: #fbfcfc; }
 
 @use 'base';
 body {
@@ -1062,13 +1072,23 @@ span {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  bottom: 30px;
+  bottom: 3px;
   right: 20px;
   border: 2px solid;
-  background-color: #bfc3bf;
+  background-color: #4c42e0;
   z-index: 10;
   position: fixed; }
 
 sup {
   vertical-align: text-top;
   font-size: smaller; }
+
+.up-arrow {
+  width: 24px;
+  margin: 11px; }
+
+.error-msg {
+  font-size: 12px;
+  color: red;
+  margin: 0px;
+  padding: 0px; }
