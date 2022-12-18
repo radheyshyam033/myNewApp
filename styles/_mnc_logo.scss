@@ -1,4 +1,4 @@
-.section2 {
+.section {
     width: 100%;
     border: 2px solid rgb(244, 242, 242);
     background-color: $section-color;
@@ -14,7 +14,7 @@
             max-width: 200px;
             min-width: 150px;
     
-            img {
+            .sec2-img {
                 width: 55%;
                 margin: 18%;
             }

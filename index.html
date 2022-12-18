@@ -11,173 +11,184 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="nav-logo">
-      <a href="/"><img class="logo-img" src="./image/logo.jpg" alt="logo"></a>
-    </div>
-    <ul class="nav-list" id="nav-list">
-      <li class="menu-item"><a href="#home"><span>HOME</span></a></li>
-      <li class="menu-item"><a href="#landing" class="arrow-icon">LANDING <i class="fa fa-angle-down"></i></a>
-        <div class="select-option">
-          <a href="">option1</a>
-          <a href="">option1</a>
-          <a href="">option1</a>
-        </div>
-      </li>
-      <li class="menu-item"><a href="#page">PAGES <i class="fa fa-angle-down"></i></a>
-        <div class="select-option">
-          <a href="">option2</a>
-          <a href="">option2</a>
-          <a href="">option3</a>
-        </div>
-      </li>
-      <li class="menu-item"><a href="#portfolio">PORTFOLIO <i class="fa fa-angle-down"></i></a>
-        <div class="select-option">
-          <a href="">option2</a>
-          <a href="">option2</a>
-          <a href="">option3</a>
-        </div>
-      </li>
-      <li class="menu-item"><a href="#docs">DOCS <i class="fa fa-angle-down"></i></a>
-        <div class="select-option">
-          <a href="">option2</a>
-          <a href="">option2</a>
-          <a href="">option3</a>
-        </div>
-      </li>
-      <li class="menu-item"><a href="#contect">CONTACT</a></li>
-    </ul>
-    <div class="right-nav">
-      <div class="icon-width">
-        <div class="nav-icon" id="setting">
-          <a href="/setting">
-            <img class="setting" src="./image/setting.png" alt="setting" srcset="">
-          </a>
-        </div>
-        <div class="nav-icon" id="kart">
-          <a href="/kart">
-            <img class="kart" src="./image/kart.png" alt="kart" srcset="">
-          </a>
-        </div>
-        <div class="hamburger" onclick="hamburger()">
-          <div class="bar" id="bar1"></div>
-          <div class="bar" id="bar2"></div>
-          <div class="bar" id="bar3"></div>
+  <header class="header">
+    <nav class="navbar container">
+      <div class="nav-logo">
+        <a href="/"><img class="logo-img" src="./image/logo.jpg" alt="logo"></a>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li class="menu-item"><a class="nav-menu" href="#home"><span>HOME</span></a>
+        </li>
+        <li class="menu-item"><a class="nav-menu" href="#landing" class="arrow-icon">LANDING <i
+              class="fa fa-angle-down"></i></a>
+          <div class="select-option">
+            <a class="menu-opt" href="">option1</a>
+            <a class="menu-opt" href="">option1</a>
+            <a class="menu-opt" href="">option1</a>
+          </div>
+        </li>
+        <li class="menu-item"><a class="nav-menu" href="#page">PAGES <i class="fa fa-angle-down"></i></a>
+          <div class="select-option">
+            <a class="menu-opt" href="">option2</a>
+            <a class="menu-opt" href="">option2</a>
+            <a class="menu-opt" href="">option3</a>
+          </div>
+        </li>
+        <li class="menu-item"><a class="nav-menu" href="#portfolio">PORTFOLIO <i class="fa fa-angle-down"></i></a>
+          <div class="select-option">
+            <a class="menu-opt" href="">option2</a>
+            <a class="menu-opt" href="">option2</a>
+            <a class="menu-opt" href="">option3</a>
+          </div>
+        </li>
+        <li class="menu-item"><a class="nav-menu" href="#docs">DOCS <i class="fa fa-angle-down"></i></a>
+          <div class="select-option">
+            <a class="menu-opt" href="">option2</a>
+            <a class="menu-opt" href="">option2</a>
+            <a class="menu-opt" href="">option3</a>
+          </div>
+        </li>
+        <li class="menu-item"><a class="nav-menu" href="#contect">CONTACT</a></li>
+      </ul>
+      <div class="right-nav">
+        <div class="icon-width">
+          <div class="nav-icon" id="setting">
+            <a href="/setting">
+              <img class="setting" src="./image/setting.png" alt="setting" srcset="">
+            </a>
+          </div>
+          <div class="nav-icon kart-color" id="kart">
+            <a href="/kart">
+              <img class="kart" src="./image/kart.png" alt="kart" srcset="">
+            </a>
+          </div>
+          <div class="hamburger" onclick="hamburger()">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <section class="section1 gl-grid">
-    <div class="content top-content" id="top-content">
-      <h1 class="top-heading">Our Creativity Is Your <span>Success</span></h1>
-      <p class="sec1-p">
-        Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae dolorum aperiam.
-      </p>
-      <div class="banner-button">
-        <button class="btn doc-btn get-start"><i class="fa fa-envelope"></i> Get Started</button>
-        <button class="btn doc-btn"><i class="fa fa-book"></i> Documentation</button>
+    </nav>
+  </header>
+  <section class="section">
+    <div class="sec-1 container">
+      <div class="content top-content" id="top-content">
+        <h1 class="top-heading">Our Creativity Is Your <span>Success</span></h1>
+        <p class="sec1-p">
+          Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae dolorum aperiam.
+        </p>
+        <div class="banner-button">
+          <button class="btn doc-btn get-start"><i class="fa fa-envelope"></i> Get Started</button>
+          <button class="btn doc-btn"><i class="fa fa-book"></i> Documentation</button>
+        </div>
       </div>
-    </div>
-    <div class="content top-image" id="top-image">
-      <img class="image" src="./image/section1Img.png" alt="first image">
+      <div class="content top-image" id="top-image">
+        <img class="image" src="./image/section1Img.png" alt="first image">
+      </div>
     </div>
   </section>
   <!-- <hr> -->
-  <section class="section2">
-    <div class="sec2-logo gl-grid">
-    <div class="mnc-logo"><img src="./image/amazon.png" alt="amazon"></div>
-    <div class="mnc-logo"><img src="./image/google.png" alt="google"></div>
-    <div class="mnc-logo"><img src="./image/lenovo.png" alt="lenovo"></div>
-    <div class="mnc-logo"><img src="./image/paypal.png" alt="paypal"></div>
-    <div class="mnc-logo"><img src="./image/spotify.png" alt="Spotify"></div>
-    <div class="mnc-logo"><img src="./image/shopify.png" alt="shopify"></div>
-  </div>
-  </section>
-  <section class="section3">
-    <din class="gl-grid">
-    <div class="how-it-work">
-      <h1 class="sec3-h1">How It Work?</h1>
-      <p class="sec3-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque ea nobis?
-      </p>
+  <section class="section">
+    <div class="sec2-logo container">
+      <div class="mnc-logo"><img class="sec2-img" src="./image/amazon.png" alt="amazon"></div>
+      <div class="mnc-logo"><img class="sec2-img" src="./image/google.png" alt="google"></div>
+      <div class="mnc-logo"><img class="sec2-img" src="./image/lenovo.png" alt="lenovo"></div>
+      <div class="mnc-logo"><img class="sec2-img" src="./image/paypal.png" alt="paypal"></div>
+      <div class="mnc-logo"><img class="sec2-img" src="./image/spotify.png" alt="Spotify"></div>
+      <div class="mnc-logo"><img class="sec2-img" src="./image/shopify.png" alt="shopify"></div>
     </div>
-    <div class="way-to-build-website">
-      <img src="./image/sec3img.png" alt="sec-3 image">
+  </section>
+  <section class="section">
+    <din class="sec-3 container">
+      <div class="how-it-work">
+        <h1 class="sec3-h1">How It Work?</h1>
+        <p class="sec3-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque
+          ea nobis?
+        </p>
+      </div>
+      <div class="way-to-build-website">
+        <img class="sec-img" src="./image/sec3img.png" alt="sec-3 image">
+        <div class="content">
+          <h1>Change the way you build websites</h1>
+          <p class="sec3-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quae beatae
+            earum
+            cupiditate commodi ad molestias nisi maxime rem!</p>
+          <ul class="section3List">
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="sec3-li"> Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="sec3-li">Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="sec3-li">Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
+          </ul>
+          <div>
+            <a class="find-more-link" id="find-out-more" href="./">Find Out More</a>
+            <div class="angle"></div>
+          </div>
+        </div>
+      </div>
+    </din>
+  </section>
+  <section class="section">
+    <div class="sec-4 container">
       <div class="content">
-        <h1>Change the way you build websites</h1>
-        <p class="sec3-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quae beatae earum
-          cupiditate commodi ad molestias nisi maxime rem!</p>
-        <ul class="section3List">
+        <h1 class="sec4-heading">Speed up your development <br> with <span>Techwind</span></h1>
+        <p class="sec4-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt
+          sit amet consectetur
+          adipisicing.</p>
+        <ul>
           <div class="circle"></div>
           <div class="tick-mark"></div>
-          <li> Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          <li class="sec4-li">Lorem ipsum dolor sit amet conse ctetur adipisicing.</li>
           <div class="circle"></div>
           <div class="tick-mark"></div>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          <li class="sec4-li">Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
           <div class="circle"></div>
           <div class="tick-mark"></div>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          <li class="sec4-li">Lorem ipsum dolor sit amet conse ctetur adipisicing.</li>
         </ul>
-        <div>
-          <a class="find-more-link" id="find-out-more" href="./">Find Out More</a>
+        <div class="inline-block">
+          <a class="find-more-link" id="find-out-more" href="./">Find Out More </a>
           <div class="angle"></div>
         </div>
       </div>
-    </div>
-  </din>
-  </section>
-  <section class="section4">
-    <div class="gl-grid">
-    <div class="content">
-      <h1 class="sec4-heading">Speed up your development <br> with <span>Techwind</span></h1>
-      <p class="sec4-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt
-        sit amet consectetur
-        adipisicing.</p>
-      <ul>
-        <div class="circle"></div>
-        <div class="tick-mark"></div>
-        <li class="sec4-li">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-        <div class="circle"></div>
-        <div class="tick-mark"></div>
-        <li class="sec4-li">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-        <div class="circle"></div>
-        <div class="tick-mark"></div>
-        <li class="sec4-li">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-      </ul>
-      <div class="inline-block">
-        <a class="find-more-link" id="find-out-more" href="./">Find Out More </a>
-        <div class="angle"></div>
-      </div>
-    </div>
-    <div class="form-section">
-      <div class="form">
-        <div><img src="./image/mobile-template.jpg" alt="" class="mobile-img"></div>
-        <div class="input-form required">
-          <form id="leadForm" name="leadForm" method="post" onsubmit=" return validateForm()">
-            <label for="name">Your Name:</label><br>
-            <img class="key-icon" src="./image/icons8-user-24.png" alt="">
-            <input type="text" id="name" name="name" class="placeholder-icon" placeholder="Name"><br>
-            <p class="name-error" id="name-error"></p>
-            <label for="email">Your Email:</label><br>
-            <img class="key-icon" src="./image/icons8-mail-50.png" alt="">
-            <input type="email" class="placeholder-icon" name="email" id="email" placeholder="Email"><br>
-            <p class="name-error" id="email-error"></p>
-            <label for="password">Enter Password:</label><br>
-            <img class="key-icon" src="./image/icons8-key-64.png" alt="">
-            <input type="password" id="password" name="password" placeholder="Password">
-            <p class="name-error" id="password-error"></p>
-            <button class="btn" type="submit">Download</button>
-          </form>
+      <div class="form-section">
+        <div class="form">
+          <div><img class="mobile-img" src="./image/mobile-template.jpg" alt=""></div>
+          <div class="input-form required">
+            <form id="leadForm" name="leadForm" method="post" onsubmit=" return validateForm()">
+              <label class="sec4-label" for="name">Your Name:</label><br>
+              <img class="key-icon" src="./image/icons8-user-24.png" alt="">
+              <input class="sec4-input" type="text" id="name" name="name" class="placeholder-icon"
+                placeholder="Name"><br>
+              <p class="name-error" id="name-error"></p>
+              <label class="sec4-label" for="email">Your Email:</label><br>
+              <img class="key-icon" src="./image/icons8-mail-50.png" alt="">
+              <input class="sec4-input" type="email" class="placeholder-icon" name="email" id="email"
+                placeholder="Email"><br>
+              <p class="name-error" id="email-error"></p>
+              <label class="sec4-label" for="password">Enter Password:</label><br>
+              <img class="key-icon" src="./image/icons8-key-64.png" alt="">
+              <input class="sec4-input" type="password" id="password" name="password" placeholder="Password">
+              <p class="name-error" id="password-error"></p>
+              <button class="sec4-btn btn" type="submit">Download</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
-  <section class="section5 gl-grid">
-    <div class="sec5-container">
+  <section class="section">
+    <div class="sec-5 container">
       <div class="heading">
-        <h3>We believe in building each other and hence</h3>
+        <h3 class="sec5-heading">We believe in building each other and hence</h3>
         <h1>Work with some amazing partners</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis tempora ut.</p>
+        <p class="sec5-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis
+          tempora ut.</p>
       </div>
       <!-- <button class="scroll-button" type="button" onclick="prev_btn()" id="prev">prev</button>
         <button class="scroll-button" type="button" onclick="next_btn()" id="next">next</button> -->
@@ -191,124 +202,129 @@
         <div class="scroll-wrapper" id="scroll-wrapper">
           <li class="slide">
             <div class="profile-card">
-              <img src="./image/mobile-template.jpg" alt="">
-              <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed" <br>
-                <span>card 1</span>
-              </p>
+              <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
+              <div class="profile-details">
+              <p class="sec5-card-p">"Lorem ipsum dolor, sit amet consectetur adipisicing  sit amet consectetur adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
+                <h3><span>user name</span></h3>
+                <h4>Staff Engineer</h4>
+              </div>
             </div>
           </li>
           <li class="slide">
             <div class="profile-card">
-              <img src="./image/mobile-template.jpg" alt="">
-              <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed" <br>
-                <span>card 2</span>
-              </p>
+              <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
+              <div class="profile-details">
+              <p class="sec5-p">"Lorem ipsum dolor, sit amet consectetur adipisicing  sit amet consectetur adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
+              <h3><span>user name</span></h3>
+                <h4>Staff Engineer</h4>
+              </div>
             </div>
           </li>
           <li class="slide">
             <div class="profile-card">
-              <img src="./image/mobile-template.jpg" alt="">
-              <p> "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sed! a adipng elit. Nihil, sed" <br>
-                <span>card 3</span>
-              </p>
+              <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
+              <div class="profile-details">
+              <p class="sec5-p"> "Lorem ipsum dolor, sit amet consectetur  sit amet consectetur adipisicing adipisicing elit. Nihil, sed! a adipng elit. Nihil, sed"</p>
+              <h3><span>user name</span></h3>
+              <h4>Staff Engineer</h4>
+            </div>
             </div>
           </li>
         </div>
       </div>
     </div>
   </section>
-  <section class="section6 gl-grid">
-    <div class="content">
-      <h1>Our Comfortable Rates</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores perspiciatis? Earum natus!
-      </p>
-      <button class="btn btn-color">Subscribe Now</button>
-    </div>
-    <div class="cards">
-      <div class="card1">
-        <div class="card-heading"><span>STARTER</span></div>
-        <div class="emi"><sup>$</sup>39/mo</div>
-        <ul>
-          <div class="circle"></div>
-          <div class="tick-mark"></div>
-          <li>Full access</li>
-          <div class="circle"></div>
-          <div class="tick-mark"></div>
-          <li>Source File</li>
-          <div class="circle"></div>
-          <div class="tick-mark"></div>
-          <li>Free appointment</li>
-          <div class="circle"></div>
-          <div class="tick-mark"></div>
-          <li>Enhance Security</li>
-        </ul>
-        <button class="btn btn-color">Get Started</button>
+  <section class="section">
+    <div class="sec-6 container">
+      <div class="content">
+        <h1 class="sec6-h1">Our Comfortable Rates</h1>
+          <p class="sec6-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores
+            perspiciatis? Earum natus!</p>
+        <button class="sec6-btn btn btn-color">Subscribe Now</button>
       </div>
-      <div class="card1">
-        <div class="card-heading"><span>PROFESSIONAL</span></div>
-        <div class="emi"><sup>$</sup>39/mo</div>
-        <ul>
-          <div class="circle"></div>
-          <div class="tick-mark"></div>
-          <li>Full access</li>
-          <div class="circle"></div>
-          <div class="tick-mark"></div>
-          <li>Source File</li>
-          <div class="circle"></div>
-          <div class="tick-mark"></div>
-          <li>Free appointment</li>
-          <div class="circle"></div>
-          <div class="tick-mark"></div>
-          <li>Enhance Security</li>
-        </ul>
-        <button class="btn btn-color">Get Started</button>
+      <div class="cards">
+        <div class="card">
+          <div class="card-heading"><span>STARTER</span></div>
+          <div class="emi"><sup>$</sup>39/mo</div>
+          <ul>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="card-li">Full access</li>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="card-li">Source File</li>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="card-li">Free appointment</li>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="card-li">Enhance Security</li>
+          </ul>
+          <button class="btn btn-color">Get Started</button>
+        </div>
+        <div class="card">
+          <div class="card-heading"><span>PROFESSIONAL</span></div>
+          <div class="emi"><sup>$</sup>39/mo</div>
+          <ul>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="card-li">Full access</li>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="card-li">Source File</li>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="card-li">Free appointment</li>
+            <div class="circle"></div>
+            <div class="tick-mark"></div>
+            <li class="card-li">Enhance Security</li>
+          </ul>
+          <button class="sec6-btn btn btn-color">Get Started</button>
+        </div>
       </div>
     </div>
   </section>
-  <section class="section7">
-    <div class="gl-grid">
-    <div>
-      <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
-      <li>How our <span>Techwind</span> work?
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse ut incidunt, optio
-          facilis reprehenderit tenetur placeat corporis?</p>
-      </li>
+  <section class="section">
+    <div class="sec-7 container">
+      <div>
+        <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
+        <li class="sec7-li">How our <span>Techwind</span> work?
+          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse ut incidunt, optio facilis reprehenderit tenetur placeat corporis?</p>
+        </li>
+      </div>
+      <div>
+        <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
+        <li class="sec7-li"> What is main process open account?
+          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis iure non. Distinctio recusandae ipsam nostrum obcaecati odio voluptatibus!</p>
+        </li>
+      </div>
+      <div>
+        <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
+        <li class="sec7-li"> How to make unlimited data entry?
+          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat reprehenderit ipsum officiis animi inventore beatae, error atque.</p>
+        </li>
+      </div>
+      <div>
+        <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
+        <li class="sec7-li"> Is <span>Techwind</span> safe to use with my account?
+          <p class="sec7-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo excepturi similique rerum temporibus impedit vitae.</p>
+        </li>
+      </div>
     </div>
-    <div>
-      <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
-      <li> What is main process open account?
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis iure non. Distinctio recusandae
-          ipsam nostrum obcaecati odio voluptatibus!</p>
-      </li>
-    </div>
-    <div>
-      <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
-      <li> How to make unlimited data entry?
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat reprehenderit ipsum
-          officiis animi inventore beatae, error atque.</p>
-      </li>
-    </div>
-    <div>
-      <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
-      <li> Is <span>Techwind</span> safe to use with my account?
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo excepturi
-          similique rerum temporibus impedit vitae.</p>
-      </li>
-    </div>
-  </div>
   </section>
-  <section class="section8">
-    <div class="gl-grid">
-    <div class="content">
-      <h1>Have Question ? Get in touch!</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos reprehenderit ab a laborum
-        autem?</p>
-      <button class="btn btn-color">Contect us</button>
+  <section class="section">
+    <div class="sec-8 container">
+      <div class="content">
+        <h1>Have Question ? Get in touch!</h1>
+        <p class="sec8-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos reprehenderit ab a laborum
+          autem?</p>
+        <button class="btn btn-color">Contect us</button>
+      </div>
     </div>
-  </div>
   </section>
   <div class="footer-head"></div>
-  <footer class="footer">
+  <footer class="footer-sec">
+    <div class="footer container">
     <div class="footer-div aboutus-wrapper">
       <div class="footer-logo">
         <a href="/"><img src="./image/techwind-logo.png" alt="Techwind"></a>
@@ -329,37 +345,50 @@
     </div>
     <div class="footer-div service-wrapper">
       <div class="company">
-        <h3>Company</h3>
+        <h3 class="footer-h3">Company</h3>
         <ul>
-          <li>About us</li>
-          <li>Services</li>
-          <li>Team</li>
-          <li>Procing</li>
-          <li>Project</li>
-          <li>Blog</li>
-          <li>Login</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">About us</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Services</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Team</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Procing</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Project</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Blog</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Login</li>
         </ul>
       </div>
       <div class="usefull-links">
-        <h3>Usefull Links</h3>
+        <h3 class="footer-h3">Usefull Links</h3>
         <ul>
-          <li>Terms of Services</li>
-          <li>Privacy Policy</li>
-          <li>Documantation</li>
-          <li>Changelog</li>
-          <li>Widget</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Terms of Services</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Privacy Policy</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Documantation</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Changelog</li>
+          <div class="arrow right"></div>
+          <li class="footer-li">Widget</li>
         </ul>
       </div>
     </div>
     <div class="footer-div subscribe-wrapper">
-      <div class="footer-p">
+      <!-- <div class="footer-p"> -->
         <h3>Newsletter</h3>
         <p>Sign up and recive the latest tips via email.</p>
         <label for="email">Write your email</label><br>
-        <input type="email require" class="placeholder-icon" placeholder="&#xf0e0; Email"><br>
+        <input type="email" class="placeholder-icon" placeholder="&#xf0e0; Email"><br>
         <button class="btn btn-color">Subscribe</button>
-      </div>
+      <!-- </div> -->
     </div>
+  </div>
     <!-- <div class="scroll-top" id="scroll-top" onclick="scrollTop()"></div> -->
   </footer>
   <script src="./main.js"></script>

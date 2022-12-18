@@ -1,27 +1,29 @@
-.section4 {
+.section {
   background-color: $section-color;
-  .gl-grid {
+
+  .sec-4 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: $section-color;
     flex-wrap: wrap-reverse;
 
     .content {
       width: 95%;
-      margin: 20px 20px;
+      // margin: 20px 20px;
       background-color: $section-color;
 
       @media (min-width:850px) {
         width: 40%;
-        padding: 12% 2% 0% 5%;
+        // padding: 12% 2% 0% 5%;
       }
 
       .sec4-heading {
-        padding: 18% 0% 2%;
+        // padding: 18% 0% 2%;
         padding-left: 0%;
 
         @media (min-width:1000px) {
-          padding: 5% 0% 1%;
+          // padding: 5% 0% 1%;
         }
       }
 
@@ -31,8 +33,25 @@
         margin: 4% 8%;
         font-size: 18px;
         color: #989595;
+        list-style: none;
 
         @media (min-width:600px) {}
+      }
+
+      .sec4-p {
+        font-size: 18px;
+        color: $paragraph-color;
+        margin: 3% 0%;
+        line-height: 1.5;
+        padding: 2% 0%;
+
+        @media (max-width:1000px) {
+          font-size: 24px;
+        }
+
+        @media (max-width:600px) {
+          font-size: 16px;
+        }
       }
 
       .find-more-link {
@@ -47,7 +66,7 @@
 
   .form-section {
     width: 100%;
-    padding-bottom: 2%;
+    padding: 2% 0%;
 
     @media (min-width:1050px) {
       width: 45%;
@@ -88,8 +107,8 @@
           margin: 5%;
         }
 
-        input {
-          width: 87%;
+        .sec4-input {
+          width: 100%;
           height: 34px;
           font-size: 18px;
           padding-left: 12%;
@@ -105,7 +124,8 @@
           }
         }
 
-        label {
+        .sec4-label {
+          padding-top: 5%;
           font-size: 18px;
           color: #1d1c1cd4;
 
@@ -118,24 +138,20 @@
           color: #e32;
           content: ' *';
           display: inline;
-
-          // @media (min-width:600px) {}
         }
 
         .key-icon {
           position: absolute;
-          width: 22px;
-          height: 20px;
+          width: 18px;
+          height: 17px;
           margin: 14px 11px;
 
-          // @media (min-width:600px) {
-          //   width: 23px;
-          //   height: 21px;
-          //   margin: 26px 11px;
-          // }
+          @media (min-width:600px) {
+            margin: 18px 10px;
+          }
         }
 
-        button {
+        .sec4-btn {
           font-size: 20px;
           height: 40px;
           width: 100%;
@@ -143,7 +159,7 @@
           background-color: rgb(63, 80, 234);
           border: 2px solid white;
           border-radius: 8px;
-          margin: 5px 0px;
+          margin: 5% 0px;
 
           @media (min-width:600px) {
             font-size: 22px;

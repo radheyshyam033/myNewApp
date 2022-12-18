@@ -1,152 +1,171 @@
-.sec5-container {
+$paragraph-color: #9fadbe;
+.sec-5 {
   background-color: white;
   align-items: center;
   padding: 2%;
 
   .heading {
-        /* width: 40%; */
-        padding: 6% 0% 4%;
-        text-align: center;
-        /* padding-top: 6%;*/
-        @media (min-width:500px) {
-          width: 95%;
-          // padding: 6% 27% 4%;
-          padding: 0px;
-        }
-        @media (min-width:1000px) {
-          padding: 6% 30% 4%;
-        }
-    h3 {
+    padding: 6% 0% 4%;
+    text-align: center;
+
+    @media (min-width:500px) {
+      width: 95%;
+      padding: 0px;
+    }
+
+    @media (min-width:1000px) {
+      padding: 6% 26% 4%;
+    }
+
+    .sec5-heading {
       padding: 3%;
       color: #3f50ea;
       font-weight: 420;
       font-size: medium;
+
       @media (max-width:500px) {
         width: 95vw;
         padding: 20px 0px;
         font-size: 15px;
       }
     }
+
+    .sec5-p {
+      font-size: 18px;
+      color: $paragraph-color;
+      margin: 3% 0%;
+      line-height: 1.5;
+      padding: 2% 0%;
+
+      @media (min-width:1000px) {
+        font-size: 24px;
+      }
+
+      @media (min-width:600px) {
+        font-size: 16px;
+      }
+    }
   }
-  .mob-scroll-button{
+
+  .mob-scroll-button {
     // display: inline-block;
     width: 40px;
     height: 40px;
     position: absolute;
     border-radius: 100%;
     border: 2px solid #ccc9c9;
+
     @media (min-width:500px) {
       display: none;
     }
   }
-  .mob_prev_btn{
+
+  .mob_prev_btn {
     display: none;
     margin: 50% 0% 0% 10%;
-    .angle{
+
+    .angle {
       color: black;
       transform: rotate(135deg);
     }
 
   }
-  .mob_next_btn{
+
+  .mob_next_btn {
     display: none;
     margin: 50% 10% 0% 87%;
-    .angle{
+
+    .angle {
       color: black;
     }
-
   }
-
 }
-.scroll-box {
-  margin: 0% 9%;
-    width: 80%;
-    @media (min-width:500px) {
-      margin: 0% 18%;
-      width: 64%;
-    }
-  // max-width: auto;
-  @media (min-width:950px) {
-    width: 77%;
-    margin: 0% 10%;
-    // width: px;
-  }
-  
 
-  .scroll-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    @media (max-width:500px) {
-      display: none;
-    }
-  }
+.scroll-box {
+
+  overflow-x: auto;
+
+
+  @media (min-width:500px) {}
+
+  @media (min-width:950px) {}
+
+
+  // .scroll-button {
+  //   width: 40px;
+  //   height: 40px;
+  //   border-radius: 100%;
+
+  //   @media (max-width:500px) {
+  //     display: none;
+  //   }
+  // }
 }
 
 .scroll-wrapper {
-  width: 100%;
   display: flex;
-  justify-content: left;
-  align-items: center;
-  overflow: auto;
-}
+  overflow-x: auto;
 
-li {
-  margin: 2% .5%;
-  font-size: 20px;
-  color: #989595;
 }
 
 .slide {
-  display: inline;
-  background-color: #eeeef7;
-  border-radius: 5px;
-  // overflow-x: auto;
-  // margin-left: 10px;
-  @media (max-width:500px) {
-    width: 304px;
-    margin-left: 13px;
+  list-style: none;
+  margin: 10px;
 
-  }
+  @media (max-width:500px) {}
 
   .profile-card {
-    display: flex;  
-    width: 466px;
-    flex-wrap: wrap;
-    box-shadow: 0px 0px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 26px 13px;
+    text-align: center;
+    /* border: 2px solid; */
+    width: 88vw;
+    align-items: center;
+    box-shadow: 0px 0px 6px #dddada;
 
-    @media (max-width:500px) {
-      padding: 15px 0px;
-      width: 301px;
-      height: 400px;
-
+    @media (min-width:500px) {
+      width: 44vw;
+    }
+    @media (min-width:800px) {
+      flex-direction: row;
+      text-align: left;
+      padding: 0px 0px;
+      width: 43vw;
     }
 
-    img {
-      width: 35%;
+    .sec5-mob-img {
+      width: 132px;
+      border-radius: 50%;
+      padding-bottom: 40px;
+      margin: auto;
 
-      @media (max-width:500px) {
-        width: 208px;
-        height: 205px;
-        border-radius: 100%;
-        border: 2px;
-        margin-left: 14%;
+      @media (min-width:800px) {
+        width: 175px;
+        border-radius: 0%;
+        padding-bottom: 0px;
       }
     }
-
-    p {
-      width: 59%;
-      padding: 2%;
-
-      @media (max-width:500px) {
-        width: 300px;
-        padding: 2%;
+    .profile-details{
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      justify-content: flex-start;
+      p{
+        padding: 10px;
+        color: $paragraph-color;
       }
+      h3{
+        padding:10px
+      }
+      h4{
+        padding:10px;
+        color:$paragraph-color;
+      }
+
     }
 
-    span {
-      font-size: 25px;
-    }
   }
 }
 

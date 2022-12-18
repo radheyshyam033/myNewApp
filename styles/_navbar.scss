@@ -2,79 +2,100 @@ $content-color: rgb(80, 70, 228);
 $contaner-color: rgb(243, 244, 246);
 $white-color: white;
 
-.navbar {
-  display: flex;
-  position: fixed;
+.header {
   width: 100%;
   min-height: 60px;
-  z-index: 10;
-  justify-content: space-evenly;
-  align-items: center;
   background-color: $white-color;
-  box-shadow:  0px 1px 6px #b2acac;
-  @media (min-width: 1250px) {
-      // max-width: 1220px;
-  }
+  box-shadow: 0px 1px 6px #b2acac;
+  z-index: 99;
+  position: fixed;
 }
-.nav-logo {
-  width: 20%;
+
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .5%;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: flex-end;
   text-align: center;
-  @media (max-width:850px) {
-    width: 50%;
-    margin-top: 8px;
-  }
+
   .logo-img {
     width: 159px;
     height: 37px;
   }
 }
-  .nav-list{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    @media (max-width:850px) {
-      display: none;
-    }
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (max-width:850px) {
+    display: none;
+  }
+
   .menu-item {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
+    padding: 2% 10%;
 
-    a {
+    .nav-menu {
       text-decoration: none;
       color: rgb(30, 29, 29);
+      display: flex;
       text-align: center;
       font-size: 12px;
       padding-right: 0px;
 
       i {
+        margin: -3px 2px;
         font-size: 20px;
       }
     }
+
     nav-a:hover {
       color: $content-color;
     }
   }
 }
-.right-nav {
-  width: 20%;
 
-  @media (max-width:850px) {
-    width: 50%;
-  }
+.right-nav {
 
   .icon-width {
     width: 100%;
     display: flex;
     justify-content: right;
     padding-right: 8%;
+    align-items: center;
 
-    .hamburger{
+    .nav-icon {
+      border: 2px solid #cfd0f4;
+      width: 40px;
+      height: 35px;
+      border-radius: 50%;
+    }
+    .setting {
+      width: 20px;
+      height: 20px;
+      margin: 5px 6px;
+    }
+  
+    .kart {
+      width: 20px;
+      height: 20px;
+      margin: 5px 6px;
+    }
+  
+    .kart-color {
+      background-color: $content-color;
+    }
+    .hamburger {
       width: 30px;
       height: 30px;
       align-items: center;
@@ -82,10 +103,12 @@ $white-color: white;
       z-index: 100;
       cursor: pointer;
       display: none;
+
       @media (max-width:850px) {
         display: inline;
       }
-      .bar{
+
+      .bar {
         height: 3px;
         width: 100%;
         background-color: rgb(118, 120, 118);
@@ -93,39 +116,22 @@ $white-color: white;
         border-radius: 5px;
         transition: 0.3s ease;
       }
-      #bar1{
+
+      #bar1 {
         transform: translateY(-4px);
       }
-      #bar3{
+
+      #bar3 {
         transform: translateY(4px);
       }
     }
   }
-
-  .nav-icon {
-    border: 2px solid rgb(207, 208, 244);
-    width: 36px;
-    height: 36px;
-    margin-top: 10px;
-    border-radius: 50%;
-    img {
-      width: 19px;
-      margin: 7px 6px;
-    }
-  }
-  #setting {
-    align-items: center;
-    background-color: $contaner-color;
-  }
-  #kart {
-    margin-left: 3px;
-    background-color: $content-color;
-  }
 }
-.side-menu{
+
+.side-menu {
   background-color: $content-color;
   height: 70%;
-  margin: 17% 5%; 
+  margin: 17% 5%;
   position: absolute;
   font-size: 20px;
   top: 0;
@@ -133,20 +139,24 @@ $white-color: white;
   z-index: -1;
   width: 60%;
   display: grid;
+
   .menu-item {
-    a{
+    a {
       color: white;
     }
-    span{
+
+    span {
       color: white;
     }
   }
 }
-.select-option{
+
+.select-option {
   display: none;
   position: absolute;
   padding-top: 11%;
-  a{
+
+  .menu-opt {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px;
@@ -154,6 +164,7 @@ $white-color: white;
     z-index: 1;
   }
 }
+
 .menu-item:hover .select-option {
   display: grid;
 }
