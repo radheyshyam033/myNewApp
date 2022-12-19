@@ -1,6 +1,3 @@
-//  {
-//     background-color: rgb(243, 244, 246);
-//  }
 .sec-8 {
     padding: 4% 0%;
     align-items: center;
@@ -20,23 +17,6 @@
 
         h1 {
             text-align: center;
-        }
-
-        .sec8-p {
-            text-align: center;
-            font-size: 18px;
-            color: $paragraph-color;
-            margin: 3% 0%;
-            line-height: 1.5;
-            padding: 2% 0%;
-
-            @media (max-width:1000px) {
-                font-size: 24px;
-            }
-
-            @media (max-width:600px) {
-                font-size: 16px;
-            }
         }
 
         .btn {

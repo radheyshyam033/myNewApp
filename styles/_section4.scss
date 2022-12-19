@@ -1,75 +1,48 @@
-// .section {
-// background-color: $section-color;
-
 .sec-4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $section-color;
-  flex-wrap: wrap-reverse;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  padding: 42px 0px;
+
+  @media (min-width:1000px) {
+    flex-direction: row;
+  }
 
   .content {
     width: 95%;
-    // margin: 20px 20px;
-    padding-top: 42px;
     background-color: $section-color;
 
-    @media (min-width:850px) {
-      width: 40%;
-      // padding: 12% 2% 0% 5%;
-    }
-
-    .sec4-heading {
-
-      @media (min-width:1000px) {
-        // padding: 5% 0% 1%;
-      }
+    @media (min-width:1000px) {
+      width: 45%; 
     }
 
     .sec4-li {
       width: 92%;
       display: list-item;
-      margin: 4% 8%;
-      font-size: 18px;
-      color: #989595;
-      list-style: none;
-
-      @media (min-width:600px) {}
-    }
-
-    .sec4-p {
+      margin: 11px 36px;
       font-size: 18px;
       color: $paragraph-color;
-      margin: 3% 0%;
-      line-height: 1.5;
-      padding: 2% 0%;
+      list-style: none;
 
-      @media (max-width:1000px) {
-        font-size: 24px;
-      }
-
-      @media (max-width:600px) {
+      @media (min-width:600px) {
         font-size: 16px;
       }
     }
-
-    .find-more-link {
-      font-size: 17px;
-      margin-top: 5%;
-      text-decoration: none;
-      color: $content-color;
-      list-style: none;
-    }
   }
+
   .form-section {
     width: 100%;
     padding: 2% 0%;
-  
-    @media (min-width:1050px) {
+
+    @media (min-width:1000px) {
       width: 45%;
       height: auto;
     }
-  
+
     .form {
       margin: 8px;
       width: 90%;
@@ -77,33 +50,29 @@
       // margin: 70px 80px;
       border-radius: 8px;
       background-color: #ffffff;
-      box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-  
-      @media (min-width:850px) {
-        width: 40%;
-      }
-  
-      @media (min-width:600px) {
+      box-shadow: 0px 0px 4px #c1bebe;
+
+      @media (min-width:600px) { 
         width: 462px;
       }
-  
+
       .mobile-img {
         width: 94%;
         height: auto;
-  
+
         @media (min-width:600px) {
           width: 450px;
           height: auto;
         }
       }
-  
+
       .input-form {
         margin: 3%;
-  
+
         @media (min-width:600px) {
           margin: 5%;
         }
-  
+
         .sec4-input {
           width: 100%;
           height: 34px;
@@ -112,7 +81,7 @@
           margin: 5px 0px;
           border: 2px solid #e0e4e8;
           border-radius: 5px;
-  
+
           @media (min-width:600px) {
             width: 100%;
             height: 43px;
@@ -120,34 +89,34 @@
             padding-left: 9%;
           }
         }
-  
+
         .sec4-label {
           padding-top: 5%;
           font-size: 18px;
           color: #1d1c1cd4;
-  
+
           @media (min-width:600px) {
             font-size: 19px;
           }
         }
-  
+
         label:after {
           color: #e32;
           content: ' *';
           display: inline;
         }
-  
+
         .key-icon {
           position: absolute;
           width: 18px;
           height: 17px;
           margin: 14px 11px;
-  
+
           @media (min-width:600px) {
             margin: 18px 10px;
           }
         }
-  
+
         .sec4-btn {
           font-size: 20px;
           height: 40px;
@@ -157,54 +126,54 @@
           border: 2px solid white;
           border-radius: 8px;
           margin: 5% 0px;
-  
+
           @media (min-width:600px) {
             font-size: 22px;
             height: 51px;
           }
         }
-  
+
         button:hover {
           background-color: rgb(39, 58, 229);
         }
       }
     }
   }
-  .submit-form{
+
+  .submit-form {
     display: none;
     margin-left: 30%;
     width: 400px;
     height: 250px;
     position: absolute;
     align-items: center;
-    box-shadow: 0px 0px 5px #a09797 ;
+    box-shadow: 0px 0px 5px #a09797;
     z-index: 5;
     background-color: #f1eeee;
 
-
-    .close-btn{
+    .close-btn {
       float: right;
       margin: 10px;
       width: 50px;
       border: none;
       font-size: 30px;
     }
-    .thankyou{
-    margin-top: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+
+    .thankyou {
+      margin-top: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
     }
-    h3{
+
+    h3 {
       font-size: 30px;
       padding-bottom: 10px;
     }
-    p{
+
+    p {
       font-size: 18px;
     }
   }
 }
-
-
-// }

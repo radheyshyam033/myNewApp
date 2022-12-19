@@ -13,13 +13,13 @@
 <body>
   <header class="header">
     <nav class="navbar container">
-      <div class="nav-logo">
+      <div class="navbar__logo">
         <a href="/"><img class="logo-img" src="./image/logo.jpg" alt="logo"></a>
       </div>
-      <ul class="nav-list" id="nav-list">
-        <li class="menu-item"><a class="nav-menu" href="#home"><span>HOME</span></a>
+      <ul class="navbar__menu" id="nav-list">
+        <li class="menu"><a class="menu__element" href="#home"><span>HOME</span></a>
         </li>
-        <li class="menu-item"><a class="nav-menu" href="#landing" class="arrow-icon">LANDING <i
+        <li class="menu"><a class="menu__element" href="#landing" class="arrow-icon">LANDING <i
               class="fa fa-angle-down"></i></a>
           <div class="select-option">
             <a class="menu-opt" href="">option1</a>
@@ -27,37 +27,37 @@
             <a class="menu-opt" href="">option1</a>
           </div>
         </li>
-        <li class="menu-item"><a class="nav-menu" href="#page">PAGES <i class="fa fa-angle-down"></i></a>
+        <li class="menu"><a class="menu__element" href="#page">PAGES <i class="fa fa-angle-down"></i></a>
           <div class="select-option">
             <a class="menu-opt" href="">option2</a>
             <a class="menu-opt" href="">option2</a>
             <a class="menu-opt" href="">option3</a>
           </div>
         </li>
-        <li class="menu-item"><a class="nav-menu" href="#portfolio">PORTFOLIO <i class="fa fa-angle-down"></i></a>
+        <li class="menu"><a class="menu__element" href="#portfolio">PORTFOLIO <i class="fa fa-angle-down"></i></a>
           <div class="select-option">
             <a class="menu-opt" href="">option2</a>
             <a class="menu-opt" href="">option2</a>
             <a class="menu-opt" href="">option3</a>
           </div>
         </li>
-        <li class="menu-item"><a class="nav-menu" href="#docs">DOCS <i class="fa fa-angle-down"></i></a>
+        <li class="menu"><a class="menu__element" href="#docs">DOCS <i class="fa fa-angle-down"></i></a>
           <div class="select-option">
             <a class="menu-opt" href="">option2</a>
             <a class="menu-opt" href="">option2</a>
             <a class="menu-opt" href="">option3</a>
           </div>
         </li>
-        <li class="menu-item"><a class="nav-menu" onclick="contectUs()">CONTACT</a></li>
+        <li class="menu"><a class="menu__element" onclick="contectUs()">CONTACT</a></li>
       </ul>
-      <div class="right-nav">
-        <div class="icon-width">
-          <div class="nav-icon" id="setting">
+      <div class="navbar__icon">
+        <div class="icons">
+          <div class="icon" id="setting">
             <a href="/setting">
               <img class="setting" src="./image/setting.png" alt="setting" srcset="">
             </a>
           </div>
-          <div class="nav-icon kart-color" id="kart">
+          <div class="icon icon-color" id="kart">
             <a href="/kart">
               <img class="kart" src="./image/kart.png" alt="kart" srcset="">
             </a>
@@ -72,15 +72,15 @@
     </nav>
   </header>
   <section class="section">
-    <div class="sec-1 container">
-      <div class="content top-content" id="top-content">
-        <h1 class="top-heading">Our Creativity Is Your <span>Success</span></h1>
-        <p class="sec1-p">
+    <div class="top-banner container">
+      <div class="top-banner__content" id="top-content">
+        <h1 class="heading heading--topBanner">Our Creativity Is Your <span>Success</span></h1>
+        <p class="paragraph">
           Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing elit. A molestiae dolorum aperiam.
         </p>
         <div class="banner-button">
-          <button class="btn doc-btn get-start"><i class="fa fa-envelope"></i> Get Started</button>
-          <button class="btn doc-btn"><i class="fa fa-book"></i> Documentation</button>
+          <button class="btn btn-color btn--topBanner"><i class="fa fa-envelope"></i> Get Started</button>
+          <button class="btn btn--topBanner"><i class="fa fa-book"></i> Documentation</button>
         </div>
       </div>
       <div class="content top-image" id="top-image">
@@ -103,16 +103,16 @@
     <div class="container">
       <din class="sec-3">
         <div class="how-it-work">
-          <h1 class="sec3-h1">How It Work?</h1>
-          <p class="sec3-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque
+          <h1 class=" heading sec3-h1">How It Work?</h1>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque
             ea nobis?
           </p>
         </div>
         <div class="way-to-build-website">
           <img class="sec-img" src="./image/sec3img.png" alt="sec-3 image">
           <div class="content">
-            <h1>Change the way you build websites</h1>
-            <p class="sec3-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quae beatae
+            <h1 class="heading">Change the way you build websites</h1>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quae beatae
               earum
               cupiditate commodi ad molestias nisi maxime rem!</p>
             <ul class="section3List">
@@ -138,8 +138,8 @@
   <section class="section sec-color">
     <div class="sec-4 container">
       <div class="content">
-        <h1 class="sec4-heading">Speed up your development <br> with <span>Techwind</span></h1>
-        <p class="sec4-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt
+        <h1 class="heading sec4-heading">Speed up your development <br> with <span>Techwind</span></h1>
+        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt
           sit amet consectetur
           adipisicing.</p>
         <ul>
@@ -198,10 +198,10 @@
   </section>
   <section class="section">
     <div class="sec-5 container">
-      <div class="heading">
+      <div class="sec5-heading">
         <h3 class="sec5-heading">We believe in building each other and hence</h3>
-        <h1>Work with some amazing partners</h1>
-        <p class="sec5-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis
+        <h1 class="heading">Work with some amazing partners</h1>
+        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatem nam ipsa quis
           tempora ut.</p>
       </div>
       <!-- <button class="mob-scroll-button mob_prev_btn" type="button" onclick="mob_prev_btn()" id="prev"> -->
@@ -220,7 +220,7 @@
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-                <p class="sec5-card-p">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur
+                <p class="paragraph sec5-card-p">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur
                   adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
                 <h3><span>user name 1</span></h3>
                 <h4>Staff Engineer</h4>
@@ -231,7 +231,7 @@
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-                <p class="sec5-p">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur adipisicing
+                <p class="paragraph">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur adipisicing
                   elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
                 <h3><span>user name 2</span></h3>
                 <h4>Staff Engineer</h4>
@@ -242,7 +242,7 @@
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-                <p class="sec5-p"> "Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing adipisicing
+                <p class="paragraph"> "Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing adipisicing
                   elit. Nihil, sed! a adipng elit. Nihil, sed"</p>
                 <h3><span>user name 3</span></h3>
                 <h4>Staff Engineer</h4>
@@ -256,8 +256,8 @@
   <section class="section">
     <div class="sec-6 container">
       <div class="content">
-        <h1 class="sec6-h1">Our Comfortable Rates</h1>
-        <p class="sec6-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores
+        <h1 class="heading sec6-h1">Our Comfortable Rates</h1>
+        <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores
           perspiciatis? Earum natus!</p>
         <button class="sec6-btn1 btn btn-color"><img class="overlap-circle" src="./image/circle-overlap.png" alt="">Subscribe Now</button>
       </div>
@@ -308,28 +308,28 @@
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li">How our <span>Techwind</span> work?
-          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse
+          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse
             ut incidunt, optio facilis reprehenderit tenetur placeat corporis?</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> What is main process open account?
-          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis iure non.
+          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis iure non.
             Distinctio recusandae ipsam nostrum obcaecati odio voluptatibus!</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> How to make unlimited data entry?
-          <p class="sec7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat
+          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat
             reprehenderit ipsum officiis animi inventore beatae, error atque.</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> Is <span>Techwind</span> safe to use with my account?
-          <p class="sec7-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo
+          <p class="paragraph paragraph--faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo
             excepturi similique rerum temporibus impedit vitae.</p>
         </li>
       </div>
@@ -338,8 +338,8 @@
   <section class="section sec-color">
     <div class="sec-8 container" id="contectUs">
       <div class="content">
-        <h1>Have Question ? Get in touch!</h1>
-        <p class="sec8-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos reprehenderit
+        <h1 class="heading">Have Question ? Get in touch!</h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos reprehenderit
           ab a laborum
           autem?</p>
         <button class="btn btn-color"><img class="phone-call" src="./image/phone-call.png" alt="phone">Contect us</button>
