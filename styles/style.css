@@ -693,6 +693,9 @@
   z-index: 0;
   border-bottom: 110px solid #1a2130;
   border-left: 1600px solid #fbfcfc; }
+  @media (min-width: 1550px) {
+    .footer-head {
+      border-left: 1600px solid #1a2130; } }
 
 .footer-sec {
   width: 100%;
@@ -727,14 +730,14 @@
         @media (min-width: 800px) {
           .footer .aboutus-wrapper .footer-logo img {
             width: 162px; } }
-    .footer .aboutus-wrapper p {
+    .footer .aboutus-wrapper .footer-p {
       font-size: 15px;
       letter-spacing: 1px;
       color: #fdfafa;
       padding: 2% 0%;
       line-height: 1.5; }
       @media (max-width: 500px) {
-        .footer .aboutus-wrapper p {
+        .footer .aboutus-wrapper .footer-p {
           width: 80vw;
           font-size: 17px;
           letter-spacing: .5px;
@@ -807,12 +810,12 @@
           padding-bottom: 15px;
           font-size: 25px;
           font-weight: 400; } }
-    .footer .subscribe-wrapper p {
+    .footer .subscribe-wrapper .footer-p {
       font-size: 15px;
       padding-bottom: 2%;
       color: white; }
       @media (min-width: 900px) {
-        .footer .subscribe-wrapper p {
+        .footer .subscribe-wrapper .footer-p {
           font-weight: 300; } }
     .footer .subscribe-wrapper label {
       font-size: 19px; }
@@ -836,6 +839,11 @@
         .footer .subscribe-wrapper input {
           width: 100%;
           height: 44px; } }
+    .footer .subscribe-wrapper .error-msg {
+      font-size: 12px;
+      color: red;
+      margin: 0px;
+      padding: 0px; }
     .footer .subscribe-wrapper ::placeholder {
       color: white;
       padding-left: 10px; }
@@ -1086,9 +1094,3 @@ sup {
 .up-arrow {
   width: 24px;
   margin: 11px; }
-
-.error-msg {
-  font-size: 12px;
-  color: red;
-  margin: 0px;
-  padding: 0px; }

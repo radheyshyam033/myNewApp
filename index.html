@@ -95,43 +95,45 @@
       <div class="mnc-logo"><img class="sec2-img" src="./image/google.png" alt="google"></div>
       <div class="mnc-logo"><img class="sec2-img" src="./image/lenovo.png" alt="lenovo"></div>
       <div class="mnc-logo"><img class="sec2-img" src="./image/paypal.png" alt="paypal"></div>
-      <div class="mnc-logo"><img class="sec2-img" src="./image/img-spotify.png" alt="Spotify"></div>
+      <div class="mnc-logo"><img class="sec2-img" src="./image/spotify.png" alt="Spotify"></div>
       <div class="mnc-logo"><img class="sec2-img" src="./image/shopify.png" alt="shopify"></div>
     </div>
   </section>
   <section class="section sec-color">
-    <din class="sec-3 container">
-      <div class="how-it-work">
-        <h1 class="sec3-h1">How It Work?</h1>
-        <p class="sec3-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque
-          ea nobis?
-        </p>
-      </div>
-      <div class="way-to-build-website">
-        <img class="sec-img" src="./image/sec3img.png" alt="sec-3 image">
-        <div class="content">
-          <h1>Change the way you build websites</h1>
-          <p class="sec3-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quae beatae
-            earum
-            cupiditate commodi ad molestias nisi maxime rem!</p>
-          <ul class="section3List">
-            <div class="circle"></div>
-            <div class="tick-mark"></div>
-            <li class="sec3-li"> Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
-            <div class="circle"></div>
-            <div class="tick-mark"></div>
-            <li class="sec3-li">Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
-            <div class="circle"></div>
-            <div class="tick-mark"></div>
-            <li class="sec3-li">Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
-          </ul>
-          <div>
-            <a class="find-more-link" id="find-out-more" href="./">Find Out More</a>
-            <div class="angle"></div>
+    <div class="container">
+      <din class="sec-3">
+        <div class="how-it-work">
+          <h1 class="sec3-h1">How It Work?</h1>
+          <p class="sec3-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque
+            ea nobis?
+          </p>
+        </div>
+        <div class="way-to-build-website">
+          <img class="sec-img" src="./image/sec3img.png" alt="sec-3 image">
+          <div class="content">
+            <h1>Change the way you build websites</h1>
+            <p class="sec3-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde quae beatae
+              earum
+              cupiditate commodi ad molestias nisi maxime rem!</p>
+            <ul class="section3List">
+              <div class="circle"></div>
+              <div class="tick-mark"></div>
+              <li class="sec3-li"> Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
+              <div class="circle"></div>
+              <div class="tick-mark"></div>
+              <li class="sec3-li">Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
+              <div class="circle"></div>
+              <div class="tick-mark"></div>
+              <li class="sec3-li">Lorem ipsum dolor sit amet consec tetur adipisicing.</li>
+            </ul>
+            <div>
+              <a class="find-more-link" id="find-out-more" href="./">Find Out More</a>
+              <div class="angle"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </din>
+      </din>
+    </div>
   </section>
   <section class="section sec-color">
     <div class="sec-4 container">
@@ -337,14 +339,14 @@
       </div>
     </div>
   </section>
-  <div class="footer-head"></div>
+  <div class="footer-head container"></div>
   <footer class="footer-sec">
     <div class="footer container">
       <div class="footer-div aboutus-wrapper">
         <div class="footer-logo">
           <a href="/"><img src="./image/techwind-logo.png" alt="Techwind"></a>
         </div>
-        <p>Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic,
+        <p class="footer-p">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic,
           you
           need to generate
           connect.</p>
@@ -398,11 +400,11 @@
       <div class="footer-div subscribe-wrapper">
         <!-- <div class="footer-p"> -->
         <h3>Newsletter</h3>
-        <p>Sign up and recive the latest tips via email.</p>
+        <p class="footer-p">Sign up and recive the latest tips via email.</p>
         <label for="email">Write your email</label><br>
-        <input onkeypress="cleanErrorMsg()" type="email" class="placeholder-icon" id="footer-email"
-          placeholder="&#xf0e0; Email"><br>
         <p class="error-msg" id="f-email-error"></p>
+        <input onkeypress="cleanErrorMsg()" type="email" class="placeholder-icon" id="footer-email"
+        placeholder="&#xf0e0; Email"><br>
         <button type="submit" class="btn btn-color" onclick="return validateEmail()">Subscribe</button>
         <!-- </div> -->
       </div>
