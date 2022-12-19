@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 60px;
+  height: 55px;
   background-color: white;
   box-shadow: 0px 1px 6px #b2acac;
   z-index: 99;
@@ -40,7 +40,7 @@
         color: #1e1d1d;
         display: flex;
         text-align: center;
-        font-size: 12px;
+        font-size: 11px;
         padding-right: 0px; }
         .navbar .navbar__menu .menu .menu__element i {
           margin: -3px 2px;
@@ -57,6 +57,7 @@
       border: 2px solid #cfd0f4;
       width: 40px;
       height: 35px;
+      margin: 0px 3px;
       border-radius: 50%; }
     .navbar .navbar__icon .icons .setting {
       width: 20px;
@@ -424,7 +425,7 @@
     border: 2px solid #ffffff; }
   .sec-5 .prev_btn {
     display: none;
-    margin: 5% 0% 0% -1%; }
+    margin: 6% 0% 0% -1%; }
     @media (min-width: 900px) {
       .sec-5 .prev_btn {
         display: block; } }
@@ -433,7 +434,7 @@
       transform: rotate(135deg); }
   .sec-5 .next_btn {
     display: none;
-    margin: 5% 10% 0% 87%; }
+    margin: 6% 10% 0% 87%; }
     @media (min-width: 900px) {
       .sec-5 .next_btn {
         display: block; } }
