@@ -680,7 +680,8 @@
         font-size: 16px; } }
     @media (min-width: 1000px) {
       .sec-7 .sec7-p {
-        font-size: 18px; } }
+        padding-top: 10px;
+        word-spacing: 1px; } }
 
 .sec-8 {
   padding: 4% 0%;
@@ -723,8 +724,12 @@
   border: none;
   right: 0;
   z-index: 0;
-  border-bottom: 110px solid #1a2130;
-  border-left: 1600px solid #fbfcfc; }
+  border-bottom: 50px solid #1a2130;
+  border-left: 950px solid #fbfcfc; }
+  @media (min-width: 900px) {
+    .footer-head {
+      border-bottom: 110px solid #1a2130;
+      border-left: 1600px solid #fbfcfc; } }
   @media (min-width: 1550px) {
     .footer-head {
       border-left: 1600px solid #1a2130; } }
@@ -749,7 +754,7 @@
       flex-direction: row;
       align-items: center; } }
   .footer .aboutus-wrapper {
-    padding: 32% 0% 0%;
+    padding: 7% 0% 0%;
     padding-left: 20px; }
     @media (min-width: 900px) {
       .footer .aboutus-wrapper {
@@ -1119,6 +1124,7 @@ span {
   bottom: 3px;
   right: 20px;
   border: 2px solid;
+  cursor: pointer;
   background-color: #4c42e0;
   z-index: 10;
   position: fixed; }

@@ -41,7 +41,7 @@ function validateForm(){
         return false;
     }
     openPopup();
-    cleaninputField();
+    // cleaninputField();
     return false;
 }
 function cleanErrorMsg(){
