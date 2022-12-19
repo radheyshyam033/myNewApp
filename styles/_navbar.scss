@@ -129,8 +129,8 @@ $white-color: white;
 }
 
 .side-menu {
-  background-color: $content-color;
-  height: 70%;
+  background-color: #5046e4;
+  height: 686%;
   margin: 17% 5%;
   position: absolute;
   font-size: 20px;
@@ -140,7 +140,7 @@ $white-color: white;
   width: 60%;
   display: grid;
 
-  .menu-item {
+  .menu-item { 
     a {
       color: white;
     }
