@@ -123,7 +123,7 @@ $paragraph-color: #9fadbe;
 .scroll-wrapper {
   display: flex;
   overflow-x: auto;
-
+  scroll-behavior: smooth;
 }
 
 .slide {

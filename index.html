@@ -162,25 +162,36 @@
         <div class="form">
           <div><img class="mobile-img" src="./image/mobile-template.jpg" alt=""></div>
           <div class="input-form required">
-            <form id="leadForm" name="leadForm" method="post" onsubmit="return validateForm()">
+            <form id="leadForm" name="leadForm" method="post" action="#" onsubmit="return validateForm()">
               <label class="sec4-label" for="name">Your Name:</label><br>
               <img class="key-icon" src="./image/icons8-user-24.png" alt="">
+
               <input onkeypress="cleanErrorMsg()" class="sec4-input" type="text" id="name" name="name"
                 class="placeholder-icon" placeholder="Name"><br>
               <p class="name-error" id="name-error"></p>
+
               <label class="sec4-label" for="email">Your Email:</label><br>
               <img class="key-icon" src="./image/icons8-mail-50.png" alt="">
-              <input onkeypress="cleanErrorMsg()" class="sec4-input" type="email" class="placeholder-icon" name="email"
+              <input onkeypress="cleanErrorMsg()" class="sec4-input" type="" class="placeholder-icon" name="email"
                 id="email" placeholder="Email"><br>
               <p class="name-error" id="email-error"></p>
+
               <label class="sec4-label" for="password">Enter Password:</label><br>
               <img class="key-icon" src="./image/icons8-key-64.png" alt="">
               <input onkeypress="cleanErrorMsg()" class="sec4-input" type="password" id="password" name="password"
                 placeholder="Password">
               <p class="name-error" id="password-error"></p>
+
               <button class="sec4-btn btn" type="submit">Download</button>
             </form>
           </div>
+        </div>
+      </div>
+      <div class="submit-form" id="submit-form">
+        <button onclick="closePopup()" class="close-btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+        <div class="thankyou">
+          <h3>Thank You</h3>
+          <p>Form Submited Successfully</p>
         </div>
       </div>
     </div>
@@ -248,9 +259,7 @@
         <h1 class="sec6-h1">Our Comfortable Rates</h1>
         <p class="sec6-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores
           perspiciatis? Earum natus!</p>
-        <button class="sec6-btn1 btn btn-color">
-          <img class="overlap-circle" src="./image/circle-overlap.png" alt="">
-          Subscribe Now</button>
+        <button class="sec6-btn1 btn btn-color"><img class="overlap-circle" src="./image/circle-overlap.png" alt="">Subscribe Now</button>
       </div>
       <div class="cards">
         <div class="card">
@@ -333,9 +342,7 @@
         <p class="sec8-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos reprehenderit
           ab a laborum
           autem?</p>
-        <button class="btn btn-color">
-          <img class="phone-call" src="./image/phone-call.png" alt="">
-          Contect us</button>
+        <button class="btn btn-color"><img class="phone-call" src="./image/phone-call.png" alt="phone">Contect us</button>
       </div>
     </div>
   </section>
@@ -366,34 +373,34 @@
           <h3 class="footer-h3">Company</h3>
           <ul>
             <div class="arrow right"></div>
-            <li class="footer-li">About us</li>
+            <li class="footer-li"><a class="footer-link" href="#">About us</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Services</li>
+            <li class="footer-li"><a class="footer-link" href="#">Services</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Team</li>
+            <li class="footer-li"><a class="footer-link" href="#">Team</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Procing</li>
+            <li class="footer-li"><a class="footer-link" href="#">Procing</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Project</li>
+            <li class="footer-li"><a class="footer-link" href="#">Project</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Blog</li>
+            <li class="footer-li"><a class="footer-link" href="#">Blog</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Login</li>
+            <li class="footer-li"><a class="footer-link" href="#">Login</a></li>
           </ul>
         </div>
         <div class="usefull-links">
           <h3 class="footer-h3">Usefull Links</h3>
           <ul>
             <div class="arrow right"></div>
-            <li class="footer-li">Terms of Services</li>
+            <li class="footer-li"><a class="footer-link" href="#">Terms of Services</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Privacy Policy</li>
+            <li class="footer-li"><a class="footer-link" href="#">Privacy Policy</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Documantation</li>
+            <li class="footer-li"><a class="footer-link" href="#">Documantation</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Changelog</li>
+            <li class="footer-li"><a class="footer-link" href="#">Changelog</a></li>
             <div class="arrow right"></div>
-            <li class="footer-li">Widget</li>
+            <li class="footer-li"><a class="footer-link" href="#">Widget</a></li>
           </ul>
         </div>
       </div>
@@ -402,9 +409,9 @@
         <h3>Newsletter</h3>
         <p class="footer-p">Sign up and recive the latest tips via email.</p>
         <label for="email">Write your email</label><br>
-        <p class="error-msg" id="f-email-error"></p>
         <input onkeypress="cleanErrorMsg()" type="email" class="placeholder-icon" id="footer-email"
-        placeholder="&#xf0e0; Email"><br>
+        placeholder="&#xf0e0; Email">
+        <p class="error-msg" id="f-email-error"></p><br>
         <button type="submit" class="btn btn-color" onclick="return validateEmail()">Subscribe</button>
         <!-- </div> -->
       </div>

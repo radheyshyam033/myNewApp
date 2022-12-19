@@ -1,8 +1,8 @@
 function next_btn() {
-    document.getElementById("scroll-wrapper").scrollLeft += 624;
+    document.getElementById("scroll-wrapper").scrollLeft += 625;
 };
  function prev_btn() {
-    document.getElementById("scroll-wrapper").scrollLeft -= 622;
+    document.getElementById("scroll-wrapper").scrollLeft -= 620;
 };
 
 function hamburger(){
@@ -16,17 +16,33 @@ function validateForm(){
         return false;
     }
     let email=document.getElementById("email").value;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(email==""){
-        text="Please enter your email";
+        text="Please enter your email id";
         document.getElementById('email-error').innerHTML=text
         return false;
     }
-    let password=document.getElementById("password").value;
-    if(password==""){
+    if(!email.match(mailformat)){
+        text="Enter correct email id";
+        document.getElementById('email-error').innerHTML=text
+        return false;
+    }
+    let pass=document.getElementById("password").value;
+    // const passLen=pass.lenght;
+    
+    if(pass==""){
         text="Please enter your password";
         document.getElementById('password-error').innerHTML=text
         return false;
     }
+    if(pass.length<8){
+        text="Password length must be atleast 8 characters";
+        document.getElementById('password-error').innerHTML=text
+        return false;
+    }
+    openPopup();
+    cleaninputField();
+    return false;
 }
 function cleanErrorMsg(){
     document.getElementById('name-error').innerHTML="";
@@ -43,10 +59,24 @@ function validateEmail(){
     }
 }
 function scrollTopHeader(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({top:0 , behavior:"smooth"})
 }
+// let scrollButton=document.getElementById("scroll-top")
+// window.onscroll = function() {scrollButton()}
+// function scrollButton(){
+//     // if(document.body.scrollTop>2000 ||document.documentElement.scrollTop > 2000){
+//     //     scrollButton.style.display="block"
+//     // }
+//     // else{
+//         scrollButton.style.display="none"
+//     // }
+// }
 function contectUs(){
-    document.getElementById("contectUs").scrollIntoView();
+    document.getElementById("contectUs").scrollIntoView({behavior:"smooth"});
 }
-
+function openPopup(){
+    document.getElementById("submit-form").style.display = "block";
+}
+function closePopup(){
+    document.getElementById("submit-form").style.display = "none";
+}

@@ -47,6 +47,7 @@ $white-color: white;
 
     .nav-menu {
       text-decoration: none;
+      cursor: pointer;
       color: rgb(30, 29, 29);
       display: flex;
       text-align: center;
@@ -159,9 +160,10 @@ $white-color: white;
   .menu-opt {
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px;
+    box-shadow: 0px 6px 9px 0px #e6e0e0;
     padding: 12px 16px;
-    z-index: 1;
+    text-decoration: none;
+    // z-index: 1;
   }
 }
 
