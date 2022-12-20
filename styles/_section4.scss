@@ -119,20 +119,8 @@
           }
         }
 
-        .sec4-btn {
-          font-size: 20px;
-          height: 40px;
+        .btn--size {
           width: 100%;
-          color: white;
-          background-color: rgb(63, 80, 234);
-          border: 2px solid white;
-          border-radius: 8px;
-          margin: 5% 0px;
-
-          @media (min-width:600px) {
-            font-size: 22px;
-            height: 51px;
-          }
         }
 
         button:hover {

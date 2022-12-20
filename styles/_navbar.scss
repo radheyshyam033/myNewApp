@@ -13,11 +13,11 @@ $white-color: white;
 
 .navbar {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   margin-top: .5%;
 
-  .navbar__logo {
+  &__logo {
     display: flex;
     justify-content: flex-end;
     text-align: center;
@@ -28,31 +28,23 @@ $white-color: white;
     }
   }
 
-  .navbar__menu {
+  &__menu {
     display: none;
     align-items: center;
     justify-content: space-around;
     width: 60%;
-    
-    @media (min-width:900px) {
-      display: flex;
-    }
-    @media (min-width:1100px) {
-      width: 50%;
-    }
 
     .menu {
       list-style: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      // padding: 2% 10%;
 
-      .menu__element {
+      &__element {
         text-decoration: none;
         cursor: pointer;
         color: rgb(30, 29, 29);
-        display: flex;
+        display: flex; 
         text-align: center;
         font-size: 11px;
         padding-right: 0px;
@@ -64,13 +56,19 @@ $white-color: white;
 
         &:hover {
           color: $content-color;
-        } 
+        }
       }
+    }
+    @media (min-width:900px) {
+      display: flex;
+    }
 
+    @media (min-width:1100px) {
+      width: 50%;
     }
   }
 
-  .navbar__icon {
+  &__icon {
 
     .icons {
       width: 100%;
@@ -85,22 +83,15 @@ $white-color: white;
         height: 35px;
         margin: 0px 3px;
         border-radius: 50%;
-      }
-
-      .setting {
-        width: 20px;
-        height: 20px;
-        margin: 5px 6px;
-      }
-
-      .kart {
-        width: 20px;
-        height: 20px;
-        margin: 5px 6px;
-      }
-
-      .icon-color {
-        background-color: $content-color;
+        &__img {
+          width: 20px;
+          height: 20px;
+          margin: 5px 6px;
+        }
+  
+        &__color {
+          background-color: $content-color;
+        }
       }
 
       .hamburger {
@@ -112,10 +103,6 @@ $white-color: white;
         cursor: pointer;
         display: none;
 
-        @media (max-width:900px) {
-          display: inline;
-        }
-
         .bar {
           height: 3px;
           width: 100%;
@@ -123,15 +110,19 @@ $white-color: white;
           display: block;
           border-radius: 5px;
           transition: 0.3s ease;
+          &__1 {
+            transform: translateY(-4px);
+          }
+
+          &__3 {
+            transform: translateY(4px);
+          }
         }
 
-        #bar1 {
-          transform: translateY(-4px);
+        @media (max-width:900px) {
+          display: inline;
         }
 
-        #bar3 {
-          transform: translateY(4px);
-        }
       }
     }
   }
@@ -139,6 +130,7 @@ $white-color: white;
 
 .side-menu {
   background-color: #5046e4;
+  color: white;
   height: 686%;
   margin: 17% 5%;
   position: absolute;
@@ -148,18 +140,9 @@ $white-color: white;
   z-index: -1;
   width: 60%;
   display: grid;
+
   @media (min-width:900px) {
     display: inline;
-  }
-
-  .menu-item {
-    a {
-      color: white;
-    }
-
-    span {
-      color: white;
-    }
   }
 }
 
@@ -167,9 +150,6 @@ $white-color: white;
   display: none;
   position: absolute;
   padding-top: 14%;
-  @media (max-width:1000px) {
-    padding-top: 20%;
-  }
 
   .menu-opt {
     background-color: #f9f9f9;
@@ -177,6 +157,9 @@ $white-color: white;
     box-shadow: 0px 6px 9px 0px #e6e0e0;
     padding: 12px 16px;
     text-decoration: none;
+  }
+  @media (max-width:1000px) {
+    padding-top: 20%;
   }
 }
 

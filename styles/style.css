@@ -11,30 +11,24 @@
   justify-content: space-between;
   align-items: center;
   margin-top: .5%; }
-  .navbar .navbar__logo {
+  .navbar__logo {
     display: flex;
     justify-content: flex-end;
     text-align: center; }
-    .navbar .navbar__logo .logo-img {
+    .navbar__logo .logo-img {
       width: 159px;
       height: 37px; }
-  .navbar .navbar__menu {
+  .navbar__menu {
     display: none;
     align-items: center;
     justify-content: space-around;
     width: 60%; }
-    @media (min-width: 900px) {
-      .navbar .navbar__menu {
-        display: flex; } }
-    @media (min-width: 1100px) {
-      .navbar .navbar__menu {
-        width: 50%; } }
-    .navbar .navbar__menu .menu {
+    .navbar__menu .menu {
       list-style: none;
       display: flex;
       align-items: center;
       justify-content: center; }
-      .navbar .navbar__menu .menu .menu__element {
+      .navbar__menu .menu__element {
         text-decoration: none;
         cursor: pointer;
         color: #1e1d1d;
@@ -42,34 +36,36 @@
         text-align: center;
         font-size: 11px;
         padding-right: 0px; }
-        .navbar .navbar__menu .menu .menu__element i {
+        .navbar__menu .menu__element i {
           margin: -3px 2px;
           font-size: 20px; }
-        .navbar .navbar__menu .menu .menu__element:hover {
+        .navbar__menu .menu__element:hover {
           color: #5046e4; }
-  .navbar .navbar__icon .icons {
+    @media (min-width: 900px) {
+      .navbar__menu {
+        display: flex; } }
+    @media (min-width: 1100px) {
+      .navbar__menu {
+        width: 50%; } }
+  .navbar__icon .icons {
     width: 100%;
     display: flex;
     justify-content: right;
     padding-right: 8%;
     align-items: center; }
-    .navbar .navbar__icon .icons .icon {
+    .navbar__icon .icons .icon {
       border: 2px solid #cfd0f4;
       width: 40px;
       height: 35px;
       margin: 0px 3px;
       border-radius: 50%; }
-    .navbar .navbar__icon .icons .setting {
-      width: 20px;
-      height: 20px;
-      margin: 5px 6px; }
-    .navbar .navbar__icon .icons .kart {
-      width: 20px;
-      height: 20px;
-      margin: 5px 6px; }
-    .navbar .navbar__icon .icons .icon-color {
-      background-color: #5046e4; }
-    .navbar .navbar__icon .icons .hamburger {
+      .navbar__icon .icons .icon__img {
+        width: 20px;
+        height: 20px;
+        margin: 5px 6px; }
+      .navbar__icon .icons .icon__color {
+        background-color: #5046e4; }
+    .navbar__icon .icons .hamburger {
       width: 30px;
       height: 30px;
       align-items: center;
@@ -77,23 +73,24 @@
       z-index: 100;
       cursor: pointer;
       display: none; }
-      @media (max-width: 900px) {
-        .navbar .navbar__icon .icons .hamburger {
-          display: inline; } }
-      .navbar .navbar__icon .icons .hamburger .bar {
+      .navbar__icon .icons .hamburger .bar {
         height: 3px;
         width: 100%;
         background-color: #767876;
         display: block;
         border-radius: 5px;
         transition: 0.3s ease; }
-      .navbar .navbar__icon .icons .hamburger #bar1 {
-        transform: translateY(-4px); }
-      .navbar .navbar__icon .icons .hamburger #bar3 {
-        transform: translateY(4px); }
+        .navbar__icon .icons .hamburger .bar__1 {
+          transform: translateY(-4px); }
+        .navbar__icon .icons .hamburger .bar__3 {
+          transform: translateY(4px); }
+      @media (max-width: 900px) {
+        .navbar__icon .icons .hamburger {
+          display: inline; } }
 
 .side-menu {
   background-color: #5046e4;
+  color: white;
   height: 686%;
   margin: 17% 5%;
   position: absolute;
@@ -106,24 +103,20 @@
   @media (min-width: 900px) {
     .side-menu {
       display: inline; } }
-  .side-menu .menu-item a {
-    color: white; }
-  .side-menu .menu-item span {
-    color: white; }
 
 .select-option {
   display: none;
   position: absolute;
   padding-top: 14%; }
-  @media (max-width: 1000px) {
-    .select-option {
-      padding-top: 20%; } }
   .select-option .menu-opt {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 6px 9px 0px #e6e0e0;
     padding: 12px 16px;
     text-decoration: none; }
+  @media (max-width: 1000px) {
+    .select-option {
+      padding-top: 20%; } }
 
 .menu:hover .select-option {
   display: grid; }
@@ -354,19 +347,8 @@
               margin: 18px 10px;
               width: 16px;
               height: 15px; } }
-        .sec-4 .form-section .form .input-form .sec4-btn {
-          font-size: 20px;
-          height: 40px;
-          width: 100%;
-          color: white;
-          background-color: #3f50ea;
-          border: 2px solid white;
-          border-radius: 8px;
-          margin: 5% 0px; }
-          @media (min-width: 600px) {
-            .sec-4 .form-section .form .input-form .sec4-btn {
-              font-size: 22px;
-              height: 51px; } }
+        .sec-4 .form-section .form .input-form .btn--size {
+          width: 100%; }
         .sec-4 .form-section .form .input-form button:hover {
           background-color: #273ae5; }
   .sec-4 .submit-form {
@@ -444,7 +426,7 @@
 
 .scroll-wrapper {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth; }
 
 .slide {
@@ -519,8 +501,8 @@
       width: 22px;
       position: absolute;
       margin: 0px -26px; }
-    .sec-6 .content .sec6-btn1 {
-      width: 200px;
+    .sec-6 .content .btn--size {
+      width: 180px;
       padding-left: 20px; }
   .sec-6 .cards {
     width: 100%;
@@ -624,9 +606,6 @@
         width: 50%; } }
     .sec-8 .content h1 {
       text-align: center; }
-    .sec-8 .content .btn {
-      margin-top: 25px;
-      padding-left: 9px; }
     .sec-8 .content .phone-call {
       width: 15px;
       position: absolute;
@@ -990,7 +969,7 @@ span {
 
 .btn {
   height: 43px;
-  width: 199px;
+  width: 170px;
   font-size: 16px;
   border: 2px solid #4c42e0;
   border-radius: 8px;
@@ -1001,15 +980,14 @@ span {
     background-color: #4c42e0;
     color: white;
     box-shadow: 0px 0px 4px #767474; }
+  .btn--color {
+    background-color: #4c42e0;
+    color: white; }
   @media (max-width: 500px) {
     .btn {
       height: 50px;
       width: 160px;
       font-size: 17px; } }
-
-.btn-color {
-  background-color: #4c42e0;
-  color: white; }
 
 .placeholder-icon {
   font-family: fontawesome;
@@ -1052,8 +1030,8 @@ span {
   padding: 0px; }
 
 .scroll-top {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   bottom: 3px;
   right: 20px;
@@ -1068,5 +1046,5 @@ sup {
   font-size: smaller; }
 
 .up-arrow {
-  width: 24px;
+  width: 20px;
   margin: 11px; }
