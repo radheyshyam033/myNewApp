@@ -84,13 +84,13 @@ $content-color: rgb(80, 70, 228);
       list-style: none;
       display: list-item;
       list-style-type: symbols();
-      margin: 20px 35px;
+      margin: 12px 25px;
       font-size: 17px;
       color: $paragraph-color;
 
       @media (min-width:1000px) {
         width: 100%;
-        font-size: 14px;
+        font-size: 13px;
       }
     }
   }

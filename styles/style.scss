@@ -1,12 +1,12 @@
 @import "navbar";
 @import "topBanner";
 @import "mnc_logo";
-@import "section3";
-@import "section4";
-@import "section5";
-@import "section6";
-@import "section7";
-@import "section8";
+@import "how_work";
+@import "speedup_development";
+@import "partners";
+@import "rates_cards";
+@import "feq_ask_question";
+@import "contectus";
 @import "footer";
 
 @use 'base';
@@ -17,13 +17,15 @@ $section-color: #fbfcfc;
 body {
   overflow-x: hidden;
 }
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: system-ui;
 }
-.container{
+
+.container {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
@@ -36,6 +38,7 @@ body {
     max-width: 560px;
   }
 }
+
 @media (min-width: 650px) {
   .container {
     max-width: 630px;
@@ -55,41 +58,43 @@ body {
 }
 
 @media (min-width: 991px) {
-  .container{
+  .container {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1024px) {
-  .container{
+  .container {
     max-width: 1020px;
   }
 }
+
 @media (min-width: 1250px) {
-  .container{
+  .container {
     max-width: 1220px;
   }
 }
 
 @media (min-width: 1366px) {
-  .container{
+  .container {
     max-width: 1280px;
   }
 }
 
-.section{ 
+.section {
   width: 100%;
   margin: 0px;
   padding: 0 10px;
   border: none;
 }
-.sec-color{
+
+.sec-color {
   background-color: $section-color;
 }
 
 .arrow {
   border: solid black;
-  border-width: 0 3px 3px 0;
+  border-width: 0 1.5px 1.5px 0;
   display: table-cell;
   // padding: 3px;
   width: 7px;
@@ -108,9 +113,9 @@ body {
     font-weight: 455;
   }
 }
+
 .find-more-link {
-  font-size: 15px;
-  margin-top: 5%;
+  font-size: 13px;
   padding-left: 8px;
   text-decoration: none;
   color: $content-color;
@@ -139,7 +144,7 @@ body {
   }
 
   @media (min-width:1100px) {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -165,11 +170,13 @@ span {
   margin-bottom: 3%;
   cursor: pointer;
   color: $blue-color;
-  &:hover{
+
+  &:hover {
     background-color: $blue-color;
     color: white;
     box-shadow: 0px 0px 4px #767474;
   }
+
   &--color {
     background-color: $blue-color;
     color: white;
@@ -200,17 +207,20 @@ span {
 
 .circle {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 2px solid;
   color: #4c42e0;
-  margin: 6px 7px;
+  margin: 2px -20px;
+
+  @media (min-width:1000px) {
+    margin: 1px -20px;
+  }
 }
 
 .tick-mark {
   position: absolute;
-  margin: 10px 0px 0px 13px;
   color: #4c42e0;
   width: 4px;
   height: 7px;
@@ -218,9 +228,14 @@ span {
   border-top: transparent;
   border-left: transparent;
   transform: rotate(50deg);
+  margin: 5px -15px;
+
+  @media (min-width:1000px) {
+    margin: 4px -15px;
+  }
 }
 
-.scroll-top{
+.scroll-top {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -232,13 +247,14 @@ span {
   z-index: 10;
   position: fixed;
 }
+
 sup {
-  vertical-align:text-top;
+  vertical-align: text-top;
   font-size: smaller;
-  
+
 }
-.up-arrow{
+
+.up-arrow {
   width: 20px;
   margin: 11px;
 }
- 

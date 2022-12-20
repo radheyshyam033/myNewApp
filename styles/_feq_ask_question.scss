@@ -13,11 +13,12 @@ $heading-color: rgb(46, 46, 46);
 
     .help-icon {
         position: absolute;
-        margin: 13px 7px;
+        height: 22px;
+        margin: 3px 0px 0px -27px;
         height: 20px;
         @media (min-width:600px) {
-            margin: 13px 0px;
-            height: 25px;
+            height: 20px;
+            margin: 0px 0px -4px -25px;
         }
     }
 

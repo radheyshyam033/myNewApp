@@ -9,8 +9,10 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 8px; }
+  align-items: center; }
+  @media (min-width: 900px) {
+    .navbar {
+      margin-top: 10px; } }
   .navbar__logo {
     display: flex;
     justify-content: flex-end;
@@ -144,7 +146,7 @@
       font-size: 39px; }
       @media (min-width: 600px) {
         .top-banner .top-banner__content .heading--topBanner {
-          font-size: 45px;
+          font-size: 42px;
           line-height: 50px; } }
     .top-banner .top-banner__content .banner-button {
       padding-top: 3%;
@@ -249,13 +251,13 @@
       list-style: none;
       display: list-item;
       list-style-type: symbols();
-      margin: 20px 35px;
+      margin: 12px 25px;
       font-size: 17px;
       color: #9fadbe; }
       @media (min-width: 1000px) {
         .way-to-build-website .content .sec3-li {
           width: 100%;
-          font-size: 14px; } }
+          font-size: 13px; } }
 
 .sec-4 {
   display: flex;
@@ -282,13 +284,13 @@
     .sec-4 .content .sec4-li {
       width: 92%;
       display: list-item;
-      margin: 11px 36px;
+      margin: 11px 26px;
       font-size: 17px;
       color: #9fadbe;
       list-style: none; }
       @media (min-width: 600px) {
         .sec-4 .content .sec4-li {
-          font-size: 14px; } }
+          font-size: 13px; } }
   .sec-4 .form {
     padding: 16px;
     border-radius: 8px;
@@ -426,11 +428,11 @@
 
 .scroll-wrapper {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth; }
   @media (min-width: 900px) {
     .scroll-wrapper {
-      overflow-x: scroll; } }
+      overflow-x: hidden; } }
 
 .slide {
   list-style: none;
@@ -538,12 +540,12 @@
     .sec-6 .cards .card-li {
       list-style: none;
       text-align: left;
-      padding: 4px 30px;
+      padding: 4px 23px;
       font-size: 16px;
       color: #9fadbe; }
       @media (min-width: 600px) {
         .sec-6 .cards .card-li {
-          font-size: 14px; } }
+          font-size: 13px; } }
     @media (min-width: 900px) {
       .sec-6 .cards .btn--getStart {
         height: 40px;
@@ -578,12 +580,13 @@
       grid-template-columns: auto auto; } }
   .sec-7 .help-icon {
     position: absolute;
-    margin: 13px 7px;
+    height: 22px;
+    margin: 3px 0px 0px -27px;
     height: 20px; }
     @media (min-width: 600px) {
       .sec-7 .help-icon {
-        margin: 13px 0px;
-        height: 25px; } }
+        height: 20px;
+        margin: 0px 0px -4px -25px; } }
   .sec-7 .sec7-li {
     list-style: none;
     width: 90%;
@@ -648,7 +651,7 @@
   @media (min-width: 1000px) {
     .footer {
       flex-direction: row;
-      align-items: center; } }
+      align-items: flex-start; } }
   .footer .aboutus-wrapper {
     padding: 7% 0% 0%;
     padding-left: 20px; }
@@ -678,7 +681,8 @@
   .footer .service-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%; }
+    width: 100%;
+    padding-left: 20px; }
     @media (min-width: 500px) {
       .footer .service-wrapper {
         width: 50%;
@@ -689,11 +693,13 @@
       font-size: 18px; }
       @media (min-width: 900px) {
         .footer .service-wrapper .footer-h3 {
-          font-size: 18px;
-          font-weight: 400; } }
+          font-size: 14px;
+          font-weight: 400;
+          margin-left: -11px;
+          margin-bottom: 16px; } }
     .footer .service-wrapper .footer-li {
       margin: 4%;
-      font-size: 15px;
+      font-size: 13px;
       letter-spacing: 1px;
       color: white;
       list-style: none; }
@@ -713,8 +719,7 @@
     margin-left: 20px; }
     @media (min-width: 500px) {
       .footer .subscribe-wrapper {
-        font-size: 19px;
-        margin-top: -41px; } }
+        font-size: 19px; } }
     @media (min-width: 900px) {
       .footer .subscribe-wrapper {
         width: 33%; } }
@@ -740,7 +745,7 @@
           font-size: 13px; } }
     .footer .subscribe-wrapper label {
       font-size: 14px;
-      margin: 13px 0px 5px; }
+      margin: 13px 0px 12px; }
     .footer .subscribe-wrapper label:after {
       color: #e32;
       content: ' *';
@@ -765,8 +770,8 @@
       @media (min-width: 1000px) {
         .footer .subscribe-wrapper input {
           width: 100%;
-          height: 36px;
-          font-size: 17px; } }
+          height: 34px;
+          font-size: 14px; } }
     .footer .subscribe-wrapper .error-msg {
       font-size: 12px;
       color: red;
@@ -788,13 +793,13 @@
       @media (min-width: 1000px) {
         .footer .subscribe-wrapper .btn {
           width: 100%;
-          height: 36px; } }
+          height: 35px; } }
   .footer .arrow {
-    position: absolute;
-    margin: 8px -11px;
+    position: relative;
+    /* margin: 8px -11px; */
     border-color: white;
-    width: 8px;
-    height: 8px; }
+    top: 11px;
+    left: -14px; }
   .footer .footer-kart-logo {
     display: flex;
     width: 100%;
@@ -902,7 +907,7 @@ body {
 
 .arrow {
   border: solid black;
-  border-width: 0 3px 3px 0;
+  border-width: 0 1.5px 1.5px 0;
   display: table-cell;
   width: 7px;
   height: 7px; }
@@ -919,8 +924,7 @@ body {
       font-weight: 455; } }
 
 .find-more-link {
-  font-size: 15px;
-  margin-top: 5%;
+  font-size: 13px;
   padding-left: 8px;
   text-decoration: none;
   color: #5046e4;
@@ -945,7 +949,7 @@ body {
       font-size: 16px; } }
   @media (min-width: 1100px) {
     .paragraph {
-      font-size: 14px; } }
+      font-size: 13px; } }
 
 .list {
   list-style: none;
@@ -995,23 +999,29 @@ span {
 
 .circle {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 2px solid;
   color: #4c42e0;
-  margin: 6px 7px; }
+  margin: 2px -20px; }
+  @media (min-width: 1000px) {
+    .circle {
+      margin: 1px -20px; } }
 
 .tick-mark {
   position: absolute;
-  margin: 10px 0px 0px 13px;
   color: #4c42e0;
   width: 4px;
   height: 7px;
   border: 2px solid;
   border-top: transparent;
   border-left: transparent;
-  transform: rotate(50deg); }
+  transform: rotate(50deg);
+  margin: 5px -15px; }
+  @media (min-width: 1000px) {
+    .tick-mark {
+      margin: 4px -15px; } }
 
 .scroll-top {
   width: 45px;

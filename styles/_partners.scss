@@ -61,13 +61,12 @@ $paragraph-color: #9fadbe;
     }
   }
 }
-
 .scroll-wrapper {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth;
   @media (min-width:900px) {
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
 }
 
