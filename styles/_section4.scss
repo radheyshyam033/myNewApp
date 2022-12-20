@@ -15,16 +15,20 @@
   .content {
     width: 95%;
     background-color: $section-color;
+    padding-top: 40px;
+    margin-top: 10px;
 
     @media (min-width:1000px) {
-      width: 45%; 
+      padding-top: 0px;
+      margin-top: 0px;
+      width: 45%;
     }
 
     .sec4-li {
       width: 92%;
       display: list-item;
       margin: 11px 36px;
-      font-size: 18px;
+      font-size: 17px;
       color: $paragraph-color;
       list-style: none;
 
@@ -34,101 +38,116 @@
     }
   }
 
-  .form-section {
-    width: 100%;
-    padding: 2% 0%;
+  // .form-section {
+  // width: 100%;
+  // padding: 2% 0%;
 
-    @media (min-width:1000px) {
-      width: 45%;
+  .form {
+    // width: 90%;
+    // margin: auto;
+    // height: 300px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px #c1bebe;
+
+    &__img {
+      width: 94%;
       height: auto;
+
     }
 
-    .form {
-      margin: 8px;
-      width: 90%;
-      margin: auto;
-      // margin: 70px 80px;
-      border-radius: 8px;
-      background-color: #ffffff;
-      box-shadow: 0px 0px 4px #c1bebe;
+    // @media (min-width:600px) {
+    //   height: auto;
+    // }
 
-      @media (min-width:600px) { 
-        width: 345px;
+    // &__input {
+    //   margin: 3%;
+
+    //   @media (min-width:600px) {
+    //     margin: 5%;
+    //   }
+    &__icon {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+    }
+
+    &__input {
+      width: 100%;
+      height: 43px;
+      font-size: 15px;
+      padding-left: 30px;
+      border: 1px solid #e4e6ea;
+      border-radius: 5px;
+
+      @media (min-width:600px) {
+        width: 100%;
+        height: 37px;
+        font-size: 13px;
       }
+    }
 
-      .mobile-img {
-        width: 94%;
-        height: auto;
+    &__label {
+      padding: 0px 0px;
+      font-size: 15px;
+      color: #020101d4;
+      display: block;
+      margin-bottom: -10px;
 
-        @media (min-width:600px) {
-          // width: 450px;
-          height: auto;
-        }
+      @media (min-width:600px) {
+        font-size: 13px;
+        margin-bottom: -9px;
       }
+    }
+    &__btn{
+      width: 100%;
+      height: 37px;
+    }
 
-      .input-form {
-        margin: 3%;
+    label:after {
+      color: #e32;
+      content: ' *';
+      display: inline;
+    }
 
-        @media (min-width:600px) {
-          margin: 5%;
-        }
+    .key-icon {
+      position: absolute;
+      width: 21px;
+      height: 14px;
+      padding-left: 6px;
 
-        .sec4-input {
-          width: 100%;
-          height: 34px;
-          font-size: 18px;
-          padding-left: 12%;
-          margin: 5px 0px;
-          border: 2px solid #e0e4e8;
-          border-radius: 5px;
-
-          @media (min-width:600px) {
-            width: 100%;
-            height: 37px;
-            font-size: 13px;
-            padding-left: 9%;
-          }
-        }
-
-        .sec4-label {
-          padding-top: 5%;
-          font-size: 16px;
-          color: #1d1c1cd4;
-
-          @media (min-width:600px) {
-            font-size: 14px;
-          }
-        }
-
-        label:after {
-          color: #e32;
-          content: ' *';
-          display: inline;
-        }
-
-        .key-icon {
-          position: absolute;
-          width: 18px;
-          height: 17px;
-          margin: 14px 11px;
-
-          @media (min-width:600px) {
-            margin: 18px 10px;
-            width: 16px;
-          height: 15px;
-          }
-        }
-
-        .btn--size {
-          width: 100%;
-        }
-
-        button:hover {
-          background-color: rgb(39, 58, 229);
-        }
+      @media (min-width:600px) {
+        width: 21px;
+        height: 14px;
+        padding-left: 6px;
       }
+    }
+
+    button:hover {
+      background-color: rgb(39, 58, 229);
+    }
+
+    .name-error {
+      font-size: 11px;
+      color: red;
+      margin: 0px;
+      padding: 0px;
+      height: 15px;
+    }
+
+    // }
+    @media (min-width:600px) {
+      width: 345px;
     }
   }
+
+  //   @media (min-width:1000px) {
+  //     width: 45%;
+  //     height: auto;
+  //   }
+  // }
 
   .submit-form {
     display: none;

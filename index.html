@@ -104,7 +104,8 @@
       <din class="sec-3">
         <div class="how-it-work">
           <h1 class=" heading sec3-h1">How It Work?</h1>
-          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo atque
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae nostrum nemo
+            atque
             ea nobis?
           </p>
         </div>
@@ -138,7 +139,7 @@
   <section class="section sec-color">
     <div class="sec-4 container">
       <div class="content">
-        <h1 class="heading sec4-heading">Speed up your development <br> with <span>Techwind</span></h1>
+        <h1 class="heading sec4-heading">Speed up your development with <span>Techwind</span></h1>
         <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, neque! Aperiam, incidunt
           sit amet consectetur
           adipisicing.</p>
@@ -158,35 +159,41 @@
           <div class="angle"></div>
         </div>
       </div>
-      <div class="form-section">
-        <div class="form">
-          <div><img class="mobile-img" src="./image/mobile-template.jpg" alt=""></div>
-          <div class="input-form required">
-            <form id="leadForm" name="leadForm" method="post" action="#" onsubmit="return validateForm()">
-              <label class="sec4-label" for="name">Your Name:</label><br>
-              <img class="key-icon" src="./image/icons8-user-24.png" alt="">
+      <!-- <div class="form-section"> -->
+      <!-- <div class="form"> -->
+      <!-- <div class="input-form required"> -->
+      <form class="form" id="leadForm" name="leadForm" method="post" action="#" onsubmit="return validateForm()">
+        <div><img class="form__img" src="./image/mobile-template.jpg" alt=""></div>
 
-              <input onkeypress="cleanErrorMsg()" class="sec4-input" type="text" id="name" name="name"
-                class="placeholder-icon" placeholder="Name"><br>
-              <p class="name-error" id="name-error"></p>
-
-              <label class="sec4-label" for="email">Your Email:</label><br>
-              <img class="key-icon" src="./image/icons8-mail-50.png" alt="">
-              <input onkeypress="cleanErrorMsg()" class="sec4-input" type="" class="placeholder-icon" name="email"
-                id="email" placeholder="Email"><br>
-              <p class="name-error" id="email-error"></p>
-
-              <label class="sec4-label" for="password">Enter Password:</label><br>
-              <img class="key-icon" src="./image/icons8-key-64.png" alt="">
-              <input onkeypress="cleanErrorMsg()" class="sec4-input" type="password" id="password" name="password"
-                placeholder="Password">
-              <p class="name-error" id="password-error"></p>
-
-              <button class="btn--size btn btn--color" type="submit">Download</button>
-            </form>
-          </div>
+        <label class="form__label" for="name">Your Name :</label><br>
+        <div class="form__icon">
+          <img class="key-icon" src="./image/icons8-user-24.png" alt="">
+          <input onkeypress="cleanErrorMsg()" class="form__input" type="text" id="name" name="name"
+            class="placeholder-icon" placeholder="Name"><br>
         </div>
-      </div>
+        <p class="name-error" id="name-error"></p>
+
+        <label class="form__label" for="email">Your Email :</label><br>
+        <div class="form__icon">
+          <img class="key-icon" src="./image/icons8-mail-50.png" alt="">
+          <input onkeypress="cleanErrorMsg()" class="form__input" type="" class="placeholder-icon" name="email"
+            id="email" placeholder="Email"><br>
+        </div>
+        <p class="name-error" id="email-error"></p>
+
+        <label class="form__label" for="password">Enter Password :</label><br>
+        <div class="form__icon">
+          <img class="key-icon" src="./image/icons8-key-64.png" alt="">
+          <input onkeypress="cleanErrorMsg()" class="form__input" type="password" id="password" name="password"
+            placeholder="Password">
+        </div>
+        <p class="name-error" id="password-error"></p>
+
+        <button class="btn btn--color form__btn" type="submit">Download</button>
+      </form>
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
       <div class="submit-form" id="submit-form">
         <button onclick="closePopup()" class="close-btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
         <div class="thankyou">
@@ -220,7 +227,8 @@
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-                <p class="paragraph sec5-card-p">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur
+                <p class="paragraph sec5-card-p">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet
+                  consectetur
                   adipisicing elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
                 <h3><span>user name 1</span></h3>
                 <h4>Staff Engineer</h4>
@@ -231,7 +239,8 @@
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-                <p class="paragraph">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur adipisicing
+                <p class="paragraph">"Lorem ipsum dolor, sit amet consectetur adipisicing sit amet consectetur
+                  adipisicing
                   elit. Nihil, sed! a adiping elit. Nihil, sed"</p>
                 <h3><span>user name 2</span></h3>
                 <h4>Staff Engineer</h4>
@@ -242,7 +251,8 @@
             <div class="profile-card">
               <img class="sec5-mob-img" src="./image/profile.jpeg" alt="">
               <div class="profile-details">
-                <p class="paragraph"> "Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing adipisicing
+                <p class="paragraph"> "Lorem ipsum dolor, sit amet consectetur sit amet consectetur adipisicing
+                  adipisicing
                   elit. Nihil, sed! a adipng elit. Nihil, sed"</p>
                 <h3><span>user name 3</span></h3>
                 <h4>Staff Engineer</h4>
@@ -259,7 +269,8 @@
         <h1 class="heading sec6-h1">Our Comfortable Rates</h1>
         <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto maiores
           perspiciatis? Earum natus!</p>
-        <button class="btn--size btn btn--color"><img class="overlap-circle" src="./image/circle-overlap.png" alt="">Subscribe Now</button>
+        <button class="btn--size btn btn--color"><img class="overlap-circle" src="./image/circle-overlap.png"
+            alt="">Subscribe Now</button>
       </div>
       <div class="cards">
         <div class="card">
@@ -308,28 +319,32 @@
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li">How our <span>Techwind</span> work?
-          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium? Inventore esse
+          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            accusantium? Inventore esse
             ut incidunt, optio facilis reprehenderit tenetur placeat corporis?</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> What is main process open account?
-          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis iure non.
+          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est debitis
+            iure non.
             Distinctio recusandae ipsam nostrum obcaecati odio voluptatibus!</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> How to make unlimited data entry?
-          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla vel repellat
+          <p class="paragraph paragraph--faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla
+            vel repellat
             reprehenderit ipsum officiis animi inventore beatae, error atque.</p>
         </li>
       </div>
       <div>
         <img class="help-icon" src="./image/icons8-help-24 (1).png" alt="icon">
         <li class="sec7-li"> Is <span>Techwind</span> safe to use with my account?
-          <p class="paragraph paragraph--faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero non ducimus. Aut quo
+          <p class="paragraph paragraph--faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero
+            non ducimus. Aut quo
             excepturi similique rerum temporibus impedit vitae.</p>
         </li>
       </div>
@@ -339,10 +354,12 @@
     <div class="sec-8 container" id="contectUs">
       <div class="content">
         <h1 class="heading">Have Question ? Get in touch!</h1>
-        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos reprehenderit
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos
+          reprehenderit
           ab a laborum
           autem?</p>
-        <button class="btn btn--color"><img class="phone-call" src="./image/phone-call.png" alt="phone">Contect us</button>
+        <button class="btn btn--color"><img class="phone-call" src="./image/phone-call.png" alt="phone">Contect
+          us</button>
       </div>
     </div>
   </section>
@@ -353,7 +370,8 @@
         <div class="footer-logo">
           <a href="/"><img src="./image/techwind-logo.png" alt="Techwind"></a>
         </div>
-        <p class="footer-p">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic,
+        <p class="footer-p">Start working with Tailwind CSS that can provide everything you need to generate awareness,
+          drive traffic,
           you
           need to generate
           connect.</p>
@@ -410,7 +428,7 @@
         <p class="footer-p">Sign up and recive the latest tips via email.</p>
         <label for="email">Write your email</label>
         <input onkeypress="cleanErrorMsg()" type="email" class="placeholder-icon" id="footer-email"
-        placeholder="&#xf0e0; Email">
+          placeholder="&#xf0e0;   Email">
         <p class="error-msg" id="f-email-error"></p><br>
         <button type="submit" class="btn btn--color" onclick="return validateEmail()">Subscribe</button>
         <!-- </div> -->

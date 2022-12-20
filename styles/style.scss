@@ -79,13 +79,13 @@ body {
 
 .section{ 
   width: 100%;
-  margin: 0px 10px;
+  margin: 0px;
+  padding: 0 10px;
   border: none;
 }
 .sec-color{
   background-color: $section-color;
 }
-
 
 .arrow {
   border: solid black;
@@ -103,13 +103,15 @@ body {
   font-weight: 440;
 
   @media (min-width:900px) {
-    font-size: 22px;
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 455;
   }
 }
 .find-more-link {
   font-size: 15px;
   margin-top: 5%;
-  padding-left: 36px;
+  padding-left: 8px;
   text-decoration: none;
   color: $content-color;
   list-style: none;
@@ -126,7 +128,7 @@ body {
 }
 
 .paragraph {
-  font-size: 18px;
+  font-size: 17px;
   color: $paragraph-color;
   margin: 3% 0%;
   line-height: 1.5;
@@ -218,12 +220,6 @@ span {
   transform: rotate(50deg);
 }
 
-.name-error{
-  font-size: 12px;
-  color: red;
-  margin: 0px;
-  padding: 0px;
-}
 .scroll-top{
   width: 45px;
   height: 45px;

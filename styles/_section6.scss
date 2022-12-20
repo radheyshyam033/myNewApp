@@ -59,9 +59,11 @@ $paragraph-color: #9fadbe;
         }
 
         .card-heading {
-            font-size: 17px;
+            font-size: 18px;
+            padding-top: 11px;
             @media (min-width:600px) {
-                font-size: 15px;
+                font-size: 13px;
+                padding-top: 11px;
             }
         }
 

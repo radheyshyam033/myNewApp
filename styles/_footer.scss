@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 14%;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     color: rgb(238, 236, 236);
 
     @media (min-width:600px) {
@@ -44,7 +44,7 @@
         padding-left: 20px;
 
         @media (min-width:900px) {
-            width: 33%; 
+            width: 33%;
             padding: 0%;
         }
 
@@ -79,51 +79,48 @@
     .service-wrapper {
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
-        width: 33%;
-
+        width: 100%;
 
         @media (min-width:500px) {
+            width: 50%;
             flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            margin-bottom: 29px;
-            margin-top: -20px;
+            justify-content: space-around;
+            align-items: flex-start;
         }
 
-        .company {
-            width: 80vw;
-            @media (min-width:500px) {
-                margin-right: 80px;
-            }
-            @media (min-width:1050px) {
-                margin-right: 80px;
-                margin-top: 45px;
-            }
-        }
+        // .company {
+        //     @media (min-width:500px) {
+        //         margin-right: 80px;
+        //     }
+        //     @media (min-width:1050px) {
+        //         margin: 15px 8px;
+        //     }
+        // }
 
-        .usefull-links {
-            margin: 10px 0px;
-            width: 80vw;
+        // .usefull-links {
+        //     margin: 10px 0px;
 
-            @media (min-width:500px) {
-                margin-right: 80px;
-                margin-top: 13px;
-                width: 10vw;
-                font-weight: 300;
-            }
-        }
+        //     @media (min-width:500px) {
+        //         margin-right: 80px;
+        //         margin-top: 13px;
+        //         width: 10%;
+        //         font-weight: 300;
+        //     }
+        //     @media (min-width:1050px) {
+        //         margin: 15px 8px;
+        //     }
+        // }
 
         .footer-h3 {
-            padding-bottom: 2%;
+            // padding-bottom: 2%;
             font-size: 18px;
 
             @media (min-width:500px) {
-                padding-bottom: 5%;
+                // padding-bottom: 5%;
             }
 
             @media (min-width:900px) {
-                padding-bottom: 7%;
+                // padding-bottom: 7%;
                 font-size: 18px;
                 font-weight: 400;
             }
@@ -138,14 +135,14 @@
             list-style: none;
 
             @media (min-width:500px) {
-                margin: 8%;
                 font-size: 13px;
                 font-weight: 300;
+                padding: 5px 0px;
                 width: 100%;
             }
 
             .footer-link {
-                text-decoration: none; 
+                text-decoration: none;
                 color: white;
             }
         }
@@ -161,6 +158,10 @@
         @media (min-width:500px) {
             font-size: 19px;
             margin-top: -41px;
+        }
+
+        @media (min-width:900px) {
+            width: 33%;
         }
 
         h3 {
@@ -203,13 +204,15 @@
         }
 
         input {
-            font-size: 20px;
+            font-size: 16px;
+            padding-left: 10px;
             color: white;
             background-color: rgb(39, 50, 75);
             width: 90%;
             height: 44px;
             border: none;
             border-radius: 5px;
+
             @media (min-width:500px) {
                 width: 70%;
                 height: 60px;
@@ -241,6 +244,7 @@
 
         .btn {
             width: 90%;
+
             @media (min-width:500px) {
                 width: 70%;
                 height: 60px;
@@ -271,19 +275,20 @@
         width: 100%;
         margin: 20px 0px 40px;
         justify-content: flex-start;
+
         @media (min-width:600px) {
             width: 50vw;
             font-size: 30px;
-            justify-content: space-around;
         }
+
         @media (min-width:1000px) {
             width: 28vw;
             font-size: 30px;
-            justify-content: space-around;
         }
+
         .f-logo {
-            height: 40px;
-            width: 38px;
+            height: 36px;
+            width: 36px;
             border-radius: 8px;
             margin: 1.5px;
             border: 1px solid #343e54;
@@ -293,9 +298,16 @@
                 border-radius: 8px;
                 margin: 3px;
             }
-            @media (min-width:1000px) {
-                border-radius: 8px;
+
+            @media (min-width:900px) {
+                height: 26px;
+                width: 26px;
                 margin: 3px;
+            }
+            .logo-img{
+                width: 90%;
+                height: 90%;
+                margin-bottom: 6px;
             }
         }
     }
@@ -305,6 +317,7 @@
     width: 100%;
     text-align: center;
     color: white;
+    font-size: 12px;
     padding: 4%;
 
     @media (min-width:900px) {

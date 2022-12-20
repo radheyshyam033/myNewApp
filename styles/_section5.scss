@@ -66,6 +66,9 @@ $paragraph-color: #9fadbe;
   display: flex;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  @media (min-width:900px) {
+    overflow-x: scroll;
+  }
 }
 
 .slide {
