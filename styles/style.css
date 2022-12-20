@@ -419,7 +419,7 @@
       transform: rotate(135deg); }
   .sec-5 .next_btn {
     display: none;
-    margin: 6% 10% 0% 87%; }
+    margin: 6% 10% 0% 86%; }
     @media (min-width: 900px) {
       .sec-5 .next_btn {
         display: block; } }
@@ -668,15 +668,14 @@
             width: 140px; } }
     .footer .aboutus-wrapper .footer-p {
       font-size: 13px;
-      letter-spacing: 1px;
       color: #fdfafa;
-      padding: 2% 0%;
-      line-height: 1.5; }
+      line-height: 20px;
+      word-spacing: 1px;
+      padding: 13px 0px; }
       @media (max-width: 500px) {
         .footer .aboutus-wrapper .footer-p {
           width: 80vw;
           font-size: 17px;
-          letter-spacing: .5px;
           font-weight: 300; } }
   .footer .service-wrapper {
     display: flex;
@@ -837,7 +836,8 @@
   text-align: center;
   color: white;
   font-size: 12px;
-  margin-top: 40px; }
+  margin-top: 30px;
+  padding: 10px; }
   @media (min-width: 900px) {
     .copyright {
       width: 100%; } }

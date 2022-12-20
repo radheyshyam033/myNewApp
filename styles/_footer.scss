@@ -26,7 +26,6 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 14%;
-    // flex-wrap: wrap;
     color: rgb(238, 236, 236);
 
     @media (min-width:600px) {
@@ -62,15 +61,14 @@
 
         .footer-p {
             font-size: 13px;
-            letter-spacing: 1px;
             color: #fdfafa;
-            padding: 2% 0%;
-            line-height: 1.5;
+            line-height: 20px;
+            word-spacing: 1px;
+            padding: 13px 0px;
 
             @media (max-width:500px) {
                 width: 80vw;
                 font-size: 17px;
-                letter-spacing: .5px;
                 font-weight: 300;
             }
         }
@@ -90,12 +88,7 @@
         }
 
         .footer-h3 {
-            // padding-bottom: 2%;
             font-size: 18px;
-
-            @media (min-width:500px) {
-                // padding-bottom: 5%;
-            }
 
             @media (min-width:900px) {
                 font-size: 14px;
@@ -295,7 +288,8 @@
     text-align: center;
     color: white;
     font-size: 12px;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 10px;
 
     @media (min-width:900px) {
         width: 100%;
