@@ -681,7 +681,7 @@
           .footer .aboutus-wrapper .footer-logo img {
             width: 140px; } }
     .footer .aboutus-wrapper .footer-p {
-      font-size: 15px;
+      font-size: 13px;
       letter-spacing: 1px;
       color: #fdfafa;
       padding: 2% 0%;
@@ -702,30 +702,36 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        margin-bottom: 29px; } }
+        margin-bottom: 29px;
+        margin-top: -20px; } }
     .footer .service-wrapper .company {
       width: 80vw; }
       @media (min-width: 500px) {
         .footer .service-wrapper .company {
           margin-right: 80px; } }
+      @media (min-width: 1050px) {
+        .footer .service-wrapper .company {
+          margin-right: 80px;
+          margin-top: 45px; } }
     .footer .service-wrapper .usefull-links {
       margin: 10px 0px;
       width: 80vw; }
       @media (min-width: 500px) {
         .footer .service-wrapper .usefull-links {
           margin-right: 80px;
+          margin-top: 13px;
           width: 10vw;
           font-weight: 300; } }
     .footer .service-wrapper .footer-h3 {
       padding-bottom: 2%;
-      font-size: 21px; }
+      font-size: 18px; }
       @media (min-width: 500px) {
         .footer .service-wrapper .footer-h3 {
           padding-bottom: 5%; } }
       @media (min-width: 900px) {
         .footer .service-wrapper .footer-h3 {
           padding-bottom: 7%;
-          font-size: 21px;
+          font-size: 18px;
           font-weight: 400; } }
     .footer .service-wrapper .footer-li {
       margin: 4%;
@@ -736,21 +742,21 @@
       @media (min-width: 500px) {
         .footer .service-wrapper .footer-li {
           margin: 8%;
-          font-size: 15px;
+          font-size: 13px;
           font-weight: 300;
           width: 100%; } }
       .footer .service-wrapper .footer-li .footer-link {
         text-decoration: none;
         color: white; }
   .footer .subscribe-wrapper {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 15px; }
+    margin-left: 20px; }
     @media (min-width: 500px) {
       .footer .subscribe-wrapper {
-        font-size: 21px; } }
+        font-size: 19px;
+        margin-top: -41px; } }
     .footer .subscribe-wrapper h3 {
       padding-bottom: 15px;
       font-size: 21px; }
@@ -761,7 +767,7 @@
       @media (min-width: 900px) {
         .footer .subscribe-wrapper h3 {
           padding-bottom: 15px;
-          font-size: 25px;
+          font-size: 21px;
           font-weight: 400; } }
     .footer .subscribe-wrapper .footer-p {
       font-size: 15px;
@@ -769,9 +775,11 @@
       color: white; }
       @media (min-width: 900px) {
         .footer .subscribe-wrapper .footer-p {
-          font-weight: 300; } }
+          font-weight: 300;
+          font-size: 13px; } }
     .footer .subscribe-wrapper label {
-      font-size: 19px; }
+      font-size: 14px;
+      margin: 13px 0px 5px; }
     .footer .subscribe-wrapper label:after {
       color: #e32;
       content: ' *';
@@ -795,7 +803,7 @@
       @media (min-width: 1000px) {
         .footer .subscribe-wrapper input {
           width: 100%;
-          height: 44px;
+          height: 36px;
           font-size: 17px; } }
     .footer .subscribe-wrapper .error-msg {
       font-size: 12px;
@@ -818,7 +826,7 @@
       @media (min-width: 1000px) {
         .footer .subscribe-wrapper .btn {
           width: 100%;
-          height: 44px; } }
+          height: 36px; } }
   .footer .arrow {
     position: absolute;
     margin: 8px -11px;
@@ -827,18 +835,19 @@
     height: 8px; }
   .footer .footer-kart-logo {
     display: flex;
-    width: 30%;
-    margin: 20px 0px 40px; }
-    @media (max-width: 1000px) {
+    width: 100%;
+    margin: 20px 0px 40px;
+    justify-content: flex-start; }
+    @media (min-width: 600px) {
       .footer .footer-kart-logo {
         width: 50vw;
         font-size: 30px;
         justify-content: space-around; } }
-    @media (max-width: 500px) {
+    @media (min-width: 1000px) {
       .footer .footer-kart-logo {
-        width: 100vw;
-        margin: 20px 0px 40px;
-        justify-content: flex-start; } }
+        width: 28vw;
+        font-size: 30px;
+        justify-content: space-around; } }
     .footer .footer-kart-logo .f-logo {
       height: 40px;
       width: 38px;
@@ -846,11 +855,11 @@
       margin: 1.5px;
       border: 1px solid #343e54;
       align-content: center; }
-      @media (min-width: 1000px) {
+      @media (min-width: 500px) {
         .footer .footer-kart-logo .f-logo {
           border-radius: 8px;
           margin: 3px; } }
-      @media (min-width: 500px) {
+      @media (min-width: 1000px) {
         .footer .footer-kart-logo .f-logo {
           border-radius: 8px;
           margin: 3px; } }
@@ -943,7 +952,7 @@ body {
 .find-more-link {
   font-size: 15px;
   margin-top: 5%;
-  padding: 36px;
+  padding-left: 36px;
   text-decoration: none;
   color: #5046e4;
   list-style: none; }
