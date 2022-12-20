@@ -133,7 +133,7 @@ body {
 }
 
 .paragraph {
-  font-size: 17px;
+  font-size: 16px;
   color: $paragraph-color;
   margin: 3% 0%;
   line-height: 1.5;
@@ -212,7 +212,7 @@ span {
   border-radius: 50%;
   border: 2px solid;
   color: #4c42e0;
-  margin: 2px -20px;
+  margin: 3px -20px;
 
   @media (min-width:1000px) {
     margin: 1px -20px;
@@ -228,7 +228,7 @@ span {
   border-top: transparent;
   border-left: transparent;
   transform: rotate(50deg);
-  margin: 5px -15px;
+  margin: 6px -15px;
 
   @media (min-width:1000px) {
     margin: 4px -15px;

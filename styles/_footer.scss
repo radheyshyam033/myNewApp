@@ -107,16 +107,15 @@
         }
 
         .footer-li {
-            margin: 4%;
+            margin: 6px;
             font-size: 13px;
-            letter-spacing: 1px;
             color: white;
             list-style: none;
 
             @media (min-width:500px) {
                 font-size: 13px;
                 font-weight: 300;
-                padding: 5px 0px;
+                padding: 2px 0px;
                 width: 100%;
             }
 
@@ -147,13 +146,12 @@
             font-size: 21px;
 
             @media (min-width:500px) {
-                padding: 10px 0px;
                 font-size: 21px;
             }
 
             @media (min-width:900px) {
-                padding-bottom: 15px;
-                font-size: 21px;
+                padding-bottom: 20px;
+                font-size: 16px;
                 font-weight: 400;
             }
 
@@ -297,11 +295,10 @@
     text-align: center;
     color: white;
     font-size: 12px;
-    padding: 4%;
+    margin-top: 40px;
 
     @media (min-width:900px) {
         width: 100%;
-        padding: 2%;
     }
 
     .copyright-p {

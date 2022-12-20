@@ -134,29 +134,29 @@
   @media (min-width: 1000px) {
     .top-banner {
       flex-direction: row; } }
-  .top-banner .top-banner__content {
+  .top-banner__content {
     padding-top: 40px; }
     @media (min-width: 1000px) {
-      .top-banner .top-banner__content {
+      .top-banner__content {
         flex-direction: row;
         width: 48%;
         padding-top: 0px; } }
-    .top-banner .top-banner__content .heading--topBanner {
+    .top-banner__content .heading--size {
       letter-spacing: 1.5px;
       font-size: 39px; }
       @media (min-width: 600px) {
-        .top-banner .top-banner__content .heading--topBanner {
+        .top-banner__content .heading--size {
           font-size: 42px;
           line-height: 50px; } }
-    .top-banner .top-banner__content .banner-button {
+    .top-banner__content .banner-button {
       padding-top: 3%;
       margin-bottom: 3%;
       display: flex;
       flex-direction: column; }
       @media (min-width: 600px) {
-        .top-banner .top-banner__content .banner-button {
+        .top-banner__content .banner-button {
           flex-direction: row; } }
-      .top-banner .top-banner__content .banner-button .btn--topBanner {
+      .top-banner__content .banner-button .btn--topBanner {
         width: 200px;
         margin-right: 10px; }
   .top-banner .top-image {
@@ -698,16 +698,15 @@
           margin-left: -11px;
           margin-bottom: 16px; } }
     .footer .service-wrapper .footer-li {
-      margin: 4%;
+      margin: 6px;
       font-size: 13px;
-      letter-spacing: 1px;
       color: white;
       list-style: none; }
       @media (min-width: 500px) {
         .footer .service-wrapper .footer-li {
           font-size: 13px;
           font-weight: 300;
-          padding: 5px 0px;
+          padding: 2px 0px;
           width: 100%; } }
       .footer .service-wrapper .footer-li .footer-link {
         text-decoration: none;
@@ -728,12 +727,11 @@
       font-size: 21px; }
       @media (min-width: 500px) {
         .footer .subscribe-wrapper h3 {
-          padding: 10px 0px;
           font-size: 21px; } }
       @media (min-width: 900px) {
         .footer .subscribe-wrapper h3 {
-          padding-bottom: 15px;
-          font-size: 21px;
+          padding-bottom: 20px;
+          font-size: 16px;
           font-weight: 400; } }
     .footer .subscribe-wrapper .footer-p {
       font-size: 15px;
@@ -839,11 +837,10 @@
   text-align: center;
   color: white;
   font-size: 12px;
-  padding: 4%; }
+  margin-top: 40px; }
   @media (min-width: 900px) {
     .copyright {
-      width: 100%;
-      padding: 2%; } }
+      width: 100%; } }
   .copyright .copyright-p {
     color: #fbfcfc; }
 
@@ -939,7 +936,7 @@ body {
   -webkit-transform: rotate(45deg); }
 
 .paragraph {
-  font-size: 17px;
+  font-size: 16px;
   color: #9fadbe;
   margin: 3% 0%;
   line-height: 1.5;
@@ -1004,7 +1001,7 @@ span {
   border-radius: 50%;
   border: 2px solid;
   color: #4c42e0;
-  margin: 2px -20px; }
+  margin: 3px -20px; }
   @media (min-width: 1000px) {
     .circle {
       margin: 1px -20px; } }
@@ -1018,7 +1015,7 @@ span {
   border-top: transparent;
   border-left: transparent;
   transform: rotate(50deg);
-  margin: 5px -15px; }
+  margin: 6px -15px; }
   @media (min-width: 1000px) {
     .tick-mark {
       margin: 4px -15px; } }
