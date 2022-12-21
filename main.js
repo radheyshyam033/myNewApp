@@ -52,8 +52,14 @@ function cleanErrorMsg(){
 }
 function validateEmail(){
     let email=document.getElementById("footer-email").value;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(email==""){
-        text="Please enter your email";
+        text="Please enter your email id";
+        document.getElementById('f-email-error').innerHTML=text
+        return false;
+    }
+    if(!email.match(mailformat)){
+        text="Enter correct email id";
         document.getElementById('f-email-error').innerHTML=text
         return false;
     }

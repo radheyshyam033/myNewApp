@@ -121,6 +121,10 @@ body {
   color: $content-color;
   list-style: none;
 }
+.link {
+  text-decoration: none;
+  color: white;
+}
 
 .right {
   transform: rotate(-45deg);

@@ -16,7 +16,7 @@
     }
 }
 
-.footer-sec {
+.footer-section { 
     width: 100%;
     background-color: rgb(25, 33, 48);
 }
@@ -38,7 +38,7 @@
         align-items: flex-start;
     }
 
-    .aboutus-wrapper {
+    &__aboutus {
         padding: 7% 0% 0%;
         padding-left: 20px;
 
@@ -49,10 +49,10 @@
             padding: 0%;
         }
  
-        .footer-logo {
+        &__logo {
             width: 220px;
 
-            img {
+            &__img {
                 width: 170px;
 
                 @media (min-width:800px) {
@@ -61,7 +61,7 @@
             }
         }
 
-        .footer-p {
+        &__paragraph {
             font-size: 15px;
             color: #fdfafa;
             line-height: 20px;
@@ -74,9 +74,51 @@
                 font-weight: 300;
             }
         }
+        &__kart-logo {
+            display: flex;
+            width: 100%;
+            margin: 20px 0px 40px;
+            justify-content: flex-start;
+    
+            @media (min-width:600px) {
+                width: 50vw;
+                font-size: 30px;
+            }
+    
+            @media (min-width:1000px) {
+                width: 28vw;
+                font-size: 30px;
+            }
+    
+            .kart-logo {
+                height: 36px;
+                width: 36px;
+                border-radius: 8px;
+                margin: 1.5px;
+                border: 1px solid #343e54;
+                align-content: center;
+    
+                @media (min-width:500px) {
+                    border-radius: 8px;
+                    margin: 3px;
+                }
+    
+                @media (min-width:900px) {
+                    height: 31px;
+                    width: 31px;
+                    margin: 3px;
+                }
+    
+                &__img {
+                    width: 90%;
+                    height: 90%;
+                    margin-bottom: 6px;
+                }
+            }
+        } 
     }
 
-    .service-wrapper {
+    &__service {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -89,7 +131,7 @@
             align-items: flex-start;
         }
 
-        .footer-h3 {
+        &__heading {
             font-size: 18px;
             margin-top: 20px;
             margin-left: -6px;
@@ -101,7 +143,7 @@
             }
         }
 
-        .footer-li {
+        &__list {
             margin: 6px;
             font-size: 13px;
             color: white;
@@ -113,20 +155,15 @@
                 padding: 2px 0px;
                 width: 100%;
             }
-
-            .footer-link {
-                text-decoration: none;
-                color: white;
-            }
+            
         }
     }
 
-    .subscribe-wrapper {
+    &__subscribe {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin-left: 20px;
-
 
         @media (min-width:500px) {
             font-size: 19px;
@@ -134,14 +171,13 @@
 
         @media (min-width:900px) {
             padding-right: 20px;
-            width: 33%;
         }
         @media (min-width:1100px) {
             padding: 0%;
             width: 33%;
         }
 
-        h3 {
+        &__heading {
             padding-bottom: 15px;
             font-size: 21px;
 
@@ -157,7 +193,7 @@
 
         }
 
-        .footer-p {
+        &__paragraph {
             font-size: 15px;
             padding-bottom: 2%;
             color: white;
@@ -168,7 +204,7 @@
             }
         }
 
-        label {
+        &__label {
             font-size: 14px;
             margin: 13px 0px 12px;
         }
@@ -178,12 +214,25 @@
             content: ' *';
             display: inline;
         }
+        &__icon{
+            position: relative;
+            top: 35px;
+            left: 11px;
+            @media (min-width:500px) {
+                top: 42px;
+            }
 
-        input {
+            @media (min-width:1000px) {
+                top: 30px;
+            }
+
+        }
+
+        &__input {
             font-size: 16px;
-            padding-left: 10px;
+            padding-left: 41px;
             color: white;
-            background-color: rgb(39, 50, 75);
+            background-color: #27324b;
             width: 90%;
             height: 44px;
             border: none;
@@ -192,6 +241,7 @@
             @media (min-width:500px) {
                 width: 70%;
                 height: 60px;
+                font-size: 18px;
             }
 
             @media (min-width:800px) {
@@ -204,6 +254,9 @@
                 height: 34px;
                 font-size: 15px;
             }
+            &::placeholder {
+                color: white;
+            }
         }
 
         .error-msg {
@@ -211,14 +264,10 @@
             color: red;
             margin: 0px;
             padding: 0px;
+            height: 25px;
         }
 
-        ::placeholder {
-            color: white;
-            padding-left: 10px;
-        }
-
-        .btn {
+        .btn--style {
             width: 90%;
 
             @media (min-width:500px) {
@@ -240,56 +289,11 @@
 
     .arrow {
         position: relative;
-        /* margin: 8px -11px; */
         border-color: white;
         top: 11px;
         left: -14px;
     }
-
-    .footer-kart-logo {
-        display: flex;
-        width: 100%;
-        margin: 20px 0px 40px;
-        justify-content: flex-start;
-
-        @media (min-width:600px) {
-            width: 50vw;
-            font-size: 30px;
-        }
-
-        @media (min-width:1000px) {
-            width: 28vw;
-            font-size: 30px;
-        }
-
-        .f-logo {
-            height: 36px;
-            width: 36px;
-            border-radius: 8px;
-            margin: 1.5px;
-            border: 1px solid #343e54;
-            align-content: center;
-
-            @media (min-width:500px) {
-                border-radius: 8px;
-                margin: 3px;
-            }
-
-            @media (min-width:900px) {
-                height: 31px;
-                width: 31px;
-                margin: 3px;
-            }
-
-            .logo-img {
-                width: 90%;
-                height: 90%;
-                margin-bottom: 6px;
-            }
-        }
-    }
 }
-
 .copyright {
     width: 100%;
     text-align: center;
@@ -300,7 +304,7 @@
 
     @media (min-width:900px) {
         width: 100%;
-    }
+    } 
 
     .copyright-p {
         color: #fbfcfc;

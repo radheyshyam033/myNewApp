@@ -648,7 +648,7 @@
     .footer-head {
       border-left: 1600px solid #1a2130; } }
 
-.footer-sec {
+.footer-section {
   width: 100%;
   background-color: #192130; }
 
@@ -666,112 +666,151 @@
     .footer {
       flex-direction: row;
       align-items: flex-start; } }
-  .footer .aboutus-wrapper {
+  .footer__aboutus {
     padding: 7% 0% 0%;
     padding-left: 20px; }
     @media (min-width: 900px) {
-      .footer .aboutus-wrapper {
+      .footer__aboutus {
         width: 33%; } }
     @media (min-width: 1100px) {
-      .footer .aboutus-wrapper {
+      .footer__aboutus {
         padding: 0%; } }
-    .footer .aboutus-wrapper .footer-logo {
+    .footer__aboutus__logo {
       width: 220px; }
-      .footer .aboutus-wrapper .footer-logo img {
+      .footer__aboutus__logo__img {
         width: 170px; }
         @media (min-width: 800px) {
-          .footer .aboutus-wrapper .footer-logo img {
+          .footer__aboutus__logo__img {
             width: 140px; } }
-    .footer .aboutus-wrapper .footer-p {
+    .footer__aboutus__paragraph {
       font-size: 15px;
       color: #fdfafa;
       line-height: 20px;
       word-spacing: 1px;
       padding: 13px 0px; }
       @media (max-width: 500px) {
-        .footer .aboutus-wrapper .footer-p {
+        .footer__aboutus__paragraph {
           width: 80vw;
           font-size: 17px;
           font-weight: 300; } }
-  .footer .service-wrapper {
+    .footer__aboutus__kart-logo {
+      display: flex;
+      width: 100%;
+      margin: 20px 0px 40px;
+      justify-content: flex-start; }
+      @media (min-width: 600px) {
+        .footer__aboutus__kart-logo {
+          width: 50vw;
+          font-size: 30px; } }
+      @media (min-width: 1000px) {
+        .footer__aboutus__kart-logo {
+          width: 28vw;
+          font-size: 30px; } }
+      .footer__aboutus__kart-logo .kart-logo {
+        height: 36px;
+        width: 36px;
+        border-radius: 8px;
+        margin: 1.5px;
+        border: 1px solid #343e54;
+        align-content: center; }
+        @media (min-width: 500px) {
+          .footer__aboutus__kart-logo .kart-logo {
+            border-radius: 8px;
+            margin: 3px; } }
+        @media (min-width: 900px) {
+          .footer__aboutus__kart-logo .kart-logo {
+            height: 31px;
+            width: 31px;
+            margin: 3px; } }
+        .footer__aboutus__kart-logo .kart-logo__img {
+          width: 90%;
+          height: 90%;
+          margin-bottom: 6px; }
+  .footer__service {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 20px; }
     @media (min-width: 500px) {
-      .footer .service-wrapper {
+      .footer__service {
         width: 50%;
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start; } }
-    .footer .service-wrapper .footer-h3 {
+    .footer__service__heading {
       font-size: 18px;
       margin-top: 20px;
       margin-left: -6px; }
       @media (min-width: 900px) {
-        .footer .service-wrapper .footer-h3 {
+        .footer__service__heading {
           font-size: 16px;
           font-weight: 400;
           margin: 0px 0px 16px -11px; } }
-    .footer .service-wrapper .footer-li {
+    .footer__service__list {
       margin: 6px;
       font-size: 13px;
       color: white;
       list-style: none; }
       @media (min-width: 500px) {
-        .footer .service-wrapper .footer-li {
+        .footer__service__list {
           font-size: 15px;
           font-weight: 300;
           padding: 2px 0px;
           width: 100%; } }
-      .footer .service-wrapper .footer-li .footer-link {
-        text-decoration: none;
-        color: white; }
-  .footer .subscribe-wrapper {
+  .footer__subscribe {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px; }
     @media (min-width: 500px) {
-      .footer .subscribe-wrapper {
+      .footer__subscribe {
         font-size: 19px; } }
     @media (min-width: 900px) {
-      .footer .subscribe-wrapper {
-        padding-right: 20px;
-        width: 33%; } }
+      .footer__subscribe {
+        padding-right: 20px; } }
     @media (min-width: 1100px) {
-      .footer .subscribe-wrapper {
+      .footer__subscribe {
         padding: 0%;
         width: 33%; } }
-    .footer .subscribe-wrapper h3 {
+    .footer__subscribe__heading {
       padding-bottom: 15px;
       font-size: 21px; }
       @media (min-width: 500px) {
-        .footer .subscribe-wrapper h3 {
+        .footer__subscribe__heading {
           font-size: 21px; } }
       @media (min-width: 900px) {
-        .footer .subscribe-wrapper h3 {
+        .footer__subscribe__heading {
           padding-bottom: 20px;
           font-size: 16px;
           font-weight: 400; } }
-    .footer .subscribe-wrapper .footer-p {
+    .footer__subscribe__paragraph {
       font-size: 15px;
       padding-bottom: 2%;
       color: white; }
       @media (min-width: 900px) {
-        .footer .subscribe-wrapper .footer-p {
+        .footer__subscribe__paragraph {
           font-weight: 300;
           font-size: 15px; } }
-    .footer .subscribe-wrapper label {
+    .footer__subscribe__label {
       font-size: 14px;
       margin: 13px 0px 12px; }
-    .footer .subscribe-wrapper label:after {
+    .footer__subscribe label:after {
       color: #e32;
       content: ' *';
       display: inline; }
-    .footer .subscribe-wrapper input {
+    .footer__subscribe__icon {
+      position: relative;
+      top: 35px;
+      left: 11px; }
+      @media (min-width: 500px) {
+        .footer__subscribe__icon {
+          top: 42px; } }
+      @media (min-width: 1000px) {
+        .footer__subscribe__icon {
+          top: 30px; } }
+    .footer__subscribe__input {
       font-size: 16px;
-      padding-left: 10px;
+      padding-left: 41px;
       color: white;
       background-color: #27324b;
       width: 90%;
@@ -779,79 +818,46 @@
       border: none;
       border-radius: 5px; }
       @media (min-width: 500px) {
-        .footer .subscribe-wrapper input {
+        .footer__subscribe__input {
           width: 70%;
-          height: 60px; } }
+          height: 60px;
+          font-size: 18px; } }
       @media (min-width: 800px) {
-        .footer .subscribe-wrapper input {
+        .footer__subscribe__input {
           width: 50%;
           height: 60px; } }
       @media (min-width: 1000px) {
-        .footer .subscribe-wrapper input {
+        .footer__subscribe__input {
           width: 100%;
           height: 34px;
           font-size: 15px; } }
-    .footer .subscribe-wrapper .error-msg {
+      .footer__subscribe__input::placeholder {
+        color: white; }
+    .footer__subscribe .error-msg {
       font-size: 12px;
       color: red;
       margin: 0px;
-      padding: 0px; }
-    .footer .subscribe-wrapper ::placeholder {
-      color: white;
-      padding-left: 10px; }
-    .footer .subscribe-wrapper .btn {
+      padding: 0px;
+      height: 25px; }
+    .footer__subscribe .btn--style {
       width: 90%; }
       @media (min-width: 500px) {
-        .footer .subscribe-wrapper .btn {
+        .footer__subscribe .btn--style {
           width: 70%;
           height: 60px; } }
       @media (min-width: 800px) {
-        .footer .subscribe-wrapper .btn {
+        .footer__subscribe .btn--style {
           width: 50%;
           height: 60px; } }
       @media (min-width: 1000px) {
-        .footer .subscribe-wrapper .btn {
+        .footer__subscribe .btn--style {
           width: 100%;
           height: 35px; } }
   .footer .arrow {
     position: relative;
-    /* margin: 8px -11px; */
     border-color: white;
     top: 11px;
     left: -14px; }
-  .footer .footer-kart-logo {
-    display: flex;
-    width: 100%;
-    margin: 20px 0px 40px;
-    justify-content: flex-start; }
-    @media (min-width: 600px) {
-      .footer .footer-kart-logo {
-        width: 50vw;
-        font-size: 30px; } }
-    @media (min-width: 1000px) {
-      .footer .footer-kart-logo {
-        width: 28vw;
-        font-size: 30px; } }
-    .footer .footer-kart-logo .f-logo {
-      height: 36px;
-      width: 36px;
-      border-radius: 8px;
-      margin: 1.5px;
-      border: 1px solid #343e54;
-      align-content: center; }
-      @media (min-width: 500px) {
-        .footer .footer-kart-logo .f-logo {
-          border-radius: 8px;
-          margin: 3px; } }
-      @media (min-width: 900px) {
-        .footer .footer-kart-logo .f-logo {
-          height: 31px;
-          width: 31px;
-          margin: 3px; } }
-      .footer .footer-kart-logo .f-logo .logo-img {
-        width: 90%;
-        height: 90%;
-        margin-bottom: 6px; }
 
 .copyright {
   width: 100%;
@@ -948,6 +954,10 @@ body {
   text-decoration: none;
   color: #5046e4;
   list-style: none; }
+
+.link {
+  text-decoration: none;
+  color: white; }
 
 .right {
   transform: rotate(-45deg);
