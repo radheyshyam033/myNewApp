@@ -139,8 +139,8 @@
             margin-left: -6px;
 
             @media (min-width:900px) {
-                font-size: 16px;
-                font-weight: 400;
+                font-size: 18px;
+                font-weight: 600;
                 margin: 0px 0px 8px 2px;
             }
         }
@@ -162,13 +162,13 @@
                 content: "";
                 border: solid black;
                 border-width: 0 1.5px 1.5px 0;
-                display: table-cell;
+                display: block;
                 width: 7px;
                 height: 7px;
                 position: relative;
                 border-color: white;
-                top: 15px;
-                left: -19px;
+                top: 13px;
+                left: -16px;
                 transform: rotate(-45deg);
                 -webkit-transform: rotate(-45deg);
             }
@@ -204,8 +204,8 @@
 
             @media (min-width:900px) {
                 padding-bottom: 20px;
-                font-size: 16px;
-                font-weight: 400;
+                font-size: 19px;
+                font-weight: 600;
             }
 
         }
