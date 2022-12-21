@@ -36,7 +36,7 @@
         color: #1e1d1d;
         display: flex;
         text-align: center;
-        font-size: 11px;
+        font-size: 13px;
         padding-right: 0px; }
         .navbar__menu .menu__element i {
           margin: -3px 2px;
@@ -393,6 +393,9 @@
     padding: 40px 0px 20px; }
     @media (min-width: 500px) {
       .sec-5 .sec5-heading {
+        padding: 3% 20%; } }
+    @media (min-width: 1100px) {
+      .sec-5 .sec5-heading {
         padding: 3% 30%; } }
     .sec-5 .sec5-heading .sec5-heading {
       padding: 20px 0px;
@@ -409,20 +412,28 @@
     border-radius: 100%;
     border: 2px solid #ffffff; }
   .sec-5 .prev_btn {
-    display: none;
-    margin: 6% 0% 0% -1%; }
+    display: none; }
     @media (min-width: 900px) {
       .sec-5 .prev_btn {
+        display: block;
+        margin: 10% 0% 0% -1%; } }
+    @media (min-width: 1100px) {
+      .sec-5 .prev_btn {
+        margin: 6% 0% 0% -1%;
         display: block; } }
     .sec-5 .prev_btn .angle {
       color: black;
       transform: rotate(135deg); }
   .sec-5 .next_btn {
-    display: none;
-    margin: 6% 10% 0% 87%; }
+    display: none; }
     @media (min-width: 900px) {
       .sec-5 .next_btn {
-        display: block; } }
+        display: block;
+        margin: 10% 10% 0% 94%; } }
+    @media (min-width: 1100px) {
+      .sec-5 .next_btn {
+        display: block;
+        margin: 6% 10% 0% 87%; } }
     .sec-5 .next_btn .angle {
       color: black; }
 
@@ -454,6 +465,9 @@
         flex-direction: row;
         text-align: left;
         padding: 0px 0px;
+        width: 47vw; } }
+    @media (min-width: 1100px) {
+      .slide .profile-card {
         width: 43vw; } }
     .slide .profile-card .sec5-mob-img {
       width: 132px;
@@ -545,7 +559,7 @@
       color: #9fadbe; }
       @media (min-width: 600px) {
         .sec-6 .cards .card-li {
-          font-size: 13px; } }
+          font-size: 15px; } }
     @media (min-width: 900px) {
       .sec-6 .cards .btn--getStart {
         height: 40px;
@@ -595,7 +609,7 @@
     color: #2e2e2e; }
     @media (min-width: 1000px) {
       .question__list {
-        font-size: 16px; } }
+        font-size: 17px; } }
   .question .paragraph--faq {
     padding: 0px; }
 
@@ -657,7 +671,9 @@
     padding-left: 20px; }
     @media (min-width: 900px) {
       .footer .aboutus-wrapper {
-        width: 33%;
+        width: 33%; } }
+    @media (min-width: 1100px) {
+      .footer .aboutus-wrapper {
         padding: 0%; } }
     .footer .aboutus-wrapper .footer-logo {
       width: 220px; }
@@ -667,7 +683,7 @@
           .footer .aboutus-wrapper .footer-logo img {
             width: 140px; } }
     .footer .aboutus-wrapper .footer-p {
-      font-size: 13px;
+      font-size: 15px;
       color: #fdfafa;
       line-height: 20px;
       word-spacing: 1px;
@@ -694,7 +710,7 @@
       margin-left: -6px; }
       @media (min-width: 900px) {
         .footer .service-wrapper .footer-h3 {
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 400;
           margin: 0px 0px 16px -11px; } }
     .footer .service-wrapper .footer-li {
@@ -704,7 +720,7 @@
       list-style: none; }
       @media (min-width: 500px) {
         .footer .service-wrapper .footer-li {
-          font-size: 13px;
+          font-size: 15px;
           font-weight: 300;
           padding: 2px 0px;
           width: 100%; } }
@@ -721,6 +737,11 @@
         font-size: 19px; } }
     @media (min-width: 900px) {
       .footer .subscribe-wrapper {
+        padding-right: 20px;
+        width: 33%; } }
+    @media (min-width: 1100px) {
+      .footer .subscribe-wrapper {
+        padding: 0%;
         width: 33%; } }
     .footer .subscribe-wrapper h3 {
       padding-bottom: 15px;
@@ -740,7 +761,7 @@
       @media (min-width: 900px) {
         .footer .subscribe-wrapper .footer-p {
           font-weight: 300;
-          font-size: 13px; } }
+          font-size: 15px; } }
     .footer .subscribe-wrapper label {
       font-size: 14px;
       margin: 13px 0px 12px; }
@@ -769,7 +790,7 @@
         .footer .subscribe-wrapper input {
           width: 100%;
           height: 34px;
-          font-size: 14px; } }
+          font-size: 15px; } }
     .footer .subscribe-wrapper .error-msg {
       font-size: 12px;
       color: red;
@@ -824,8 +845,8 @@
           margin: 3px; } }
       @media (min-width: 900px) {
         .footer .footer-kart-logo .f-logo {
-          height: 26px;
-          width: 26px;
+          height: 31px;
+          width: 31px;
           margin: 3px; } }
       .footer .footer-kart-logo .f-logo .logo-img {
         width: 90%;
@@ -836,7 +857,7 @@
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 30px;
   padding: 10px; }
   @media (min-width: 900px) {
@@ -911,7 +932,7 @@ body {
   height: 7px; }
 
 .heading {
-  font-size: 24px;
+  font-size: 27px;
   letter-spacing: 1px;
   color: #101010;
   font-weight: 440; }

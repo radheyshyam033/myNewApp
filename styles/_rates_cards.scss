@@ -83,7 +83,7 @@ $paragraph-color: #9fadbe;
             color: $paragraph-color;
 
             @media (min-width:600px) {
-                font-size: 13px;
+                font-size: 15px;
             }
         }
 
@@ -109,7 +109,7 @@ $paragraph-color: #9fadbe;
 
             @media (min-width:500px) {
                 width: 45%;
-                height: 325px;
+                height: 325px; 
             }
 
             &:hover {

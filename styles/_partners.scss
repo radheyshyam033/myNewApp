@@ -12,6 +12,9 @@ $paragraph-color: #9fadbe;
     text-align: center;
     padding: 40px 0px 20px;
     @media (min-width:500px) {
+      padding: 3% 20%;
+    }
+    @media (min-width:1100px) {
       padding: 3% 30%;
     }
     .sec5-heading {
@@ -36,8 +39,12 @@ $paragraph-color: #9fadbe;
 
   .prev_btn {
     display: none;
-    margin: 6% 0% 0% -1%;
     @media (min-width:900px) {
+      display: block;
+      margin: 10% 0% 0% -1%;
+    }
+    @media (min-width:1100px) {
+      margin: 6% 0% 0% -1%;
       display: block;
     }
 
@@ -52,8 +59,12 @@ $paragraph-color: #9fadbe;
     display: none;
     @media (min-width:900px) {
       display: block;
+      margin: 10% 10% 0% 94%;
     }
-    margin: 6% 10% 0% 87%;
+    @media (min-width:1100px) {
+      display: block;
+      margin: 6% 10% 0% 87%;
+    }
  
 
     .angle {
@@ -94,6 +105,9 @@ $paragraph-color: #9fadbe;
       flex-direction: row;
       text-align: left;
       padding: 0px 0px;
+      width: 47vw;
+    }
+    @media (min-width:1100px) {
       width: 43vw;
     }
 
