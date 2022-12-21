@@ -1,6 +1,6 @@
 $heading-color: rgb(46, 46, 46);
 
-.sec-7 {
+.question {
     padding: 4% 10%;
     display: grid;
     min-height: 411px;
@@ -11,7 +11,7 @@ $heading-color: rgb(46, 46, 46);
         grid-template-columns: auto auto;
     }
 
-    .help-icon {
+    &__icon {
         position: absolute;
         height: 22px;
         margin: 3px 0px 0px -27px;
@@ -22,7 +22,7 @@ $heading-color: rgb(46, 46, 46);
         }
     }
 
-    .sec7-li {
+    &__list {
         list-style: none;
         width: 90%;
         margin: 12px 0px 13px 30px;

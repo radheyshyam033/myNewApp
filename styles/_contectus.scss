@@ -1,8 +1,8 @@
-.sec-8 {
+.contectUs {
     padding: 4% 0%;
     align-items: center;
 
-    .content {
+    &__content {
         margin: auto;
         width: 95%;
         text-align: center;
@@ -15,11 +15,11 @@
             width: 50%;
         }
 
-        h1 {
+        .heading {
             text-align: center;
         }
 
-        .phone-call {
+        &__icon {
             width: 15px;
             position: absolute;
             margin: 4px -17px;
