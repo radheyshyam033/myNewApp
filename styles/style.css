@@ -745,7 +745,7 @@
         .footer__service__heading {
           font-size: 16px;
           font-weight: 400;
-          margin: 0px 0px 16px -11px; } }
+          margin: 0px 0px 8px 2px; } }
     .footer__service__list {
       margin: 6px;
       font-size: 13px;
@@ -757,6 +757,19 @@
           font-weight: 300;
           padding: 2px 0px;
           width: 100%; } }
+      .footer__service__list::before {
+        content: "";
+        border: solid black;
+        border-width: 0 1.5px 1.5px 0;
+        display: table-cell;
+        width: 7px;
+        height: 7px;
+        position: relative;
+        border-color: white;
+        top: 15px;
+        left: -19px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg); }
   .footer__subscribe {
     display: flex;
     flex-direction: column;
