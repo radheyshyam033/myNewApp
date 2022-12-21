@@ -213,7 +213,7 @@
 
 .way-to-build-website {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
   .way-to-build-website .sec-img {
@@ -234,7 +234,7 @@
     @media (min-width: 1000px) {
       .way-to-build-website .content {
         width: 45%;
-        padding: 3% 5%;
+        padding: 3% 3%;
         background-color: #fbfcfc; } }
     .way-to-build-website .content .sec3-p2 {
       font-size: 18px;
@@ -258,16 +258,14 @@
       @media (min-width: 1000px) {
         .way-to-build-website .content .sec3-li {
           width: 100%;
-          font-size: 13px; } }
+          font-size: 15px; } }
 
 .sec-4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fbfcfc;
   flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-around;
+  background-color: #fbfcfc;
   padding: 42px 0px; }
   @media (min-width: 1000px) {
     .sec-4 {
@@ -291,7 +289,7 @@
       list-style: none; }
       @media (min-width: 600px) {
         .sec-4 .content .sec4-li {
-          font-size: 13px; } }
+          font-size: 15px; } }
   .sec-4 .form {
     padding: 16px;
     border-radius: 8px;
@@ -315,7 +313,7 @@
         .sec-4 .form__input {
           width: 100%;
           height: 37px;
-          font-size: 13px; } }
+          font-size: 15px; } }
     .sec-4 .form__label {
       padding: 0px 0px;
       font-size: 15px;
@@ -324,8 +322,8 @@
       margin-bottom: -10px; }
       @media (min-width: 600px) {
         .sec-4 .form__label {
-          font-size: 13px;
-          margin-bottom: -9px; } }
+          font-size: 15px;
+          margin-bottom: -7px; } }
     .sec-4 .form__btn {
       width: 100%;
       height: 37px; }
@@ -353,7 +351,8 @@
       height: 15px; }
     @media (min-width: 600px) {
       .sec-4 .form {
-        width: 345px; } }
+        width: 373px;
+        margin-right: 50px; } }
   .sec-4 .submit-form {
     display: none;
     margin-left: 30%;
@@ -923,7 +922,7 @@ body {
       font-weight: 455; } }
 
 .find-more-link {
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 8px;
   text-decoration: none;
   color: #5046e4;
@@ -941,7 +940,7 @@ body {
   font-size: 16px;
   color: #9fadbe;
   margin: 3% 0%;
-  line-height: 1.5;
+  line-height: 1.7;
   padding: 2% 0%; }
   @media (min-width: 600px) {
     .paragraph {

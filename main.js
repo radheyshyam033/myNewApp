@@ -1,8 +1,8 @@
 function next_btn() {
-    document.getElementById("scroll-wrapper").scrollLeft += 625;
+    document.getElementById("scroll-wrapper").scrollLeft += 630;
 };
  function prev_btn() {
-    document.getElementById("scroll-wrapper").scrollLeft -= 620;
+    document.getElementById("scroll-wrapper").scrollLeft -= 630;
 };
 
 function hamburger(){
