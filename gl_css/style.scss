@@ -1,0 +1,68 @@
+@import "certificate";
+@import "skills";
+
+body {  
+  overflow-x: hidden;      
+}        
+        
+* {       
+  margin: 0px;       
+  padding: 0px;      
+  box-sizing: border-box;
+  font-family: sans-serif;   
+} 
+   
+.container { 
+  width: 100%; 
+  padding-right: 0;   
+  padding-left: 0;
+  margin-right: auto;   
+  margin-left: auto; 
+  border: 2px;  
+} 
+@media (min-width: 576px) { 
+  .container {
+    max-width: 560px;  
+  }
+}   
+@media (min-width: 650px) {
+  .container {
+    max-width: 630px;
+  }
+}  
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;  
+  }
+}   
+  
+@media (min-width: 992px) {  
+  .container {  
+    max-width: 975px; 
+  }    
+}   
+      
+@media (min-width: 1024px) {
+  .container {  
+    max-width: 1000px;   
+  }
+}
+
+@media (min-width: 1200px) { 
+  .container {
+    max-width: 1170px;     
+  } 
+}
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1850px;
+  }
+}
