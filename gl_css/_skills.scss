@@ -1,6 +1,6 @@
-$sec-background-color:#ffffff;
-$heading-color:#004ab4;
-$sub-titla-color:#4e4d4d;
+$sec-background-color: #ffffff;
+$heading-color: #004ab4;
+$sub-titla-color: #4e4d4d;
 
 .demand-skills {
     background-color: $sec-background-color;
@@ -18,8 +18,8 @@ $sub-titla-color:#4e4d4d;
     justify-content: center;
     padding-top: 10px;
 
-    &__overline { 
-        color: $heading-color; 
+    &__overline {
+        color: $heading-color;
         // letter-spacing: 0.7px;
         font-size: 14px;
     }
@@ -27,7 +27,6 @@ $sub-titla-color:#4e4d4d;
     &__title {
         font-size: 25px;
         font-weight: 500;
-        // letter-spacing: 1px;
         line-height: 32px;
         padding: 15px 0px;
     }
@@ -36,7 +35,6 @@ $sub-titla-color:#4e4d4d;
         font-size: 16px;
         padding: 5px 0px 21px;
         line-height: 24px;
-        // letter-spacing: 1px;
         font-weight: 300;
         color: $sub-titla-color;
     }
@@ -59,9 +57,8 @@ $sub-titla-color:#4e4d4d;
 
     &__list {
         padding-left: 14px;
-        // letter-spacing: 0.5px;
-        font-size: 16px;  
-    }  
+        font-size: 16px;
+    }
 }
 
 @media (min-width:650px) {
@@ -73,18 +70,20 @@ $sub-titla-color:#4e4d4d;
         padding: 30px 30px 0px 0px;
 
         &__overline {
-            // letter-spacing: 1px;
-            font-size: 18px;
+            font-size: 16px;
+            font-weight: 400;
         }
 
         &__title {
-            font-size: 49px;
-            line-height: 50px;
-            padding: 30px 0px;
+            font-size: 46px;
+            line-height: 60px;
+            padding: 16px 0px;
         }
 
         &__subtitle {
-            font-size: 18px;
+            font-size: 17px;
+            color: #908d8d;
+            font-weight: 100;
         }
     }
 
@@ -96,22 +95,26 @@ $sub-titla-color:#4e4d4d;
     }
 
 }
+
 @media (min-width:1200px) {
-     .skills {
+    .skills {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
     }
-    .skills-heading{
+
+    .skills-heading {
         width: 50%;
         padding: 40px 51px 0px 0px;
     }
+
     .all-course {
         flex-direction: row;
         flex-wrap: wrap;
         width: 60%;
         padding-left: 25px;
     }
+
     .course {
         width: 50%;
         padding: 9px 27px 9px 40px;

@@ -42,7 +42,7 @@ $card-footer-color: #828282;
       background-color: white;
       padding: 12px;
       border-radius: 8px;
-      box-shadow: 0px 0px 3px 0px #ccc8c8;
+      box-shadow: 0px 2px 4px 0px #ded9d9;
 
       &__title {
         font-size: 26px;
@@ -67,10 +67,9 @@ $card-footer-color: #828282;
       }
 
       &__content {
-        font-size: 15px;
+        font-size: 14px;
         padding: 4px 0px 10px;
         line-height: 23px;
-        // letter-spacing: 0.7px;
       }
 
       &__footer {
@@ -111,10 +110,10 @@ $card-footer-color: #828282;
             padding-left: 10px;
           }
         }
-      }
 
-      &__content {
-        font-size: 18px;
+        &__content {
+          font-size: 17px;
+        }
       }
     }
 
@@ -129,7 +128,8 @@ $card-footer-color: #828282;
 
     &__title {
       font-size: 44px;
-      line-height: 93px;
+      line-height: 51px;
+      padding: 20px 0px;
 
       &__logo {
         width: 170px;
