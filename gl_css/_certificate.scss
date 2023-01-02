@@ -3,7 +3,7 @@ $heading-color: #004ab4;
 $card-footer-color: #828282;
 
 .pgdm-certificate {
-  background-color: sec-background-color;
+  background-color: $sec-background-color;
   padding: 16px;
 }
 
@@ -15,15 +15,13 @@ $card-footer-color: #828282;
   padding-top: 14px;
 
   &__overline {
-    color: heading-color;
-    letter-spacing: 0.7px;
+    color: $heading-color;
     font-size: 14px;
   }
 
   &__title {
     font-size: 25px;
     font-weight: 500;
-    letter-spacing: 1px;
     line-height: 57px;
   }
 }
@@ -48,7 +46,6 @@ $card-footer-color: #828282;
 
       &__title {
         font-size: 26px;
-        letter-spacing: 1px;
         font-weight: 400;
 
         &__logo {
@@ -73,11 +70,11 @@ $card-footer-color: #828282;
         font-size: 15px;
         padding: 4px 0px 10px;
         line-height: 23px;
-        letter-spacing: 0.7px;
+        // letter-spacing: 0.7px;
       }
 
       &__footer {
-        color: card-footer-color;
+        color: $card-footer-color;
         padding-top: 5px;
         font-size: 11px;
       }
@@ -102,7 +99,7 @@ $card-footer-color: #828282;
 
     .cards {
       .card {
-        padding: 45px 26px;
+        padding: 29px 26px;
 
         &__title {
           font-size: 50px;
@@ -126,8 +123,8 @@ $card-footer-color: #828282;
   .heading {
 
     &__overline {
-      letter-spacing: 1px;
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: 400;
     }
 
     &__title {
@@ -142,7 +139,7 @@ $card-footer-color: #828282;
   }
 
   .certificate-img {
-    margin-top: 30px;
+    margin-top: 54px;
   }
 }
 
@@ -162,7 +159,7 @@ $card-footer-color: #828282;
   }
 
   .certificate-img {
-    max-width: 743px;
+    max-width: 713px;
     padding-left: 20px;
   }
 
