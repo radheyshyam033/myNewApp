@@ -1,7 +1,9 @@
-
+$sec-background-color: #ffffff;
+$heading-color: #004ab4;
+$sub-titla-color: #4e4d4d;
 
 .demand-skills {
-    background-color: #ffffff;
+    background-color: sec-background-color;
     padding: 16px;
 }
 
@@ -17,7 +19,7 @@
     padding-top: 10px;
 
     &__overline {
-        color: #004ab4;
+        color: heading-color;
         letter-spacing: 0.7px;
         font-size: 14px;
     }
@@ -36,7 +38,7 @@
         line-height: 24px;
         letter-spacing: 1px;
         font-weight: 300;
-        color: #4e4d4d;
+        color: sub-titla-color;
     }
 }
 
@@ -58,8 +60,8 @@
     &__list {
         padding-left: 14px;
         letter-spacing: 0.5px;
-        font-size: 16px;  
-    }  
+        font-size: 16px;
+    }
 }
 
 @media (min-width:650px) {
@@ -94,22 +96,26 @@
     }
 
 }
+
 @media (min-width:1200px) {
-     .skills {
+    .skills {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
     }
-    .skills-heading{
+
+    .skills-heading {
         width: 50%;
         padding: 40px 51px 0px 0px;
     }
+
     .all-course {
         flex-direction: row;
         flex-wrap: wrap;
         width: 60%;
         padding-left: 25px;
     }
+
     .course {
         width: 50%;
         padding: 9px 27px 9px 40px;
