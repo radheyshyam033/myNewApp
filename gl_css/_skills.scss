@@ -1,7 +1,6 @@
 $sec-background-color: #ffffff;
 $heading-color: #004ab4;
-$sub-titla-color: #4e4d4d;
-
+$sub-titla-color: #908d8d;
 .demand-skills {
     background-color: $sec-background-color;
     padding: 16px;
@@ -32,7 +31,7 @@ $sub-titla-color: #4e4d4d;
     }
 
     &__subtitle {
-        font-size: 16px;
+        font-size: 17px;
         padding: 5px 0px 21px;
         line-height: 24px;
         font-weight: 300;
@@ -81,9 +80,8 @@ $sub-titla-color: #4e4d4d;
         }
 
         &__subtitle {
-            font-size: 17px;
-            color: #908d8d;
-            font-weight: 100;
+            font-size: 18px;
+            font-weight: 300;
         }
     }
 
